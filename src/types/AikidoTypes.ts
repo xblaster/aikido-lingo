@@ -45,7 +45,7 @@ export interface IconElement {
 
 /** Icon data structure */
 export interface IconData {
-  type: 'svg' | 'emoji' | 'composite'
+  type: 'svg' | 'emoji' | 'composite' | 'lucide'
 
   // For type='svg'
   svgPath?: string              // Path to SVG file
@@ -56,6 +56,10 @@ export interface IconData {
 
   // For type='composite' (multiple elements)
   elements?: IconElement[]
+
+  // For type='lucide' (lucide-react icons)
+  iconName?: string             // Name of the lucide icon (e.g. 'UserCircle')
+  strokeWidth?: number          // Stroke width for lucide icons (default: 2)
 
   // Styling
   color?: string                // Primary color
@@ -72,7 +76,7 @@ export interface TerminologyItem {
   english: string               // English translation
 
   // Visual representation
-  iconType: 'svg' | 'emoji' | 'composite'
+  iconType: 'svg' | 'emoji' | 'composite' | 'lucide'
   iconData: IconData            // Icon data
   iconCaption: string           // Caption (e.g. "Sitting on heels")
 

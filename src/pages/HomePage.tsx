@@ -5,6 +5,7 @@
 
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import {
   Box,
   Container,
@@ -21,6 +22,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { useTheme } from '@mui/material/styles';
 import { useProgress } from '../contexts/ProgressContext'
 import { aikidoCurriculum } from '../data/curriculum'
+import { pageVariants, staggerContainer, staggerItem, cardHover } from '../utils/animations'
 
 const HomePage: React.FC = () => {
   const theme = useTheme();
@@ -48,10 +50,23 @@ const HomePage: React.FC = () => {
   const beltProgress = Math.round((completedUnits / totalUnits) * 100)
 
   return (
-    <Box sx={{ minHeight: '100vh', py: 4 }}>
+    <Box
+      component={motion.div}
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      sx={{ minHeight: '100vh', py: 4 }}
+    >
       <Container maxWidth="lg">
         {/* Header */}
-        <Box sx={{ mb: 4, textAlign: 'center' }}>
+        <Box
+          component={motion.div}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          sx={{ mb: 4, textAlign: 'center' }}
+        >
           <Typography variant="h2" gutterBottom sx={{ fontWeight: 700, color: 'primary.light' }}>
             🥋 Aikido Lingo
           </Typography>
@@ -62,6 +77,10 @@ const HomePage: React.FC = () => {
 
         {/* User Stats Card (Glassmorphism) */}
         <Box
+          component={motion.div}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
           sx={{
             p: 3,
             mb: 4,
@@ -126,23 +145,38 @@ const HomePage: React.FC = () => {
           Unités d'apprentissage
         </Typography>
 
-        <Grid container spacing={3}>
+        <Grid
+          container
+          spacing={3}
+          component={motion.div}
+          variants={staggerContainer}
+          initial="initial"
+          animate="animate"
+        >
           {currentBelt?.units.map((unit, index) => {
             const status = getUnitStatus(unit.id);
             const isLocked = status === 'locked';
             const isComplete = status === 'completed';
 
             return (
-              <Grid item xs={12} md={6} lg={4} key={unit.id}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                lg={4}
+                key={unit.id}
+                component={motion.div}
+                variants={staggerItem}
+              >
                 <Card
+                  component={motion.div}
+                  variants={isLocked ? undefined : cardHover}
+                  initial="rest"
+                  whileHover="hover"
+                  whileTap="tap"
                   sx={{
                     height: '100%',
                     opacity: isLocked ? 0.5 : 1,
-                    transition: 'transform 0.3s, box-shadow 0.3s',
-                    '&:hover': {
-                      transform: isLocked ? 'none' : 'translateY(-8px)',
-                      boxShadow: isLocked ? 'none' : `0 20px 40px -15px ${theme.palette.primary.dark}`,
-                    },
                     background: isComplete
                       ? 'linear-gradient(145deg, rgba(46, 125, 50, 0.2), rgba(22, 22, 22, 0.2))'
                       : `linear-gradient(145deg, ${theme.palette.background.paper}, #1a1a1a)`,

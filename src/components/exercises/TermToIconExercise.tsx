@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import {
   Box,
   Typography,
@@ -14,6 +15,14 @@ import {
 } from '@mui/material'
 import { Exercise, ExerciseResult } from '../../types'
 import IconRenderer from '../icons/IconRenderer'
+import {
+  fadeInOut,
+  staggerContainer,
+  staggerItem,
+  buttonPress,
+  successBounce,
+  errorShake,
+} from '../../utils/animations'
 
 interface TermToIconExerciseProps {
   exercise: Exercise
@@ -61,14 +70,25 @@ const TermToIconExercise: React.FC<TermToIconExerciseProps> = ({
   }
 
   return (
-    <Box>
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+    >
       {/* Question */}
       <Typography variant="h5" gutterBottom sx={{ mb: 3, fontWeight: 600 }}>
         {exercise.question}
       </Typography>
 
       {/* Term information */}
-      <Paper sx={{ p: 2, mb: 3, bgcolor: 'primary.light', color: 'white' }}>
+      <Paper
+        component={motion.div}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
+        sx={{ p: 2, mb: 3, bgcolor: 'primary.light', color: 'white' }}
+      >
         <Typography variant="h6">
           {exercise.terminologyItem.japanese} ({exercise.terminologyItem.romaji})
         </Typography>
@@ -78,46 +98,65 @@ const TermToIconExercise: React.FC<TermToIconExerciseProps> = ({
       </Paper>
 
       {/* Options grid */}
-      <Grid container spacing={2} sx={{ mb: 3 }}>
-        {exercise.options?.map((option) => (
-          <Grid item xs={6} key={option.id}>
-            <Paper
-              onClick={() => handleOptionSelect(option.id)}
-              sx={{
-                p: 3,
-                cursor: showFeedback ? 'default' : 'pointer',
-                border: 2,
-                borderColor:
-                  selectedOption === option.id
-                    ? showFeedback
-                      ? option.isCorrect
-                        ? 'success.main'
-                        : 'error.main'
-                      : 'primary.main'
-                    : 'transparent',
-                bgcolor:
-                  showFeedback && option.isCorrect
-                    ? 'success.light'
-                    : 'background.paper',
-                transition: 'all 0.2s',
-                '&:hover': !showFeedback
-                  ? {
-                      transform: 'translateY(-4px)',
-                      boxShadow: 3
-                    }
-                  : {}
-              }}
-            >
-              {option.iconData && (
-                <IconRenderer
-                  iconData={option.iconData}
-                  caption={option.value}
-                  size="medium"
-                />
-              )}
-            </Paper>
-          </Grid>
-        ))}
+      <Grid
+        container
+        spacing={2}
+        sx={{ mb: 3 }}
+        component={motion.div}
+        variants={staggerContainer}
+        initial="initial"
+        animate="animate"
+      >
+        {exercise.options?.map((option) => {
+          const isSelected = selectedOption === option.id
+          const isCorrectOption = option.isCorrect
+          const shouldAnimate = showFeedback && isSelected
+
+          return (
+            <Grid item xs={6} key={option.id} component={motion.div} variants={staggerItem}>
+              <Paper
+                component={motion.div}
+                variants={
+                  shouldAnimate
+                    ? isCorrectOption
+                      ? successBounce
+                      : errorShake
+                    : undefined
+                }
+                initial="initial"
+                animate={shouldAnimate ? 'animate' : undefined}
+                onClick={() => handleOptionSelect(option.id)}
+                whileHover={!showFeedback ? { scale: 1.05, y: -4 } : undefined}
+                whileTap={!showFeedback ? { scale: 0.98 } : undefined}
+                sx={{
+                  p: 3,
+                  cursor: showFeedback ? 'default' : 'pointer',
+                  border: 2,
+                  borderColor:
+                    isSelected
+                      ? showFeedback
+                        ? isCorrectOption
+                          ? 'success.main'
+                          : 'error.main'
+                        : 'primary.main'
+                      : 'transparent',
+                  bgcolor:
+                    showFeedback && isCorrectOption
+                      ? 'success.light'
+                      : 'background.paper',
+                }}
+              >
+                {option.iconData && (
+                  <IconRenderer
+                    iconData={option.iconData}
+                    caption={option.value}
+                    size="medium"
+                  />
+                )}
+              </Paper>
+            </Grid>
+          )
+        })}
       </Grid>
 
       {/* Hint */}
@@ -138,31 +177,46 @@ const TermToIconExercise: React.FC<TermToIconExerciseProps> = ({
       )}
 
       {/* Feedback */}
-      {showFeedback && (
-        <Alert
-          severity={
-            selectedOption === exercise.correctAnswer ? 'success' : 'error'
-          }
-          sx={{ mb: 2 }}
-        >
-          {selectedOption === exercise.correctAnswer
-            ? '✅ Correct ! Bien joué !'
-            : '❌ Incorrect. La bonne réponse était mise en vert.'}
-        </Alert>
-      )}
+      <AnimatePresence>
+        {showFeedback && (
+          <Alert
+            component={motion.div}
+            variants={fadeInOut}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            severity={
+              selectedOption === exercise.correctAnswer ? 'success' : 'error'
+            }
+            sx={{ mb: 2 }}
+          >
+            {selectedOption === exercise.correctAnswer
+              ? '✅ Correct ! Bien joué !'
+              : '❌ Incorrect. La bonne réponse était mise en vert.'}
+          </Alert>
+        )}
+      </AnimatePresence>
 
       {/* Submit button */}
-      {!showFeedback && (
-        <Button
-          variant="contained"
-          size="large"
-          fullWidth
-          onClick={handleSubmit}
-          disabled={!selectedOption}
-        >
-          Valider
-        </Button>
-      )}
+      <AnimatePresence>
+        {!showFeedback && (
+          <Button
+            component={motion.button}
+            variants={buttonPress}
+            initial="rest"
+            whileHover="hover"
+            whileTap="tap"
+            exit={{ opacity: 0, scale: 0.9 }}
+            variant="contained"
+            size="large"
+            fullWidth
+            onClick={handleSubmit}
+            disabled={!selectedOption}
+          >
+            Valider
+          </Button>
+        )}
+      </AnimatePresence>
     </Box>
   )
 }
