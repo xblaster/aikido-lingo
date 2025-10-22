@@ -3,7 +3,7 @@
  * Shows results after completing a unit
  */
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
@@ -15,6 +15,7 @@ import {
   Grid,
   Divider
 } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import StarIcon from '@mui/icons-material/Star'
 import StarBorderIcon from '@mui/icons-material/StarBorder'
 import { UnitProgress } from '../types'
@@ -29,21 +30,40 @@ import {
   buttonPress,
   errorShake,
 } from '../utils/animations'
+import { useSoundEffects } from '../hooks/useSoundEffects'
+import { useHaptic } from '../hooks/useHaptic'
 
 const CompletionPage: React.FC = () => {
   const { unitId } = useParams<{ unitId: string }>()
   const location = useLocation()
   const navigate = useNavigate()
+  const theme = useTheme()
+
+  const sounds = useSoundEffects()
+  const haptic = useHaptic()
 
   const unitProgress = location.state?.unitProgress as UnitProgress | undefined
   const unit = unitId ? getUnitById(unitId) : null
+
+  const passed = unit && unitProgress ? isUnitPassed(unitProgress) : false
+
+  // Play celebration or error sound on mount
+  useEffect(() => {
+    if (!unit || !unitProgress) return
+
+    if (passed) {
+      sounds.celebration()
+      haptic.trigger('success')
+    } else {
+      sounds.error()
+      haptic.trigger('error')
+    }
+  }, [passed, unit, unitProgress]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!unit || !unitProgress) {
     navigate('/')
     return null
   }
-
-  const passed = isUnitPassed(unitProgress)
   const duration = Math.round(
     unitProgress.completedExercises.reduce((sum, ex) => sum + ex.timeSpent, 0) / 60000
   )
@@ -77,7 +97,17 @@ const CompletionPage: React.FC = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, type: 'spring', stiffness: 200, damping: 20 }}
-          sx={{ p: 4, textAlign: 'center' }}
+          sx={{
+            p: 4,
+            textAlign: 'center',
+            background: passed
+              ? `linear-gradient(145deg, rgba(102, 187, 106, 0.1), ${theme.palette.background.paper})`
+              : `linear-gradient(145deg, rgba(255, 152, 0, 0.1), ${theme.palette.background.paper})`,
+            border: passed
+              ? '1px solid rgba(102, 187, 106, 0.3)'
+              : '1px solid rgba(255, 152, 0, 0.3)',
+            boxShadow: passed ? theme.custom.shadows.successGlow : theme.custom.shadows.xl,
+          }}
         >
           {/* Result */}
           {passed ? (

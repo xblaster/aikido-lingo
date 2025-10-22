@@ -23,6 +23,8 @@ import {
   successBounce,
   errorShake,
 } from '../../utils/animations'
+import { useSoundEffects } from '../../hooks/useSoundEffects'
+import { useHaptic } from '../../hooks/useHaptic'
 
 interface TermToIconExerciseProps {
   exercise: Exercise
@@ -39,9 +41,16 @@ const TermToIconExercise: React.FC<TermToIconExerciseProps> = ({
   const [attempts, setAttempts] = useState(0)
   const [showHint, setShowHint] = useState(false)
 
+  // Sound effects and haptic feedback
+  const sounds = useSoundEffects()
+  const haptic = useHaptic()
+
   const handleOptionSelect = (optionId: string) => {
     if (showFeedback) return
     setSelectedOption(optionId)
+    // Light click feedback
+    sounds.click()
+    haptic.trigger('light')
   }
 
   const handleSubmit = () => {
@@ -52,6 +61,15 @@ const TermToIconExercise: React.FC<TermToIconExerciseProps> = ({
 
     const isCorrect = selectedOption === exercise.correctAnswer
     const timeSpent = Date.now() - startTime
+
+    // Audio and haptic feedback based on result
+    if (isCorrect) {
+      sounds.success()
+      haptic.trigger('success')
+    } else {
+      sounds.error()
+      haptic.trigger('error')
+    }
 
     // Wait for feedback, then complete
     setTimeout(() => {

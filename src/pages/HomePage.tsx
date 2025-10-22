@@ -85,9 +85,14 @@ const HomePage: React.FC = () => {
             p: 3,
             mb: 4,
             borderRadius: '16px',
-            bgcolor: 'rgba(42, 42, 42, 0.6)',
-            backdropFilter: 'blur(10px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            background: theme.custom.gradients.glass,
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            boxShadow: theme.custom.shadows.lg,
+            '&:hover': {
+              boxShadow: theme.custom.shadows.primaryGlow,
+            },
+            transition: 'box-shadow 0.3s ease',
           }}
         >
           <Grid container spacing={3} alignItems="center">
@@ -104,13 +109,25 @@ const HomePage: React.FC = () => {
                       height: 12,
                       borderRadius: 6,
                       bgcolor: 'rgba(255,255,255,0.1)',
+                      boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.2)',
                       '& .MuiLinearProgress-bar': {
-                        background: `linear-gradient(90deg, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
+                        background: theme.custom.gradients.primary,
+                        boxShadow: theme.custom.glows.primary,
+                        borderRadius: 6,
                       },
                     }}
                   />
                 </Box>
-                <Typography variant="h5" sx={{ fontWeight: 700, color: 'primary.light' }}>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontWeight: 700,
+                    background: theme.custom.gradients.primary,
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
                   {beltProgress}%
                 </Typography>
               </Box>
@@ -178,8 +195,23 @@ const HomePage: React.FC = () => {
                     height: '100%',
                     opacity: isLocked ? 0.5 : 1,
                     background: isComplete
-                      ? 'linear-gradient(145deg, rgba(46, 125, 50, 0.2), rgba(22, 22, 22, 0.2))'
-                      : `linear-gradient(145deg, ${theme.palette.background.paper}, #1a1a1a)`,
+                      ? `linear-gradient(145deg, rgba(102, 187, 106, 0.15), rgba(22, 22, 22, 0.3))`
+                      : `linear-gradient(145deg, ${theme.palette.background.paper}, rgba(26, 42, 58, 0.4))`,
+                    border: isComplete
+                      ? '1px solid rgba(102, 187, 106, 0.3)'
+                      : '1px solid rgba(255, 255, 255, 0.05)',
+                    boxShadow: theme.custom.shadows.md,
+                    transition: 'all 0.3s ease',
+                    '&:hover': !isLocked
+                      ? {
+                          boxShadow: isComplete
+                            ? theme.custom.shadows.successGlow
+                            : theme.custom.shadows.primaryGlow,
+                          border: isComplete
+                            ? '1px solid rgba(102, 187, 106, 0.5)'
+                            : '1px solid rgba(38, 166, 154, 0.3)',
+                        }
+                      : {},
                   }}
                 >
                   <CardActionArea

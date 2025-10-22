@@ -19,6 +19,29 @@ declare module '@mui/material/styles' {
         black_3: string
         black_4: string
       }
+      gradients: {
+        primary: string
+        secondary: string
+        success: string
+        warning: string
+        vibrant: string
+        glass: string
+      }
+      glows: {
+        primary: string
+        secondary: string
+        success: string
+        error: string
+      }
+      shadows: {
+        sm: string
+        md: string
+        lg: string
+        xl: string
+        glow: string
+        primaryGlow: string
+        successGlow: string
+      }
     }
   }
   interface ThemeOptions {
@@ -33,6 +56,29 @@ declare module '@mui/material/styles' {
         black_2: string
         black_3: string
         black_4: string
+      }
+      gradients?: {
+        primary: string
+        secondary: string
+        success: string
+        warning: string
+        vibrant: string
+        glass: string
+      }
+      glows?: {
+        primary: string
+        secondary: string
+        success: string
+        error: string
+      }
+      shadows?: {
+        sm: string
+        md: string
+        lg: string
+        xl: string
+        glow: string
+        primaryGlow: string
+        successGlow: string
       }
     }
   }
@@ -181,7 +227,8 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          background: 'linear-gradient(180deg, #1a1a1a 0%, #121212 100%)',
+          background: 'radial-gradient(ellipse at top, #1a2a3a 0%, #0f1419 50%, #000000 100%)',
+          backgroundAttachment: 'fixed',
           minHeight: '100vh',
         },
       },
@@ -262,7 +309,36 @@ const theme = createTheme({
       black_2: '#212121',
       black_3: '#212121',
       black_4: '#212121'
-    }
+    },
+
+    // Vibrant gradients for modern look
+    gradients: {
+      primary: 'linear-gradient(135deg, #26a69a 0%, #4fc3f7 100%)',
+      secondary: 'linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%)',
+      success: 'linear-gradient(135deg, #66bb6a 0%, #4caf50 100%)',
+      warning: 'linear-gradient(135deg, #ffa726 0%, #ff9800 100%)',
+      vibrant: 'linear-gradient(135deg, #26a69a 0%, #4fc3f7 50%, #ffa726 100%)',
+      glass: 'linear-gradient(135deg, rgba(42, 42, 42, 0.7) 0%, rgba(42, 42, 42, 0.5) 100%)',
+    },
+
+    // Glow effects for hover states
+    glows: {
+      primary: '0 0 20px rgba(38, 166, 154, 0.4), 0 0 40px rgba(38, 166, 154, 0.2)',
+      secondary: '0 0 20px rgba(79, 195, 247, 0.4), 0 0 40px rgba(79, 195, 247, 0.2)',
+      success: '0 0 20px rgba(102, 187, 106, 0.4), 0 0 40px rgba(102, 187, 106, 0.2)',
+      error: '0 0 20px rgba(255, 152, 0, 0.4), 0 0 40px rgba(255, 152, 0, 0.2)',
+    },
+
+    // Enhanced shadow system for depth
+    shadows: {
+      sm: '0 2px 8px rgba(0, 0, 0, 0.15)',
+      md: '0 4px 16px rgba(0, 0, 0, 0.2)',
+      lg: '0 8px 32px rgba(0, 0, 0, 0.25)',
+      xl: '0 16px 48px rgba(0, 0, 0, 0.3)',
+      glow: '0 0 20px rgba(38, 166, 154, 0.3)',
+      primaryGlow: '0 4px 24px rgba(38, 166, 154, 0.4), 0 0 8px rgba(38, 166, 154, 0.2)',
+      successGlow: '0 4px 24px rgba(102, 187, 106, 0.4), 0 0 8px rgba(102, 187, 106, 0.2)',
+    },
   }
 })
 
