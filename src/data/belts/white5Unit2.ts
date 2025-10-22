@@ -11,7 +11,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'hanmi',
     japanese: '半身',
-    romaji: 'han-mi',
+    romaji: 'hanmi',
     french: 'Position triangulaire',
     english: 'Half-body stance',
     iconType: 'composite',
@@ -27,7 +27,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'kamae',
     japanese: '構え',
-    romaji: 'ka-ma-e',
+    romaji: 'kamae',
     french: 'Position de garde',
     english: 'Guard posture',
     iconType: 'composite',
@@ -43,7 +43,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'shizentai',
     japanese: '自然体',
-    romaji: 'shi-zen-tai',
+    romaji: 'shizentai',
     french: 'Posture naturelle',
     english: 'Natural stance',
     iconType: 'emoji',
@@ -59,7 +59,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'migi',
     japanese: '右',
-    romaji: 'mi-gi',
+    romaji: 'migi',
     french: 'Droite',
     english: 'Right',
     iconType: 'emoji',
@@ -75,7 +75,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'hidari',
     japanese: '左',
-    romaji: 'hi-da-ri',
+    romaji: 'hidari',
     french: 'Gauche',
     english: 'Left',
     iconType: 'emoji',
@@ -91,7 +91,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'ai-hanmi',
     japanese: '相半身',
-    romaji: 'ai-han-mi',
+    romaji: 'aihanmi',
     french: 'Même position',
     english: 'Same stance',
     iconType: 'composite',
@@ -114,7 +114,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'gyaku-hanmi',
     japanese: '逆半身',
-    romaji: 'gya-ku-han-mi',
+    romaji: 'gyakuhanmi',
     french: 'Position opposée',
     english: 'Opposite stance',
     iconType: 'composite',
@@ -137,7 +137,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'suwari-waza',
     japanese: '座り技',
-    romaji: 'su-wa-ri-wa-za',
+    romaji: 'suwariwaza',
     french: 'Techniques à genoux',
     english: 'Kneeling techniques',
     iconType: 'composite',
@@ -153,7 +153,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'tachi-waza',
     japanese: '立ち技',
-    romaji: 'ta-chi-wa-za',
+    romaji: 'tachiwaza',
     french: 'Techniques debout',
     english: 'Standing techniques',
     iconType: 'composite',
@@ -175,7 +175,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'hanmi-handachi',
     japanese: '半身半立',
-    romaji: 'han-mi-han-da-chi',
+    romaji: 'hanmihandachi',
     french: 'Un assis, un debout',
     english: 'One sitting, one standing',
     iconType: 'composite',
@@ -197,7 +197,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'chudan',
     japanese: '中段',
-    romaji: 'chu-dan',
+    romaji: 'chudan',
     french: 'Niveau moyen',
     english: 'Middle level',
     iconType: 'composite',
@@ -219,7 +219,7 @@ export const unit2Terminology: TerminologyItem[] = [
   {
     id: 'ma-ai',
     japanese: '間合い',
-    romaji: 'ma-ai',
+    romaji: 'maai',
     french: 'Distance de sécurité',
     english: 'Safe distance',
     iconType: 'composite',

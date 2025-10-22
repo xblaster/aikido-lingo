@@ -1,1080 +1,888 @@
-# Aikido Lingo - Implementation Guide
+# Aikido Lingo - Curriculum Implementation Guide
 
-This guide provides step-by-step instructions, code templates, and best practices for implementing the Aikido Lingo application.
+## Quick Start for Adding New Units
 
-## Quick Start
-
-### 1. Initial Setup (30 minutes)
-
-```bash
-# Create React app with TypeScript
-npx create-react-app aikido-lingo --template typescript
-cd aikido-lingo
-
-# Install dependencies
-npm install @mui/material @emotion/react @emotion/styled
-npm install react-router-dom@7.9.2
-npm install @mui/icons-material
-
-# Install dev dependencies
-npm install --save-dev @types/react-router-dom
-npm install --save-dev prettier eslint-config-prettier
-
-# Initialize git
-git init
-git add .
-git commit -m "Initial commit: Create React App with TypeScript"
-```
-
-### 2. Configure TypeScript (tsconfig.json)
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "allowJs": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"],
-      "@/components/*": ["components/*"],
-      "@/types/*": ["types/*"],
-      "@/services/*": ["services/*"],
-      "@/utils/*": ["utils/*"],
-      "@/data/*": ["data/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/contexts/*": ["contexts/*"],
-      "@/pages/*": ["pages/*"]
-    }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"]
-}
-```
-
-### 3. Configure ESLint (.eslintrc.js)
-
-```javascript
-module.exports = {
-  extends: [
-    'react-app',
-    'react-app/jest',
-    'prettier'
-  ],
-  rules: {
-    '@typescript-eslint/no-unused-vars': ['error', {
-      argsIgnorePattern: '^_',
-      varsIgnorePattern: '^_'
-    }],
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'prefer-const': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
-  }
-};
-```
-
-### 4. Configure Prettier (.prettierrc)
-
-```json
-{
-  "semi": true,
-  "trailingComma": "es5",
-  "singleQuote": true,
-  "printWidth": 100,
-  "tabWidth": 2,
-  "arrowParens": "avoid"
-}
-```
-
-## Implementation Roadmap
-
-### Week 1: Type System & Utilities
-
-#### Day 1: Core Types
-
-**File: `src/types/AikidoTypes.ts`**
-
-See ARCHITECTURE.md section 4.2 for complete type definitions. Key points:
-
-- Define all domain types first
-- Use strict TypeScript (no `any`)
-- Export types, not interfaces when using unions
-- Document complex types with JSDoc
-
-**File: `src/types/ExerciseTypes.ts`**
-
-Exercise types must support all 8 exercise formats. See ARCHITECTURE.md for details.
-
-**File: `src/types/ProgressTypes.ts`**
-
-Critical for localStorage persistence structure.
-
-#### Day 2-3: Constants & Utilities
-
-**File: `src/utils/constants.ts`**
-
-```typescript
-/**
- * Application-wide constants
- */
-
-import type { BeltLevel } from '@/types';
-
-// Storage keys
-export const STORAGE_KEYS = {
-  PROGRESS: 'aikido-lingo-progress',
-  SETTINGS: 'aikido-lingo-settings',
-  CACHE: 'aikido-lingo-cache',
-} as const;
-
-// Game mechanics
-export const MAX_HEARTS = 5;
-export const MIN_PASSING_SCORE = 80;
-export const BASE_XP_PER_UNIT = 100;
-export const XP_BONUS_HIGH_SCORE = 50;  // Score >= 90%
-export const XP_BONUS_PERFECT = 25;     // Score = 100%
-export const XP_BONUS_FAST = 25;        // Avg time < 15s
-
-// Spaced repetition intervals (days)
-export const LEITNER_INTERVALS = {
-  1: 1,
-  2: 3,
-  3: 7,
-  4: 14,
-  5: 30,
-} as const;
-
-// Belt colors for UI
-export const BELT_COLORS: Record<BeltLevel, string> = {
-  white_5: '#ffffff',
-  white_4: '#ffffff',
-  white_3: '#fdd835',
-  white_2: '#fdd835',
-  white_1: '#fb8c00',
-  black_1: '#212121',
-  black_2: '#212121',
-  black_3: '#212121',
-  black_4: '#212121',
-};
-
-// Belt display names
-export const BELT_NAMES: Record<BeltLevel, string> = {
-  white_5: '5th Kyu - White Belt',
-  white_4: '4th Kyu - White Belt',
-  white_3: '3rd Kyu - Yellow Belt',
-  white_2: '2nd Kyu - Yellow Belt',
-  white_1: '1st Kyu - Orange Belt',
-  black_1: '1st Dan - Black Belt',
-  black_2: '2nd Dan - Black Belt',
-  black_3: '3rd Dan - Black Belt',
-  black_4: '4th Dan - Black Belt',
-};
-
-// Icon sizes in pixels
-export const ICON_SIZES = {
-  small: 48,
-  medium: 96,
-  large: 144,
-} as const;
-
-// Exercise time estimates (seconds)
-export const EXERCISE_TIME_ESTIMATES = {
-  icon_matching: 30,
-  term_to_icon: 15,
-  icon_to_term: 15,
-  video_observation: 45,
-  position_identification: 20,
-  safety_quiz: 20,
-  sequence_ordering: 30,
-  free_recall: 10,
-} as const;
-```
-
-**File: `src/utils/localStorage.ts`**
-
-See ARCHITECTURE.md section 11.2 for complete implementation.
-
-Key functions:
-- `saveProgress(progress: UserProgress): void`
-- `loadProgress(): UserProgress | null`
-- `clearAllData(): void`
-- `exportData(): string`
-- `importData(jsonString: string): boolean`
-
-#### Day 4-5: Services Layer
-
-**File: `src/services/progressTracking.ts`**
-
-```typescript
-/**
- * Progress tracking service
- * Handles progress calculations, XP gains, and statistics
- */
-
-import type {
-  UserProgress,
-  ExerciseResult,
-  PracticeSession,
-  TechniqueCategory,
-} from '@/types';
-import {
-  BASE_XP_PER_UNIT,
-  XP_BONUS_HIGH_SCORE,
-  XP_BONUS_PERFECT,
-  XP_BONUS_FAST,
-} from '@/utils/constants';
-
-/**
- * Initialize new user progress
- */
-export function initializeProgress(): UserProgress {
-  return {
-    currentBeltLevel: 'white_5',
-    completedUnits: [],
-    unlockedUnits: ['white5_unit1'], // First unit always unlocked
-    stats: {
-      totalXp: 0,
-      totalMinutes: 0,
-      unitsCompleted: 0,
-      accuracy: 0,
-      streak: 0,
-      categoryProgress: {
-        positions: { termsLearned: 0, accuracy: 0 },
-        movements: { termsLearned: 0, accuracy: 0 },
-        techniques: { termsLearned: 0, accuracy: 0 },
-        weapons: { termsLearned: 0, accuracy: 0 },
-        falls: { termsLearned: 0, accuracy: 0 },
-        principles: { termsLearned: 0, accuracy: 0 },
-        etiquette: { termsLearned: 0, accuracy: 0 },
-      },
-    },
-    practiceLog: [],
-    spacedRepetitionData: { boxes: {} },
-    safetyChecklist: {},
-    createdAt: new Date().toISOString(),
-    lastUpdated: new Date().toISOString(),
-  };
-}
-
-/**
- * Calculate XP gained from unit completion
- */
-export function calculateXpGain(score: number, results: ExerciseResult[]): number {
-  let xp = BASE_XP_PER_UNIT;
-
-  // Bonus for high score
-  if (score >= 90) {
-    xp += XP_BONUS_HIGH_SCORE;
-  }
-  if (score === 100) {
-    xp += XP_BONUS_PERFECT;
-  }
-
-  // Bonus for speed (average < 15s per exercise)
-  const avgTime = results.reduce((sum, r) => sum + r.timeSpent, 0) / results.length;
-  if (avgTime < 15000) {
-    xp += XP_BONUS_FAST;
-  }
-
-  return xp;
-}
-
-/**
- * Calculate accuracy percentage from results
- */
-export function calculateAccuracy(results: ExerciseResult[]): number {
-  if (results.length === 0) return 0;
-  const correct = results.filter(r => r.isCorrect).length;
-  return Math.round((correct / results.length) * 100);
-}
-
-/**
- * Update or continue streak
- */
-export function updateStreak(progress: UserProgress): number {
-  const today = new Date().toISOString().split('T')[0];
-  const lastSession = progress.practiceLog[progress.practiceLog.length - 1];
-
-  if (!lastSession) return 1;
-
-  const lastDate = new Date(lastSession.date).toISOString().split('T')[0];
-  const daysDiff = Math.floor(
-    (new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24)
-  );
-
-  if (daysDiff === 0) return progress.stats.streak; // Same day
-  if (daysDiff === 1) return progress.stats.streak + 1; // Next day
-  return 1; // Streak broken, restart
-}
-
-/**
- * Create practice session record
- */
-export function createPracticeSession(
-  unitId: string,
-  duration: number,
-  score: number,
-  exercisesCompleted: number,
-  termsReviewed: string[]
-): PracticeSession {
-  return {
-    date: new Date().toISOString(),
-    unitId,
-    duration: Math.round(duration / 60000), // Convert ms to minutes
-    exercisesCompleted,
-    score: Math.round(score),
-    termsReviewed,
-  };
-}
-
-/**
- * Update category progress
- */
-export function updateCategoryProgress(
-  progress: UserProgress,
-  category: TechniqueCategory,
-  termsCount: number,
-  accuracy: number
-): UserProgress {
-  const categoryStats = progress.stats.categoryProgress[category];
-
-  return {
-    ...progress,
-    stats: {
-      ...progress.stats,
-      categoryProgress: {
-        ...progress.stats.categoryProgress,
-        [category]: {
-          termsLearned: categoryStats.termsLearned + termsCount,
-          accuracy: Math.round(
-            (categoryStats.accuracy * categoryStats.termsLearned + accuracy * termsCount) /
-              (categoryStats.termsLearned + termsCount)
-          ),
-        },
-      },
-    },
-  };
-}
-
-/**
- * Calculate overall accuracy from all practice sessions
- */
-export function calculateOverallAccuracy(sessions: PracticeSession[]): number {
-  if (sessions.length === 0) return 0;
-
-  const totalScore = sessions.reduce((sum, s) => sum + s.score, 0);
-  return Math.round(totalScore / sessions.length);
-}
-```
-
-**File: `src/services/spacedRepetition.ts`**
-
-See ARCHITECTURE.md section 9.2 for complete implementation of Leitner algorithm.
-
-**File: `src/services/unlockSystem.ts`**
-
-See ARCHITECTURE.md section 9.3 for unlock logic implementation.
-
-### Week 2: Theme & Component Foundation
-
-#### Day 6: Theme Configuration
-
-**File: `src/theme.ts`**
-
-See ARCHITECTURE.md section 12.1 for complete theme configuration.
-
-This sets up:
-- Aikido-inspired color palette (red primary, navy secondary)
-- Typography with Japanese font support
-- Responsive breakpoints
-- Component style overrides
-
-#### Day 7-9: Common Components
-
-**File: `src/components/common/ProgressBar.tsx`**
-
-```typescript
-/**
- * ProgressBar component
- * Displays progress toward completion (used in exercises and units)
- */
-
-import React from 'react';
-import { Box, LinearProgress, Typography } from '@mui/material';
-
-interface ProgressBarProps {
-  /** Current progress value */
-  current: number;
-  /** Total/max value */
-  total: number;
-  /** Display format */
-  variant?: 'detailed' | 'simple';
-  /** Custom label */
-  label?: string;
-}
-
-export const ProgressBar: React.FC<ProgressBarProps> = ({
-  current,
-  total,
-  variant = 'detailed',
-  label,
-}) => {
-  const percentage = Math.round((current / total) * 100);
-
-  if (variant === 'simple') {
-    return (
-      <LinearProgress
-        variant="determinate"
-        value={percentage}
-        sx={{ height: 8, borderRadius: 4 }}
-      />
-    );
-  }
-
-  return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 0.5 }}>
-        <Typography variant="body2" color="text.secondary">
-          {label || 'Progress'}
-        </Typography>
-        <Typography variant="body2" fontWeight={600}>
-          {current}/{total} ({percentage}%)
-        </Typography>
-      </Box>
-      <LinearProgress
-        variant="determinate"
-        value={percentage}
-        sx={{ height: 8, borderRadius: 4 }}
-      />
-    </Box>
-  );
-};
-```
-
-**File: `src/components/common/HeartDisplay.tsx`**
-
-```typescript
-/**
- * HeartDisplay component
- * Shows remaining lives/hearts during exercises
- */
-
-import React from 'react';
-import { Box } from '@mui/material';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { MAX_HEARTS } from '@/utils/constants';
-
-interface HeartDisplayProps {
-  /** Number of hearts remaining (0-5) */
-  hearts: number;
-  /** Size of hearts */
-  size?: 'small' | 'medium' | 'large';
-}
-
-const sizeMap = {
-  small: 20,
-  medium: 28,
-  large: 36,
-};
-
-export const HeartDisplay: React.FC<HeartDisplayProps> = ({ hearts, size = 'medium' }) => {
-  const iconSize = sizeMap[size];
-
-  return (
-    <Box sx={{ display: 'flex', gap: 0.5 }}>
-      {Array.from({ length: MAX_HEARTS }).map((_, index) => {
-        const filled = index < hearts;
-
-        return filled ? (
-          <FavoriteIcon
-            key={index}
-            sx={{ fontSize: iconSize, color: 'error.main' }}
-          />
-        ) : (
-          <FavoriteBorderIcon
-            key={index}
-            sx={{ fontSize: iconSize, color: 'action.disabled' }}
-          />
-        );
-      })}
-    </Box>
-  );
-};
-```
-
-**File: `src/components/common/StatCard.tsx`**
-
-```typescript
-/**
- * StatCard component
- * Displays a single statistic value with icon
- */
-
-import React from 'react';
-import { Card, CardContent, Typography, Box } from '@mui/material';
-
-interface StatCardProps {
-  /** Statistic label */
-  label: string;
-  /** Statistic value */
-  value: string | number;
-  /** Icon to display */
-  icon: React.ReactNode;
-  /** Accent color */
-  color?: string;
-}
-
-export const StatCard: React.FC<StatCardProps> = ({
-  label,
-  value,
-  icon,
-  color = 'primary.main',
-}) => {
-  return (
-    <Card>
-      <CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-          <Box sx={{ color, mr: 1 }}>{icon}</Box>
-          <Typography variant="body2" color="text.secondary">
-            {label}
-          </Typography>
-        </Box>
-        <Typography variant="h4" fontWeight={700}>
-          {value}
-        </Typography>
-      </CardContent>
-    </Card>
-  );
-};
-```
-
-### Week 3-4: Icon System & Exercise Components
-
-#### Day 10-12: Icon Rendering System
-
-See ARCHITECTURE.md section 8 for complete icon system implementation:
-
-- `src/components/icons/IconRenderer.tsx` - Main factory
-- `src/components/icons/EmojiIcon.tsx` - Simple emoji rendering
-- `src/components/icons/SvgIcon.tsx` - SVG file rendering
-- `src/components/icons/CompositeIcon.tsx` - Complex composite icons
-
-#### Day 13-18: Priority Exercise Components
-
-**File: `src/components/exercises/TermToIconExercise.tsx`**
-
-See ARCHITECTURE.md section 7.4 for complete implementation.
-
-This is the most important exercise type for MVP. Key features:
-- Display Japanese term prominently
-- Show 4 icon options in a grid
-- Handle selection and submission
-- Track time and hints used
-- Return `ExerciseResult` on completion
-
-**Similar pattern for**:
-- `IconToTermExercise.tsx` - Show icon, choose term
-- `SafetyQuizExercise.tsx` - Text-based MCQ
-- `FreeRecallExercise.tsx` - Flashcard with self-assessment
-
-### Week 4: Learning Flow
-
-#### Day 19-22: Learning Components
-
-**File: `src/components/learning/ExerciseRenderer.tsx`**
-
-```typescript
-/**
- * ExerciseRenderer component
- * Dynamically renders the appropriate exercise component based on type
- */
-
-import React from 'react';
-import type { Exercise, ExerciseResult } from '@/types';
-
-import { TermToIconExercise } from '@/components/exercises/TermToIconExercise';
-import { IconToTermExercise } from '@/components/exercises/IconToTermExercise';
-import { SafetyQuizExercise } from '@/components/exercises/SafetyQuizExercise';
-import { FreeRecallExercise } from '@/components/exercises/FreeRecallExercise';
-// Import other exercise types as implemented
-
-interface ExerciseRendererProps {
-  exercise: Exercise;
-  onComplete: (result: ExerciseResult) => void;
-}
-
-export const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({
-  exercise,
-  onComplete,
-}) => {
-  // Map exercise types to components
-  const exerciseComponents = {
-    term_to_icon: TermToIconExercise,
-    icon_to_term: IconToTermExercise,
-    safety_quiz: SafetyQuizExercise,
-    free_recall: FreeRecallExercise,
-    // Add other types as implemented
-  };
-
-  const ExerciseComponent = exerciseComponents[exercise.type];
-
-  if (!ExerciseComponent) {
-    console.error(`Unknown exercise type: ${exercise.type}`);
-    return (
-      <Box sx={{ p: 3, textAlign: 'center' }}>
-        <Typography color="error">
-          Exercise type "{exercise.type}" not implemented
-        </Typography>
-      </Box>
-    );
-  }
-
-  return (
-    <ExerciseComponent
-      exercise={exercise}
-      onComplete={onComplete}
-    />
-  );
-};
-```
-
-**File: `src/components/learning/LearningUnit.tsx`**
-
-See ARCHITECTURE.md section 7.2 for complete implementation.
-
-This is the main orchestrator component that:
-1. Loads unit data
-2. Initializes session in UnitSessionContext
-3. Renders current exercise
-4. Updates progress on completion
-5. Shows completion screen when done
-
-### Week 5-6: Data & Pages
-
-#### Day 23-26: Content Creation
-
-**File: `src/data/icons/stancesIcons.ts`**
-
-```typescript
-/**
- * Stance/position icon definitions
- */
-
-import type { IconData } from '@/types';
-
-export const stancesIcons: Record<string, IconData> = {
-  seiza: {
-    type: 'emoji',
-    emoji: '🧎',
-  },
-
-  hanmi: {
-    type: 'composite',
-    elements: [
-      {
-        type: 'shape',
-        shape: 'person',
-        position: { x: 50, y: 40 },
-        color: '#1976d2',
-        size: 30,
-      },
-      {
-        type: 'shape',
-        shape: 'triangle',
-        position: { x: 50, y: 75 },
-        color: '#ffa726',
-        size: 25,
-      },
-    ],
-  },
-
-  shizentai: {
-    type: 'composite',
-    elements: [
-      {
-        type: 'shape',
-        shape: 'person',
-        position: { x: 50, y: 50 },
-        color: '#1976d2',
-        size: 30,
-      },
-    ],
-  },
-
-  kamae: {
-    type: 'composite',
-    elements: [
-      {
-        type: 'shape',
-        shape: 'person',
-        position: { x: 50, y: 50 },
-        color: '#1976d2',
-        size: 30,
-      },
-      {
-        type: 'line',
-        position: { x: 30, y: 50 },
-        direction: 'right',
-        color: '#c62828',
-        size: 15,
-        strokeWidth: 3,
-      },
-    ],
-  },
-};
-```
-
-**File: `src/data/belts/white5Data.ts`**
-
-```typescript
-/**
- * 5th Kyu (White Belt) curriculum data
- * Units 1-4: Fundamentals
- */
-
-import type { LearningUnit, TerminologyItem, Exercise } from '@/types';
-import { stancesIcons } from '@/data/icons/stancesIcons';
-import { etiquetteIcons } from '@/data/icons/etiquetteIcons';
-
-/** Unit 1: Dojo Etiquette */
-const unit1Terminology: TerminologyItem[] = [
-  {
-    id: 'rei',
-    japanese: '礼',
-    romaji: 'rei',
-    french: 'Salut',
-    english: 'Bow',
-    iconType: 'composite',
-    iconData: etiquetteIcons.rei,
-    iconCaption: 'Salut respectueux',
-    category: 'etiquette',
-    beltLevel: 'white_5',
-    description: 'Salut formel marquant respect et humilité dans le dojo.',
-    difficulty: 1,
-    keywords: ['salut', 'respect', 'bow', 'greeting'],
-    relatedTerms: ['seiza', 'sensei'],
-  },
-
-  {
-    id: 'seiza',
-    japanese: '正座',
-    romaji: 'sei-za',
-    french: 'Position assise formelle',
-    english: 'Formal sitting',
-    iconType: 'emoji',
-    iconData: stancesIcons.seiza,
-    iconCaption: 'Assis sur les talons',
-    category: 'positions',
-    beltLevel: 'white_5',
-    description: 'Position assise traditionnelle japonaise, genoux au sol, dos droit.',
-    difficulty: 1,
-    keywords: ['sitting', 'assis', 'position', 'formal'],
-    relatedTerms: ['rei', 'tatami'],
-  },
-
-  // Add 8-10 more terms for complete unit
-];
-
-function generateUnit1Exercises(): Exercise[] {
-  const exercises: Exercise[] = [];
-
-  // Exercise 1: Term to Icon - rei
-  exercises.push({
-    id: 'unit1_ex1_rei',
-    type: 'term_to_icon',
-    question: 'Quelle icône représente "Rei" (salut) ?',
-    terminologyItem: unit1Terminology[0],
-    options: [
-      {
-        id: 'opt1',
-        value: 'Salut respectueux',
-        iconData: etiquetteIcons.rei,
-        isCorrect: true,
-      },
-      {
-        id: 'opt2',
-        value: 'Position assise',
-        iconData: stancesIcons.seiza,
-        isCorrect: false,
-      },
-      {
-        id: 'opt3',
-        value: 'Position debout',
-        iconData: stancesIcons.shizentai,
-        isCorrect: false,
-      },
-      {
-        id: 'opt4',
-        value: 'Position de garde',
-        iconData: stancesIcons.kamae,
-        isCorrect: false,
-      },
-    ],
-    correctAnswer: 'opt1',
-    hint: 'Marque de respect au début et à la fin de chaque pratique',
-    difficulty: 1,
-    estimatedTime: 15,
-  });
-
-  // Add 9-11 more exercises with variety
-
-  return exercises;
-}
-
-export const learningUnit1: LearningUnit = {
-  id: 'white5_unit1',
-  title: 'Étiquette du dojo',
-  description: 'Apprenez les bases du respect et de la conduite dans un dojo d\'aïkido',
-  beltLevel: 'white_5',
-  category: 'etiquette',
-  terminology: unit1Terminology,
-  exercises: generateUnit1Exercises(),
-  targetScore: 80,
-  estimatedTime: 15,
-  prerequisites: [],
-  isSafetyCritical: false,
-};
-
-// Export all white5 units
-export const white5Units = [
-  learningUnit1,
-  // Add unit 2, 3, etc.
-];
-```
-
-**File: `src/data/curriculum.ts`**
-
-```typescript
-/**
- * Complete curriculum structure
- */
-
-import type { Curriculum } from '@/types';
-import { white5Units } from './belts/white5Data';
-import { BELT_COLORS, BELT_NAMES } from '@/utils/constants';
-
-export const curriculum: Curriculum = {
-  belts: [
-    {
-      id: 'white_5',
-      level: 'white_5',
-      name: BELT_NAMES.white_5,
-      description: 'Fondamentaux de l\'aïkido: étiquette, positions de base et premiers mouvements',
-      units: white5Units,
-      color: BELT_COLORS.white_5,
-      unlockCondition: {
-        type: 'always_unlocked',
-      },
-    },
-    // Add other belts as content is created
-  ],
-};
-```
-
-#### Day 27-30: Pages & Routing
-
-**File: `src/pages/HomePage.tsx`**
-
-```typescript
-/**
- * HomePage
- * Main landing page with navigation menu
- */
-
-import React from 'react';
-import { Container, Box, Typography } from '@mui/material';
-import { NavigationMenu } from '@/components/navigation/NavigationMenu';
-import { useProgress } from '@/contexts/ProgressContext';
-import { ProgressBar } from '@/components/common/ProgressBar';
-
-export const HomePage: React.FC = () => {
-  const { progress } = useProgress();
-
-  const completedCount = progress.completedUnits.length;
-  const totalUnits = progress.unlockedUnits.length;
-
-  return (
-    <Container maxWidth="md">
-      <Box sx={{ py: 4 }}>
-        {/* Header */}
-        <Box sx={{ textAlign: 'center', mb: 4 }}>
-          <Typography variant="h2" gutterBottom>
-            🥋 Aikido Lingo
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            Maîtrisez la terminologie d'aïkido
-          </Typography>
-        </Box>
-
-        {/* Progress Summary */}
-        <Box sx={{ mb: 4 }}>
-          <Typography variant="h6" gutterBottom>
-            Votre progression
-          </Typography>
-          <ProgressBar
-            current={completedCount}
-            total={totalUnits}
-            label="Unités complétées"
-          />
-        </Box>
-
-        {/* Navigation Menu */}
-        <NavigationMenu />
-
-        {/* Quick Stats */}
-        <Box sx={{ mt: 4, p: 2, bgcolor: 'background.paper', borderRadius: 2 }}>
-          <Typography variant="body2" color="text.secondary">
-            Total XP: {progress.stats.totalXp} |
-            Précision: {progress.stats.accuracy}% |
-            Série: {progress.stats.streak} jours
-          </Typography>
-        </Box>
-      </Box>
-    </Container>
-  );
-};
-```
-
-**File: `src/App.tsx`**
-
-```typescript
-/**
- * App root component
- * Sets up routing, theme, and context providers
- */
-
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline, Box } from '@mui/material';
-
-import { theme } from './theme';
-import { ProgressProvider } from './contexts/ProgressContext';
-import { UnitSessionProvider } from './contexts/UnitSessionContext';
-
-import { HomePage } from './pages/HomePage';
-import { LearningPage } from './pages/LearningPage';
-import { LearningUnit } from './components/learning/LearningUnit';
-
-export const App: React.FC = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <ProgressProvider>
-        <UnitSessionProvider>
-          <BrowserRouter>
-            <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/learning" element={<LearningPage />} />
-                <Route path="/learning/:unitId" element={<LearningUnit />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
-              </Routes>
-            </Box>
-          </BrowserRouter>
-        </UnitSessionProvider>
-      </ProgressProvider>
-    </ThemeProvider>
-  );
-};
-```
-
-## Testing Checklist
-
-### Unit Tests to Write
-
-For each service:
-```typescript
-// src/services/progressTracking.test.ts
-describe('Progress Tracking Service', () => {
-  it('initializes progress with correct defaults', () => {
-    const progress = initializeProgress();
-    expect(progress.currentBeltLevel).toBe('white_5');
-    expect(progress.unlockedUnits).toContain('white5_unit1');
-  });
-
-  it('calculates XP correctly for perfect score', () => {
-    const xp = calculateXpGain(100, mockResults);
-    expect(xp).toBe(175); // Base + high score + perfect
-  });
-});
-```
-
-For each component:
-```typescript
-// src/components/common/ProgressBar.test.tsx
-describe('ProgressBar', () => {
-  it('displays correct percentage', () => {
-    render(<ProgressBar current={7} total={10} />);
-    expect(screen.getByText('70%')).toBeInTheDocument();
-  });
-});
-```
-
-## Deployment
-
-### Netlify Deployment
-
-1. Connect GitHub repository to Netlify
-2. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `build`
-3. Add `netlify.toml`:
-
-```toml
-[build]
-  command = "npm run build"
-  publish = "build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-```
-
-## Common Pitfalls & Solutions
-
-### 1. Type Errors
-**Problem**: TypeScript errors with Material-UI
-**Solution**: Ensure `@emotion/react` and `@emotion/styled` are installed
-
-### 2. Import Path Issues
-**Problem**: `@/` paths not resolving
-**Solution**: Check `tsconfig.json` baseUrl and paths configuration
-
-### 3. Context Not Found
-**Problem**: "useProgress must be used within ProgressProvider"
-**Solution**: Ensure App.tsx wraps all routes with context providers
-
-### 4. localStorage Not Persisting
-**Problem**: Progress not saved between sessions
-**Solution**: Check browser DevTools → Application → Local Storage
-
-### 5. Exercise Not Rendering
-**Problem**: Blank screen when loading exercise
-**Solution**: Verify exercise type is mapped in ExerciseRenderer
-
-## Next Steps After MVP
-
-1. Add remaining 4 exercise types
-2. Implement review mode with spaced repetition
-3. Create library page with filtering
-4. Build dashboard with statistics charts
-5. Add PWA support for offline use
-6. Create units 4-10 for full curriculum
+This guide provides step-by-step instructions for implementing the remaining 27 curriculum units following the established patterns.
 
 ---
 
-This guide provides everything needed to start implementing Aikido Lingo. Follow the week-by-week structure, use the provided code templates, and refer to ARCHITECTURE.md for detailed specifications.
+## Overview
+
+**Current Status**:
+- ✅ 6 units completed (examples for white 5, white 4, yellow 3)
+- 📋 27 units remaining
+- ✅ Complete curriculum design documented
+- ✅ All patterns and templates established
+
+**Implementation Time**:
+- Per unit: 2.5-3.5 hours
+- Total remaining: ~67-95 hours
+- At 5 units/week: 5-6 weeks to completion
+
+---
+
+## Step-by-Step Unit Creation
+
+### Step 1: Choose Your Unit
+
+Follow the recommended implementation order from CURRICULUM_SUMMARY.md:
+
+**Priority Order**:
+1. Complete White 5 (unit 5 remaining)
+2. Complete White 4 (units 2-5)
+3. Complete Yellow 3 (units 2-6)
+4. Complete Yellow 2 (units 1-6)
+5. Complete Orange 1 (units 1-6)
+6. Complete Black 1 (units 1-5)
+
+### Step 2: Create Unit File
+
+```bash
+# Example: Creating white 5 unit 5
+touch src/data/belts/white5Unit5.ts
+```
+
+### Step 3: Copy Base Template
+
+Use this template structure (see working examples in existing units):
+
+```typescript
+/**
+ * Unit [Number]: [Title] ([Belt Level])
+ * [Brief description]
+ */
+
+import { TerminologyItem, LearningUnit, Exercise } from '@/types'
+
+/** Terminology items for [Unit Name] */
+export const [unitName]Terminology: TerminologyItem[] = [
+  // Add 8-15 terms here
+]
+
+/** Generate exercises for [Unit Name] */
+function generate[UnitName]Exercises(): Exercise[] {
+  const exercises: Exercise[] = []
+
+  // Add 8-12 exercises here
+
+  return exercises
+}
+
+/** Complete [Unit Name] export */
+export const [unitId]: LearningUnit = {
+  id: '[belt_level]_unit[number]',
+  title: '[French Title]',
+  description: '[French Description]',
+
+  beltLevel: '[belt_level]',
+  category: '[category]',
+
+  terminology: [unitName]Terminology,
+  exercises: generate[UnitName]Exercises(),
+
+  targetScore: 80, // or 85 for black belt
+  estimatedTime: 20, // in minutes
+
+  prerequisites: ['[prerequisite_unit_ids]'],
+  isSafetyCritical: false // or true if safety-critical
+}
+```
+
+### Step 4: Add Terminology Items
+
+**CRITICAL REQUIREMENT**: All icons must be BLACK (#000000) only - no colors!
+
+```typescript
+{
+  id: 'unique_term_id',
+  japanese: '日本語',
+  romaji: 'ro-ma-ji', // Hyphenated for clarity
+  french: 'Traduction française',
+  english: 'English translation',
+
+  iconType: 'lucide',
+  iconData: {
+    type: 'lucide',
+    iconName: 'IconName', // From lucide-react
+    color: '#000000',      // BLACK ONLY - REQUIRED
+    strokeWidth: 2
+  },
+  iconCaption: 'Short descriptive caption',
+
+  category: 'techniques', // positions, movements, weapons, falls, principles, etiquette
+  beltLevel: 'white_5',   // Current belt level
+  description: 'Detailed explanation in French.',
+
+  difficulty: 2,          // 1-5 based on belt level
+  keywords: ['key', 'words', 'for', 'search'],
+  relatedTerms: ['term_id_1', 'term_id_2']
+}
+```
+
+### Step 5: Add Exercises
+
+Follow the distribution pattern:
+- 35% Term to Icon (exercises 1, 3, 5, 7)
+- 35% Icon to Term (exercises 2, 4, 6)
+- 15-30% Safety Quiz (more if safety-critical)
+- 15% Free Recall (usually last exercise)
+
+#### Template 1: Term to Icon
+
+```typescript
+exercises.push({
+  id: '[belt]_unit[num]_ex[num]',
+  type: 'term_to_icon',
+  question: 'Quelle icône représente "[Term]" ([translation]) ?',
+  terminologyItem: [unitName]Terminology[index],
+  options: [
+    {
+      id: 'opt1',
+      value: 'Correct caption',
+      iconData: [unitName]Terminology[index].iconData,
+      isCorrect: true
+    },
+    {
+      id: 'opt2',
+      value: 'Wrong caption',
+      iconData: { type: 'lucide', iconName: 'OtherIcon', color: '#000000' },
+      isCorrect: false
+    },
+    {
+      id: 'opt3',
+      value: 'Wrong caption',
+      iconData: { type: 'lucide', iconName: 'AnotherIcon', color: '#000000' },
+      isCorrect: false
+    },
+    {
+      id: 'opt4',
+      value: 'Wrong caption',
+      iconData: { type: 'lucide', iconName: 'DifferentIcon', color: '#000000' },
+      isCorrect: false
+    }
+  ],
+  correctAnswer: 'opt1',
+  hint: 'Helpful hint in French',
+  difficulty: 2,
+  estimatedTime: 15
+})
+```
+
+#### Template 2: Icon to Term
+
+```typescript
+exercises.push({
+  id: '[belt]_unit[num]_ex[num]',
+  type: 'icon_to_term',
+  question: 'Quel est ce terme ?',
+  terminologyItem: [unitName]Terminology[index],
+  options: [
+    { id: 'opt1', value: 'Correct Term', isCorrect: true },
+    { id: 'opt2', value: 'Similar Wrong Term', isCorrect: false },
+    { id: 'opt3', value: 'Another Wrong Term', isCorrect: false },
+    { id: 'opt4', value: 'Different Wrong Term', isCorrect: false }
+  ],
+  correctAnswer: 'opt1',
+  hint: 'Helpful hint explaining the term',
+  difficulty: 2,
+  estimatedTime: 15
+})
+```
+
+#### Template 3: Safety Quiz (CRITICAL for safety-critical units)
+
+```typescript
+exercises.push({
+  id: '[belt]_unit[num]_ex[num]_safety',
+  type: 'safety_quiz',
+  question: 'Question de sécurité importante ?',
+  terminologyItem: [unitName]Terminology[index],
+  options: [
+    {
+      id: 'opt1',
+      value: 'Correct safe answer',
+      isCorrect: true
+    },
+    {
+      id: 'opt2',
+      value: 'Unsafe answer',
+      isCorrect: false
+    },
+    {
+      id: 'opt3',
+      value: 'Another unsafe answer',
+      isCorrect: false
+    },
+    {
+      id: 'opt4',
+      value: 'Wrong answer',
+      isCorrect: false
+    }
+  ],
+  correctAnswer: 'opt1',
+  context: 'IMPORTANT safety context and explanation. Why this matters.',
+  difficulty: 1,
+  estimatedTime: 20
+})
+```
+
+#### Template 4: Free Recall
+
+```typescript
+exercises.push({
+  id: '[belt]_unit[num]_ex[num]_recall',
+  type: 'free_recall',
+  question: 'Question de rappel libre - expliquez ou nommez...',
+  terminologyItem: [unitName]Terminology[index],
+  options: [
+    { id: 'hard', value: 'Je ne sais pas', isCorrect: false },
+    { id: 'medium', value: 'Je connais un peu', isCorrect: false },
+    { id: 'good', value: 'Je connais bien', isCorrect: true },
+    { id: 'easy', value: 'Je maîtrise parfaitement', isCorrect: true }
+  ],
+  correctAnswer: 'good',
+  hint: 'Optional hint with key points',
+  difficulty: 3,
+  estimatedTime: 20
+})
+```
+
+### Step 6: Update Curriculum
+
+```typescript
+// In src/data/curriculum.ts
+
+// 1. Import your new unit
+import { white5Unit5 } from './belts/white5Unit5'
+
+// 2. Add to the appropriate belt section's units array
+{
+  id: 'white_5_belt',
+  level: 'white_5',
+  name: '5ème Kyū - Ceinture blanche',
+  description: 'Découvrez les fondamentaux...',
+  units: [
+    white5Unit1,
+    white5Unit2,
+    white5Unit3,
+    white5Unit4,
+    white5Unit5  // ← Add here
+  ],
+  color: '#ffffff',
+  unlockCondition: { type: 'always_unlocked' }
+}
+```
+
+### Step 7: Test Your Unit
+
+```bash
+# 1. Compile TypeScript
+npm run build
+
+# 2. If successful, start dev server
+npm start
+
+# 3. In browser:
+#    - Navigate to your new unit
+#    - Complete as a user would
+#    - Verify all icons appear in BLACK AND WHITE
+#    - Check all exercises work
+#    - Ensure difficulty feels right
+```
+
+---
+
+## Black and White Icon System
+
+### CRITICAL REQUIREMENT
+**ALL icons MUST be black (#000000) with NO other colors.**
+
+This is non-negotiable for visual consistency and professional appearance.
+
+### Recommended Lucide Icons
+
+#### People & Positions
+```typescript
+'User'          // Single person, general stance
+'Users'         // Multiple people, partner work
+'UserCircle'    // Person with emphasis
+'UserCheck'     // Correct position
+'UserX'         // Incorrect position
+```
+
+#### Movement - Straight Directions
+```typescript
+'ArrowUp'       // Forward, shomen direction
+'ArrowDown'     // Downward, strikes, mae ukemi
+'ArrowLeft'     // Left movement
+'ArrowRight'    // Right movement, entering
+'ArrowUpRight'  // Diagonal movements
+'ArrowDownLeft' // Diagonal movements
+```
+
+#### Movement - Rotation
+```typescript
+'RotateCw'      // Clockwise rotation, tenkan
+'RotateCcw'     // Counter-clockwise, nikyo motion
+'RefreshCw'     // Continuous rotation, kaiten
+'Repeat'        // Repeated movement, practice
+```
+
+#### Movement - Complex
+```typescript
+'Move'          // General movement, tai sabaki
+'MoveHorizontal'// Lateral movement
+'MoveVertical'  // Vertical movement
+'TrendingUp'    // Rising movement, spiral motion
+```
+
+#### Control & Technique
+```typescript
+'Hand'          // Hand position, grab, tegatana
+'Grip'          // Gripping, control, osae
+'Lock'          // Immobilization, pin, kansetsu
+'Target'        // Strike point, atemi
+'Crosshair'     // Precise targeting, focus point
+```
+
+#### Connection & Principles
+```typescript
+'Link'          // Connection, musubi
+'Unlink'        // Separation
+'Waves'         // Flow, harmonization, awase
+'Wind'          // Ki, breath, kokyu
+'Zap'           // Energy, power
+```
+
+#### Safety & Awareness
+```typescript
+'Shield'        // Protection, safety, ukemi
+'ShieldAlert'   // Critical safety warning
+'AlertTriangle' // Warning, caution
+'Eye'           // Awareness, metsuke
+```
+
+#### Learning & Progression
+```typescript
+'Book'          // Study, learning, theory
+'BookOpen'      // Open learning
+'GraduationCap' // Levels, achievement
+'TrendingUp'    // Progression, improvement
+'CheckCircle'   // Correct, success
+'XCircle'       // Incorrect, failure
+```
+
+#### Weapons
+```typescript
+'Sword'         // Bokken, ken
+'Minus'         // Jo (staff as simple line)
+'GitBranch'     // Tanto (knife/dagger)
+```
+
+#### Geometric Shapes
+```typescript
+'Circle'        // Circular movement, tenkan
+'Square'        // Stability, foundation
+'Triangle'      // Hanmi, sankaku
+'Minimize2'     // Distance, maai
+'Maximize2'     // Expansion, extension
+```
+
+#### Measurement & Control
+```typescript
+'Gauge'         // Pressure, control level
+'Ruler'         // Distance measurement
+'Weight'        // Balance, center
+```
+
+### Icon Usage Example
+
+```typescript
+// For tenkan (pivot/rotation)
+iconData: {
+  type: 'lucide',
+  iconName: 'RotateCw',
+  color: '#000000',  // BLACK ONLY
+  strokeWidth: 2
+}
+
+// For shomen uchi (front strike)
+iconData: {
+  type: 'lucide',
+  iconName: 'ArrowDown',
+  color: '#000000',  // BLACK ONLY
+  strokeWidth: 2
+}
+
+// For musubi (connection)
+iconData: {
+  type: 'lucide',
+  iconName: 'Link',
+  color: '#000000',  // BLACK ONLY
+  strokeWidth: 2
+}
+
+// For safety/protection
+iconData: {
+  type: 'lucide',
+  iconName: 'Shield',
+  color: '#000000',  // BLACK ONLY
+  strokeWidth: 2
+}
+```
+
+---
+
+## Common Aikido Terms by Category
+
+### Positions (Kamae)
+- seiza, shizentai, kamae, hanmi
+- migi hanmi, hidari hanmi, gyaku hanmi, ai hanmi
+- sankaku no kamae, chudan, jodan, gedan
+- shikko (knee walking), suwari waza, tachi waza
+
+### Movements (Tai Sabaki)
+- ayumi ashi, tsugi ashi, suri ashi
+- tenkan, irimi, tenshin, tai sabaki
+- tai no henko, happo giri
+- ma-ai, issoku ittou no ma-ai, to-ma, chika-ma
+
+### Basic Techniques (Kihon Waza)
+- ikkyo, nikyo, sankyo, yonkyo, gokyo (five pins)
+- omote, ura (front/back versions)
+- osae waza (pins), katame waza (locks), kansetsu waza (joint locks)
+
+### Projection Techniques (Nage Waza)
+- shiho nage, kote gaeshi, kaiten nage
+- irimi nage, tenchi nage, kokyu nage
+- juji garami, ude garami, koshi nage, aiki otoshi
+
+### Attacks (Uke's Role)
+- katate dori (one hand grab)
+- ryote dori (two hands grab)
+- kata dori (shoulder grab)
+- shomen uchi (front strike)
+- yokomen uchi (side strike)
+- munetsuki (chest punch)
+- ushiro (from behind)
+
+### Ukemi (Falling)
+- ukemi, mae ukemi, ushiro ukemi, yoko ukemi
+- zempo kaiten (forward high roll)
+- koho tento (backward roll)
+- tobi ukemi (flying fall)
+
+### Weapons (Buki Waza)
+- bokken / ken (wooden sword)
+- jo (staff, 128cm)
+- tanto (knife/dagger)
+- suburi (solo practice swings)
+- kumitachi (paired sword)
+- kumijo (paired staff)
+- tanto dori, tachi dori, jo dori (disarms)
+
+### Principles (Riai)
+- ki (energy/spirit)
+- aiki (harmonizing energy)
+- kokyu (breath)
+- kokyu ryoku (breath power)
+- ki no nagare (flowing with ki)
+- musubi (connection)
+- awase (blending/harmonization)
+- zanshin (remaining mind/awareness)
+- kuzushi (breaking balance)
+- ma-ai (distancing)
+- metsuke (eye contact/gaze)
+
+### Etiquette (Reigi)
+- rei (bow)
+- onegaishimasu (please teach me)
+- arigatou gozaimashita (thank you)
+- sensei (teacher)
+- dojo (training hall)
+- tatami (mat)
+- kamiza (upper seat, place of honor)
+- uke (receiver, one who falls)
+- tori / nage (performer, one who throws)
+
+---
+
+## Difficulty Guidelines by Belt Level
+
+### White Belt (5th-4th Kyu)
+- **Difficulty Range**: 1-3 (mostly 1-2)
+- **Focus**: Concrete, fundamental terms
+- **Examples**: rei, seiza, kamae, shomen uchi
+- **Exercise Style**: Clear distinctions, direct matching
+- **Estimated Time**: 15-22 minutes per unit
+
+### Yellow Belt (3rd-2nd Kyu)
+- **Difficulty Range**: 2-4 (mostly 2-3)
+- **Focus**: Core techniques, principles beginning
+- **Examples**: nikyo, tenkan, irimi nage, kokyu
+- **Exercise Style**: Similar options requiring discrimination
+- **Estimated Time**: 20-25 minutes per unit
+
+### Orange Belt (1st Kyu)
+- **Difficulty Range**: 3-5 (mostly 3-4)
+- **Focus**: Advanced techniques, variations
+- **Examples**: henka waza, kaeshi waza, advanced projections
+- **Exercise Style**: Complex integration, variations
+- **Estimated Time**: 24-28 minutes per unit
+
+### Black Belt (1st Dan)
+- **Difficulty Range**: 4-5
+- **Focus**: Teaching, philosophy, mastery concepts
+- **Examples**: jiyu waza, pedagogical terms, O-Sensei's teachings
+- **Exercise Style**: Conceptual understanding, application
+- **Estimated Time**: 26-30 minutes per unit
+
+---
+
+## Safety-Critical Unit Checklist
+
+If `isSafetyCritical: true`, ensure:
+
+- [ ] **Minimum 2-3 safety quiz questions** (vs 1 for regular units)
+- [ ] First safety quiz appears within exercises 1-3
+- [ ] Safety quizzes cover:
+  - [ ] Proper technique application
+  - [ ] Partner communication (tap signals, verbal cues)
+  - [ ] Injury prevention methods
+  - [ ] Progressive practice approach
+- [ ] Context field always filled with detailed explanation
+- [ ] Related safety terms cross-referenced
+- [ ] Description emphasizes safety considerations
+
+**Safety-Critical Categories**:
+- All ukemi units (falls)
+- All joint lock units (nikyo, sankyo, yonkyo, gokyo)
+- All nage waza units (throws/projections)
+- All weapons units
+- All jiyu waza / randori units (free practice)
+
+---
+
+## Japanese Romanization (Hepburn System)
+
+### Basic Rules
+- Long vowels: Use macron (ō, ū) or double vowel (oo, uu)
+- Hyphenate syllables for clarity: `ko-kyu` not `kokyu`
+- Double consonants preserved: `ikkyo` not `ikyo`
+- N before consonants: `tenkan` not `tekan`
+- Soft 'ch' for chi: `mochi` not `moti`
+
+### Common Patterns
+- -yo ending: `ikkyo`, `nikyo`, `sankyo`
+- -ku ending: `kokyu`, `doku`
+- -shi ending: `mawashi`, `tenshi`
+- -tsu sound: `munetsuki`, `tsuki`
+- Long o: `dojo`, `seiza`
+
+---
+
+## Translation Tips
+
+### French Translations
+- Use proper accents: é, è, ê, à, ô, ù
+- Formal register for instruction
+- Technical terms: Japanese + French explanation
+- Action verbs: Use infinitive form
+- Example: "Salut respectueux" not just "salut"
+
+### English Translations
+- More literal than French
+- Technical accuracy over colloquial
+- Consistent terminology across units
+- Example: "Bow" not "greeting" for rei
+
+---
+
+## Implementation Checklist
+
+### Before Starting
+- [ ] Review existing example units (white5Unit4, white4Unit1, yellow3Unit1)
+- [ ] Check CURRICULUM_DESIGN.md for unit content specifications
+- [ ] Understand belt level requirements
+- [ ] Identify if unit is safety-critical
+
+### During Implementation
+- [ ] Create file in src/data/belts/
+- [ ] Define 8-15 terminology items
+- [ ] ALL icons BLACK (#000000) ONLY
+- [ ] Japanese characters correct
+- [ ] Romaji properly hyphenated
+- [ ] French translations accurate with accents
+- [ ] English translations clear
+- [ ] Difficulty appropriate for belt
+- [ ] Related terms cross-referenced
+- [ ] Generate 8-12 exercises
+- [ ] Exercise distribution correct (35/35/15/15)
+- [ ] Safety quizzes if applicable
+- [ ] Difficulty progression within unit
+- [ ] Estimated times realistic
+- [ ] Prerequisites correctly set
+
+### After Implementation
+- [ ] Import in src/data/curriculum.ts
+- [ ] Add to belt section array
+- [ ] Run `npm run build` - no errors
+- [ ] Run `npm start` - loads correctly
+- [ ] Test complete unit flow
+- [ ] Verify all icons BLACK AND WHITE
+- [ ] Check French text for errors
+- [ ] Validate exercise difficulty
+- [ ] Confirm safety content clear
+
+---
+
+## Testing Procedure
+
+### 1. TypeScript Compilation
+```bash
+npm run build
+```
+**Expected**: No errors, clean compile
+
+**Common Issues**:
+- Missing import statements
+- Mismatched type definitions
+- Incorrect export names
+
+### 2. Development Server
+```bash
+npm start
+```
+**Expected**: Unit appears in curriculum
+
+**Check**:
+- Unit visible in appropriate belt section
+- Prerequisites respected (locked if not met)
+- Unit card displays correctly
+
+### 3. Unit Flow Test
+**Steps**:
+1. Start unit
+2. Complete each exercise
+3. Verify icons render (BLACK AND WHITE)
+4. Check answer validation
+5. Progress through all exercises
+6. Complete unit
+7. Verify XP awarded
+8. Check unit marked complete
+
+### 4. Content Quality Review
+- [ ] No typos in French text
+- [ ] No grammatical errors
+- [ ] Icons visually distinct
+- [ ] Hints helpful but not giving answers
+- [ ] Safety information clear
+- [ ] Difficulty feels appropriate
+
+---
+
+## Common Issues and Solutions
+
+### Issue: Icon Doesn't Render
+**Problem**: Blank space where icon should be
+
+**Solutions**:
+- Verify iconName exactly matches lucide-react export
+- Ensure color is '#000000' (string, not just black)
+- Check iconType === 'lucide'
+- Confirm strokeWidth is number not string
+
+### Issue: TypeScript Error on Import
+**Problem**: Cannot find module '@/data/belts/...'
+
+**Solutions**:
+- Use `@/` path alias, not relative paths
+- Ensure export name matches import name
+- Check file actually exists
+- Verify tsconfig.json paths configured
+
+### Issue: Exercise Validation Not Working
+**Problem**: Selecting correct answer doesn't register
+
+**Solutions**:
+- Verify correctAnswer matches an option id
+- Check isCorrect boolean on options
+- Ensure terminologyItem is defined
+- Validate all required fields present
+
+### Issue: Unit Won't Unlock
+**Problem**: New unit not appearing in curriculum
+
+**Solutions**:
+- Check prerequisites array
+- Verify previous unit IDs correct
+- Ensure belt unlockCondition properly set
+- Complete prerequisite units
+
+### Issue: Icons Have Color
+**Problem**: Icons showing in blue/red/etc instead of black
+
+**Solutions**:
+- Check color: '#000000' on ALL iconData
+- Verify no default colors in theme
+- Ensure IconRenderer respects color prop
+- Remove any color overrides in components
+
+---
+
+## Next Unit to Implement
+
+### Recommended: white5Unit5 - First Techniques
+
+**Purpose**: Introduce basic ikkyo and fundamental attack forms
+
+**Terminology to Include** (8-10 terms):
+1. ikkyo (first principle)
+2. katate dori (one-hand grab)
+3. ryote dori (two-hands grab)
+4. kata dori (shoulder grab)
+5. shomen uchi (front strike)
+6. yokomen uchi (side strike)
+7. omote (front version)
+8. ura (back version)
+9. kihon waza (basic technique)
+10. nagare (flowing movement)
+
+**Exercise Focus**:
+- Recognizing different attack forms
+- Understanding omote vs ura concept
+- Ikkyo application basics
+- Safety: controlled speed, tap signals
+
+**Safety Quiz Topics**:
+- Speed control when learning
+- Partner agreement before techniques
+- Stopping on tap signal
+
+**Estimated Development Time**: 2.5-3 hours
+
+**File Location**: `C:\dev\aikido-lingo\src\data\belts\white5Unit5.ts`
+
+---
+
+## Implementation Progress Tracking
+
+### Completed Units (6)
+- ✅ white5Unit1 - Dojo Etiquette
+- ✅ white5Unit2 - Basic Positions
+- ✅ white5Unit3 - Movement Foundations
+- ✅ white5Unit4 - Safety & Ukemi Basics
+- ✅ white4Unit1 - Advanced Kamae
+- ✅ yellow3Unit1 - Nikyo Second Principle
+
+### Remaining Units by Belt (27)
+
+**White 5** (1):
+- [ ] Unit 5: First Techniques ← START HERE
+
+**White 4** (4):
+- [ ] Unit 2: Tai Sabaki Deep Dive
+- [ ] Unit 3: Ikkyo Variations
+- [ ] Unit 4: Weapons Awareness
+- [ ] Unit 5: Ukemi Development
+
+**Yellow 3** (5):
+- [ ] Unit 2: Sankyo Third Principle
+- [ ] Unit 3: Tenkan Mastery
+- [ ] Unit 4: Irimi Techniques
+- [ ] Unit 5: Kokyu Principles
+- [ ] Unit 6: Weapons Integration
+
+**Yellow 2** (6):
+- [ ] Unit 1: Yonkyo Fourth Principle
+- [ ] Unit 2: Gokyo Fifth Principle
+- [ ] Unit 3: Projection Techniques
+- [ ] Unit 4: Advanced Footwork
+- [ ] Unit 5: Jo Fundamentals
+- [ ] Unit 6: Partner Dynamics
+
+**Orange 1** (6):
+- [ ] Unit 1: Advanced Projections
+- [ ] Unit 2: Henka Waza
+- [ ] Unit 3: Kaeshi Waza
+- [ ] Unit 4: Weapons Combinations
+- [ ] Unit 5: Philosophy Integration
+- [ ] Unit 6: Synthesis and Flow
+
+**Black 1** (5):
+- [ ] Unit 1: Teaching Fundamentals
+- [ ] Unit 2: Advanced Applications
+- [ ] Unit 3: Jiyu Waza
+- [ ] Unit 4: Weapons Mastery
+- [ ] Unit 5: O-Sensei's Vision
+
+---
+
+## Resources
+
+### Aikido References
+- **Aikikai Foundation**: aikikai.or.jp (official headquarters)
+- **Traditional Aikido**: traditionalaikido.com
+- **Aikido Journal**: aikidojournal.com
+
+### Japanese Language
+- **Jisho.org**: Japanese-English dictionary
+- **Romaji Converter**: Online tools for Hepburn romanization
+- **Japanese Grammar Guide**: Tae Kim's guide
+
+### Icons
+- **Lucide Icons**: lucide.dev
+- Browse complete icon library
+- Preview and search functionality
+- Copy component names
+
+### Development
+- **TypeScript Handbook**: typescriptlang.org/docs
+- **React Documentation**: react.dev
+- **Material-UI**: mui.com/material-ui
+
+---
+
+## Support Documents
+
+All documentation is in the project root:
+
+- **CURRICULUM_DESIGN.md**: Complete pedagogical design and rationale
+- **CURRICULUM_IMPLEMENTATION.ts**: TypeScript structures and templates
+- **CURRICULUM_SUMMARY.md**: Overview and quick reference
+- **IMPLEMENTATION_GUIDE.md**: This file - step-by-step instructions
+- **DATA_TEMPLATE.md**: Original template guide (still relevant)
+
+---
+
+## Conclusion
+
+You have everything needed to implement the remaining units:
+
+✅ Complete curriculum design across 6 belt levels
+✅ Clear pedagogical progression
+✅ 6 working example units demonstrating all patterns
+✅ Comprehensive templates and code examples
+✅ Black and white icon system fully specified
+✅ Exercise patterns established
+✅ Testing procedures defined
+✅ Quality checklists provided
+
+**Start with white5Unit5 and work systematically through the belt levels.**
+
+Each unit follows the same pattern. The work becomes faster as the patterns become familiar.
+
+**Estimated Timeline**:
+- Weeks 1-2: Complete White 5 & White 4 (6 units)
+- Weeks 3-4: Complete Yellow 3 & start Yellow 2 (8 units)
+- Weeks 5-6: Complete Yellow 2, Orange 1, Black 1 (remaining 13 units)
+
+**Total: 6 weeks to complete all 27 remaining units at a pace of 4-5 units per week.**
+
+Good luck with the implementation!
+
+---
+
+**Document Version**: 1.0
+**Last Updated**: 2025-10-22
+**Author**: Claude Code (Aikido Curriculum Expert)

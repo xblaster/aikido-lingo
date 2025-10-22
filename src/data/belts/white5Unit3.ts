@@ -11,7 +11,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'irimi',
     japanese: '入身',
-    romaji: 'i-ri-mi',
+    romaji: 'irimi',
     french: 'Entrer directement',
     english: 'Direct entry',
     iconType: 'composite',
@@ -27,7 +27,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'tenkan',
     japanese: '転換',
-    romaji: 'ten-kan',
+    romaji: 'tenkan',
     french: 'Rotation pivot',
     english: 'Pivot turn',
     iconType: 'composite',
@@ -43,7 +43,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'tai-sabaki',
     japanese: '体捌き',
-    romaji: 'tai-sa-ba-ki',
+    romaji: 'taisabaki',
     french: 'Déplacement du corps',
     english: 'Body movement',
     iconType: 'composite',
@@ -59,7 +59,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'ayumi-ashi',
     japanese: '歩み足',
-    romaji: 'a-yu-mi-a-shi',
+    romaji: 'ayumiashi',
     french: 'Pas normal',
     english: 'Normal walking',
     iconType: 'composite',
@@ -75,7 +75,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'tsugi-ashi',
     japanese: '継ぎ足',
-    romaji: 'tsu-gi-a-shi',
+    romaji: 'tsugiashi',
     french: 'Pas glissés',
     english: 'Shuffle steps',
     iconType: 'composite',
@@ -91,7 +91,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'tenshin',
     japanese: '転身',
-    romaji: 'ten-shin',
+    romaji: 'tenshin',
     french: 'Reculer en pivotant',
     english: 'Retreat pivot',
     iconType: 'composite',
@@ -107,7 +107,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'mae-ukemi',
     japanese: '前受身',
-    romaji: 'ma-e-u-ke-mi',
+    romaji: 'mae ukemi',
     french: 'Chute avant',
     english: 'Forward roll',
     iconType: 'composite',
@@ -123,7 +123,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'ushiro-ukemi',
     japanese: '後受身',
-    romaji: 'u-shi-ro-u-ke-mi',
+    romaji: 'ushiro ukemi',
     french: 'Chute arrière',
     english: 'Backward roll',
     iconType: 'composite',
@@ -139,7 +139,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'yoko-ukemi',
     japanese: '横受身',
-    romaji: 'yo-ko-u-ke-mi',
+    romaji: 'yoko ukemi',
     french: 'Chute latérale',
     english: 'Side fall',
     iconType: 'composite',
@@ -155,7 +155,7 @@ export const unit3Terminology: TerminologyItem[] = [
   {
     id: 'ukemi',
     japanese: '受身',
-    romaji: 'u-ke-mi',
+    romaji: 'ukemi',
     french: 'Art de chuter',
     english: 'Falling technique',
     iconType: 'emoji',

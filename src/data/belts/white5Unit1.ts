@@ -27,7 +27,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'seiza',
     japanese: '正座',
-    romaji: 'sei-za',
+    romaji: 'seiza',
     french: 'Position assise formelle',
     english: 'Formal sitting',
     iconType: 'emoji',
@@ -43,7 +43,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'dojo',
     japanese: '道場',
-    romaji: 'do-jo',
+    romaji: 'dojo',
     french: 'Lieu d\'entraînement',
     english: 'Training hall',
     iconType: 'emoji',
@@ -59,7 +59,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'sensei',
     japanese: '先生',
-    romaji: 'sen-sei',
+    romaji: 'sensei',
     french: 'Professeur',
     english: 'Teacher',
     iconType: 'emoji',
@@ -75,7 +75,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'uke',
     japanese: '受け',
-    romaji: 'u-ke',
+    romaji: 'uke',
     french: 'Celui qui reçoit',
     english: 'Receiver',
     iconType: 'emoji',
@@ -91,7 +91,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'tori',
     japanese: '取り',
-    romaji: 'to-ri',
+    romaji: 'tori',
     french: 'Celui qui prend',
     english: 'Taker',
     iconType: 'composite',
@@ -124,7 +124,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'tatami',
     japanese: '畳',
-    romaji: 'ta-ta-mi',
+    romaji: 'tatami',
     french: 'Tapis',
     english: 'Mat',
     iconType: 'emoji',
@@ -140,7 +140,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'onegaishimasu',
     japanese: 'お願いします',
-    romaji: 'o-ne-gai-shi-ma-su',
+    romaji: 'onegaishimasu',
     french: 'S\'il vous plaît / Merci de m\'enseigner',
     english: 'Please teach me',
     iconType: 'emoji',
@@ -156,7 +156,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'arigatou',
     japanese: 'ありがとう',
-    romaji: 'a-ri-ga-tou',
+    romaji: 'arigatou',
     french: 'Merci',
     english: 'Thank you',
     iconType: 'emoji',
@@ -172,7 +172,7 @@ export const unit1Terminology: TerminologyItem[] = [
   {
     id: 'kamiza',
     japanese: '上座',
-    romaji: 'ka-mi-za',
+    romaji: 'kamiza',
     french: 'Place d\'honneur',
     english: 'Upper seat',
     iconType: 'composite',
