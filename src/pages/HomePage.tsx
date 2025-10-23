@@ -20,6 +20,8 @@ import {
   AccordionDetails,
   Fab,
   ButtonBase,
+  Paper,
+  Button,
 } from '@mui/material'
 import LockIcon from '@mui/icons-material/Lock'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
@@ -37,6 +39,52 @@ const HomePage: React.FC = () => {
   const { progress, isUnitUnlocked, isUnitCompleted } = useProgress()
   const [expandedBelt, setExpandedBelt] = React.useState<string | false>('white_5_belt')
   const [showScrollTop, setShowScrollTop] = React.useState(false)
+
+  const allUnits = React.useMemo(() => (
+    aikidoCurriculum.belts.flatMap(belt =>
+      belt.units.map(unit => ({ belt, unit }))
+    )
+  ), [])
+
+  const nextUnitEntry = React.useMemo(() => (
+    allUnits.find(({ unit }) => isUnitUnlocked(unit.id) && !isUnitCompleted(unit.id)) || null
+  ), [allUnits, isUnitUnlocked, isUnitCompleted])
+
+  const lastSession = React.useMemo(() => {
+    if (!progress.practiceLog.length) return null
+    const sortedLog = [...progress.practiceLog].sort((a, b) => (
+      new Date(b.date).getTime() - new Date(a.date).getTime()
+    ))
+    return sortedLog[0]
+  }, [progress.practiceLog])
+
+  const dueReviews = React.useMemo(() => {
+    const boxes = progress.spacedRepetitionData?.boxes || {}
+    const now = Date.now()
+    return Object.values(boxes).filter(entry => {
+      if (!entry?.nextReview) return false
+      const nextReviewTime = new Date(entry.nextReview).getTime()
+      return !Number.isNaN(nextReviewTime) && nextReviewTime <= now
+    }).length
+  }, [progress.spacedRepetitionData])
+
+  const formatRelativeTime = React.useCallback((dateString: string) => {
+    const date = new Date(dateString)
+    if (Number.isNaN(date.getTime())) return ''
+
+    const diffMs = Date.now() - date.getTime()
+    const minutes = Math.round(diffMs / 60000)
+    if (minutes <= 1) return "À l'instant"
+    if (minutes < 60) return `Il y a ${minutes} minute${minutes > 1 ? 's' : ''}`
+
+    const hours = Math.round(minutes / 60)
+    if (hours < 24) return `Il y a ${hours} heure${hours > 1 ? 's' : ''}`
+
+    const days = Math.round(hours / 24)
+    if (days < 7) return `Il y a ${days} jour${days > 1 ? 's' : ''}`
+
+    return new Intl.DateTimeFormat('fr-FR', { dateStyle: 'medium' }).format(date)
+  }, [])
 
   // Scroll listener for scroll-to-top button
   React.useEffect(() => {
@@ -111,6 +159,129 @@ const HomePage: React.FC = () => {
           <Typography variant="h6" color="text.secondary">
             Maîtrisez la terminologie de l'aïkido
           </Typography>
+        </Box>
+
+        {/* Resume Card */}
+        <Box
+          component={motion.div}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          sx={{ mb: 4 }}
+        >
+          <Paper
+            sx={{
+              p: { xs: 3, md: 4 },
+              borderRadius: '18px',
+              background: theme.custom.gradients.glass,
+              backdropFilter: 'blur(16px)',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              boxShadow: theme.custom.shadows.lg,
+            }}
+          >
+            <Grid container spacing={3} alignItems="center">
+              <Grid item xs={12} md={8}>
+                <Typography variant="overline" color="text.secondary" sx={{ letterSpacing: 1, fontWeight: 600 }}>
+                  Votre prochaine étape
+                </Typography>
+                {nextUnitEntry ? (
+                  <>
+                    <Typography variant="h4" sx={{ fontWeight: 700, mt: 1 }}>
+                      {nextUnitEntry.unit.title}
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ mt: 1.5, mb: 2 }}>
+                      {nextUnitEntry.unit.description}
+                    </Typography>
+                    <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: { xs: 2, md: 0 } }}>
+                      <Chip
+                        label={nextUnitEntry.belt.name}
+                        size="small"
+                        sx={{ borderColor: 'rgba(255,255,255,0.2)' }}
+                        variant="outlined"
+                      />
+                      <Chip
+                        label={`${nextUnitEntry.unit.terminology.length} termes`}
+                        size="small"
+                        variant="outlined"
+                      />
+                      <Chip
+                        label={`${nextUnitEntry.unit.exercises.length} exercices`}
+                        size="small"
+                        variant="outlined"
+                      />
+                      {dueReviews > 0 && (
+                        <Chip
+                          label={`${dueReviews} révision${dueReviews > 1 ? 's' : ''} à revoir`}
+                          size="small"
+                          color="warning"
+                          variant="outlined"
+                        />
+                      )}
+                    </Box>
+                  </>
+                ) : (
+                  <>
+                    <Typography variant="h4" sx={{ fontWeight: 700, mt: 1 }}>
+                      Bravo, toutes les unités sont terminées !
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ mt: 1.5, mb: 2 }}>
+                      Continuez à entretenir vos connaissances avec les révisions espacées et partagez vos acquis avec votre dojo.
+                    </Typography>
+                    {dueReviews > 0 && (
+                      <Chip
+                        label={`${dueReviews} révision${dueReviews > 1 ? 's' : ''} à revoir`}
+                        size="small"
+                        color="warning"
+                        variant="outlined"
+                      />
+                    )}
+                  </>
+                )}
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    endIcon={<PlayArrowIcon />}
+                    onClick={() => nextUnitEntry && handleUnitClick(nextUnitEntry.unit.id)}
+                    disabled={!nextUnitEntry}
+                    sx={{
+                      py: 1.5,
+                      background: theme.custom.gradients.primary,
+                      boxShadow: theme.custom.shadows.primaryGlow,
+                    }}
+                  >
+                    {nextUnitEntry ? 'Reprendre cette unité' : 'Explorer les unités'}
+                  </Button>
+                  <Box sx={{
+                    p: 2,
+                    borderRadius: '12px',
+                    bgcolor: 'rgba(255,255,255,0.06)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                  }}>
+                    <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 0.5 }}>
+                      Activité récente
+                    </Typography>
+                    {lastSession ? (
+                      <>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                          {formatRelativeTime(lastSession.date)}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                          Score {lastSession.score}% · {lastSession.exercisesCompleted} exercices · {lastSession.duration} min
+                        </Typography>
+                      </>
+                    ) : (
+                      <Typography variant="body2" color="text.secondary">
+                        Lancez votre première session pour voir votre progression ici.
+                      </Typography>
+                    )}
+                  </Box>
+                </Box>
+              </Grid>
+            </Grid>
+          </Paper>
         </Box>
 
         {/* Quick Navigation to Belts */}
