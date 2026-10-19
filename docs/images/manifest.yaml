@@ -1,0 +1,89 @@
+# Liste fermée des images d'Aikido Lingo. Ce sont de VRAIES images qui illustrent la situation
+# (photo ou dessin), pas des icônes. Chaque image est soit récupérée sous licence libre
+# (docs/images/sources-libres.md), soit générée par Antigravity (docs/images/prompt-antigravity.md).
+# Le contenu ne référence QUE ces identifiants ; tout ajout passe par docs/demandes.md.
+# Chemin final : public/images/<famille>/<id>.webp — l'emoji n'est qu'un repli d'affichage.
+#
+# Formats : scenes 1200x900 (4:3) | covers 1600x800 (2:1) | modules 1600x800 (2:1)
+#           mascotte 512x512 transparent | badges 512x512 transparent (seuls éléments graphiques d'interface)
+# Champs par entrée (renseignés au fil de l'eau) :
+#   origine: { type: libre|genere|filme, url?, auteur?, licence?, attribution? }
+#   video?: { type: fichier|embed, src?, url?, debut?, fin?, licence?, attribution? }
+#       fichier = public/videos/<famille>/<id>.webm (clip court, sans son, en boucle, ≤ 10 s, ≤ 2 Mo)
+#       embed   = lecteur externe (YouTube en mode youtube-nocookie) limité au segment [debut, fin]
+#     La vidéo s'ajoute à l'image (qui sert d'affiche et de repli), elle ne la remplace pas.
+#     Entrées où une vidéo apporte le plus : shikko, mae-ukemi, ushiro-ukemi, irimi, tenkan,
+#     zarei, et les 8 attaques.
+#   relecture: { statut: a-relire|valide|refuse, relecteur?, date?, raison? }   (absent = a-relire)
+
+scenes:              # public/images/scenes/ — situations réelles, pour image_choice, intros de leçon, lexique
+  # étiquette et postures (au dojo, sur le tatami)
+  - { id: seiza,          emoji: "🧎", scene: "un pratiquant assis en seiza sur le tatami, dos droit, mains posées sur les cuisses, vu de profil" }
+  - { id: ritsurei,       emoji: "🙇", scene: "un pratiquant salue debout (ritsurei) au bord du tatami, en direction du kamiza" }
+  - { id: zarei,          emoji: "🙇", scene: "deux partenaires en seiza face à face se saluent à genoux (zarei), mains posées devant eux sur le tatami" }
+  - { id: shikko,         emoji: "🧎", scene: "un pratiquant se déplace à genoux (shikko) sur le tatami, une jambe avancée, vu de 3/4" }
+  - { id: ai-hanmi,       emoji: "🧍", scene: "deux partenaires face à face en garde, MÊME pied avant (ai hanmi), distance de garde, plan large montrant les pieds" }
+  - { id: gyaku-hanmi,    emoji: "🧍", scene: "deux partenaires face à face en garde, pieds avant OPPOSÉS (gyaku hanmi), plan large montrant les pieds" }
+  - { id: mae-ukemi,      emoji: "🤸", scene: "un pratiquant en pleine chute avant roulée (mae ukemi) sur l'épaule, sur le tatami" }
+  - { id: ushiro-ukemi,   emoji: "🤸", scene: "un pratiquant en chute arrière (ushiro ukemi), menton rentré, sur le tatami" }
+  - { id: irimi,          emoji: "➡️", scene: "tori entre à côté d'uke qui attaque (irimi), en passant sur sa ligne d'attaque, plan large" }
+  - { id: tenkan,         emoji: "🔄", scene: "tori pivote derrière son pied avant (tenkan) alors qu'uke lui saisit le poignet, plan large" }
+  # attaques (deux partenaires : tori en hakama, uke en keikogi)
+  - { id: katate-dori,    emoji: "✊", scene: "uke saisit d'une main un poignet de tori" }
+  - { id: ryote-dori,     emoji: "✊", scene: "uke saisit les deux poignets de tori, une main pour chaque poignet" }
+  - { id: morote-dori,    emoji: "✊", scene: "uke saisit à deux mains un seul avant-bras de tori" }
+  - { id: kata-dori,      emoji: "🫱", scene: "uke saisit le keikogi de tori à l'épaule" }
+  - { id: shomen-uchi,    emoji: "✋", scene: "uke frappe verticalement vers le sommet de la tête de tori avec le tranchant de la main ; tori va à la rencontre" }
+  - { id: yokomen-uchi,   emoji: "✋", scene: "uke frappe en diagonale le côté de la tête de tori avec le tranchant de la main" }
+  - { id: tsuki,          emoji: "👊", scene: "uke porte un coup de poing direct au ventre de tori (chudan tsuki), tori esquive" }
+  - { id: ushiro-ryote-dori, emoji: "↩️", scene: "uke, placé derrière tori, lui saisit les deux poignets" }
+  # tenue, armes et lieu (montrés en situation, portés ou tenus)
+  - { id: keikogi,  emoji: "🥋", scene: "un pratiquant debout en keikogi blanc et ceinture blanche, au dojo" }
+  - { id: hakama,   emoji: "👖", scene: "un pratiquant debout en hakama sombre, vu de face puis de dos (plis visibles)" }
+  - { id: obi,      emoji: "🎗️", scene: "gros plan sur une ceinture nouée à la taille d'un pratiquant en keikogi" }
+  - { id: bokken,   emoji: "🗡️", scene: "un pratiquant en garde avec un bokken (sabre de bois), au dojo" }
+  - { id: jo,       emoji: "🦯", scene: "un pratiquant tenant un jo (bâton de bois) en garde, au dojo" }
+  - { id: tanto,    emoji: "🔪", scene: "uke menace avec un tanto en bois, tori face à lui en garde" }
+  - { id: tatami,   emoji: "🟫", scene: "surface de tatami d'un dojo, vue en légère plongée, quelques pratiquants au loin" }
+  - { id: kamiza,   emoji: "⛩️", scene: "le kamiza d'un dojo : place d'honneur au mur, sobre (calligraphie floue ou absente, aucun portrait identifiable)" }
+
+covers:              # public/images/covers/ — bandeau d'unité, réutilisable entre niveaux
+  - { id: dojo,            emoji: "⛩️", scene: "un dojo d'aikido vu de l'entrée : tatami, kamiza au fond, lumière douce" }
+  - { id: reishiki,        emoji: "🙇", scene: "début de cours : pratiquants alignés en seiza saluant le professeur" }
+  - { id: posture,         emoji: "🧍", scene: "deux partenaires en garde (hanmi) se font face, concentration" }
+  - { id: ukemi,           emoji: "🤸", scene: "un pratiquant en chute roulée, d'autres attendent au bord du tatami" }
+  - { id: deplacements,    emoji: "👣", scene: "un groupe travaille les déplacements (tai sabaki) en ligne" }
+  - { id: saisies,         emoji: "🤝", scene: "uke saisit le poignet de tori, tori commence à se déplacer" }
+  - { id: frappes,         emoji: "✋", scene: "uke frappe shomen uchi, tori entre" }
+  - { id: immobilisations, emoji: "🔒", scene: "tori termine une immobilisation au sol (fin d'ikkyo), uke à plat ventre, bras contrôlé" }
+  - { id: projections,     emoji: "🌀", scene: "uke projeté chute en arc, tori stable au centre (irimi nage)" }
+  - { id: suwari,          emoji: "🧎", scene: "deux partenaires pratiquent à genoux (suwari waza)" }
+  - { id: ushiro,          emoji: "↩️", scene: "uke saisit tori par derrière (ushiro waza)" }
+  - { id: armes,           emoji: "🗡️", scene: "deux partenaires travaillent au bokken (kumitachi) ou au jo" }
+  - { id: randori,         emoji: "👥", scene: "tori au centre face à plusieurs uke qui attaquent à tour de rôle" }
+  - { id: histoire,        emoji: "📜", scene: "photo ou gravure historique d'aikido libre de droits, OU évocation sans personne : vieux dojo, rouleau, paysage japonais" }
+  - { id: examen,          emoji: "🎓", scene: "passage de grade : un jury assis au bord du tatami regarde un couple de pratiquants" }
+
+modules:             # public/images/modules/ — bandeau des onglets
+  - { id: lexique,   emoji: "📖", scene: "un carnet de notes de pratiquant ouvert au bord du tatami" }
+  - { id: reishiki,  emoji: "🙇", scene: "zori alignés au bord du tatami, salut en arrière-plan" }
+  - { id: decodeur,  emoji: "🧩", scene: "un professeur montre une technique, les élèves observent assis en seiza" }
+  - { id: examen,    emoji: "⏱️", scene: "un jury de grade prend des notes pendant une démonstration" }
+
+mascotte:            # public/images/mascotte/ — personnage d'interface (dessin), pas une illustration de situation
+  - { id: neutre,      emoji: "🙂", scene: "debout, sourire calme" }
+  - { id: salut,       emoji: "🙇", scene: "ritsurei (salut debout)" }
+  - { id: bravo,       emoji: "🎉", scene: "bras levés, joyeux" }
+  - { id: encourage,   emoji: "💪", scene: "poing serré, regard bienveillant (« Ganbatte ! »)" }
+  - { id: reflechit,   emoji: "🤔", scene: "main au menton" }
+  - { id: oups,        emoji: "😅", scene: "assis sur le tatami après une chute, sourire gêné" }
+
+badges:              # public/images/badges/ — élément d'interface, un par niveau de l'app
+  - { id: 6k,     emoji: "⚪", scene: "ceinture blanche nouée" }
+  - { id: 5k,     emoji: "⚪", scene: "ceinture blanche + 1 trait vermillon" }
+  - { id: 4k,     emoji: "⚪", scene: "ceinture blanche + 2 traits vermillon" }
+  - { id: 3k,     emoji: "⚪", scene: "ceinture blanche + 3 traits vermillon" }
+  - { id: 1k,     emoji: "⚪", scene: "ceinture blanche + 4 traits vermillon" }
+  - { id: shodan, emoji: "⚫", scene: "ceinture noire nouée + hakama plié" }
+  # NB : les couleurs de ceinture kyu varient selon les fédérations/clubs ; les traits sont un code
+  # de progression propre à l'app.

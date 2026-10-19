@@ -1,0 +1,22 @@
+schema: spec-driven
+
+context: |
+  Language: fr
+  All artifacts must be written in fr.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+  Project: Aikido Lingo, a Duolingo-style static web app (Next.js 14) teaching aikido theory
+  (vocabulary, reishiki, technique nomenclature, grading programs 6e kyu -> shodan) in French.
+  The data contract is docs/contrat.md; it wins over any other document. Folder ownership
+  (technique / contenu / recherche / orchestration) is defined there.
+  Golden rule: nothing is taught without a source from content/referentiel/sources.md;
+  variations between federations (FFAAA, FFAB), Aikikai and dojos are presented as such.
+  The app complements, never replaces, teaching on the tatami by a qualified teacher.
+
+rules:
+  proposal:
+    - State which owners (technique, contenu, recherche, orchestration) are impacted
+    - State whether docs/contrat.md must change; if so, the orchestration agent logs it
+  tasks:
+    - Tag every task with its owner in brackets, e.g. [technique]
+  specs:
+    - Keep volumes, levels and exercise types consistent with docs/contrat.md
