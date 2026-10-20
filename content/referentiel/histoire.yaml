@@ -1,0 +1,23 @@
+# Faits historiques sourcés. Rédigé le 2026-10-19. Codes de source : voir sources.md.
+faits:
+  - { fait: "Ueshiba Morihei, fondateur de l'aïkido, naît le 14 décembre 1883 dans l'actuelle ville de Tanabe (préfecture de Wakayama).", date: "1883-12-14", source: "AIK-HIST-EN ; AIK-HIST-JA" }
+  - { fait: "À Ayabe (Kyoto), il rencontre Deguchi Onisaburo, de la religion Omoto, et se consacre à l'ascèse spirituelle.", date: "1919", source: "AIK-HIST-EN" }
+  - { fait: "Il ouvre à Ayabe un dojo d'entraînement, l'Ueshiba-juku.", date: "1920", source: "AIK-HIST-EN ; BUDOKAN-I" }
+  - { fait: "Il désigne « aiki » comme l'essence des arts martiaux.", date: "1922", source: "AIK-HIST-EN" }
+  - { fait: "Il s'installe à Tokyo avec sa famille ; ses activités se déplacent vers la capitale.", date: "1927", source: "AIK-HIST-EN" }
+  - { fait: "Le dojo Kobukan (皇武館) est fondé à Wakamatsu-cho (Shinjuku) ; c'est l'actuel Hombu Dojo.", date: "1931", source: "AIK-HIST-EN ; AIK-DOSHU-EN ; BUDOKAN-I" }
+  - { fait: "La fondation Kobukai est reconnue par le ministère de la Santé.", date: "1940", source: "AIK-HIST-EN" }
+  - { fait: "Le nom « aïkido » est adopté ; Ueshiba Kisshomaru est nommé à la tête du dojo.", date: "1942", source: "AIK-HIST-EN ; AIK-HIST-JA" }
+  - { fait: "L'Aiki Jinja (sanctuaire de l'aïkido) est érigé à Iwama (Ibaraki).", date: "1943", source: "AIK-HIST-EN" }
+  - { fait: "La fondation Aikikai est officiellement reconnue (9 février).", date: "1948-02-09", source: "AIK-HIST-EN ; BUDOKAN-I" }
+  - { fait: "Le fondateur meurt le 26 avril 1969 à 86 ans ; son fils Ueshiba Kisshomaru devient Doshu.", date: "1969-04-26", source: "AIK-HIST-EN ; FFAB-MAITRES" }
+  - { fait: "Première assemblée de la Fédération internationale d'aïkido (IAF) à Tokyo : 400 délégués de 28 pays.", date: "1976-10", source: "AIK-HIST-EN" }
+  - { fait: "Ueshiba Kisshomaru meurt le 4 janvier 1999 ; Ueshiba Moriteru, petit-fils du fondateur, devient Doshu (18 janvier).", date: "1999-01-18", source: "AIK-HIST-EN" }
+  - { fait: "L'Aikikai devient fondation d'intérêt public ; l'aïkido est présent dans environ 140 pays et régions.", date: "2012-04", source: "AIK-HIST-EN ; AIK-DOSHU-EN" }
+  - { fait: "Il n'existe pas de compétition en aïkido : tori et uke alternent pour se perfectionner.", source: "AIK-WHAT-EN" }
+  - { fait: "Selon la FFAAA, l'aïkido est présenté pour la première fois en France en 1951 par Mochizuki Minoru (source unique, non recoupée).", date: "1951", source: "FFAAA-GUIDE p. 4", sourceUnique: true }
+  - { fait: "Tamura Nobuyoshi, uchi deshi du fondateur, arrive en France en 1964 et s'y installe ; il meurt le 9 juillet 2010.", date: "1964", source: "FFAB-MAITRES" }
+  - { fait: "La Fédération française libre d'aïkido (FFLA, 1982) devient en 1985 la Fédération française d'aïkido et de budo (FFAB).", date: "1985", source: "FFAB-MAITRES" }
+  - { fait: "La FFAAA est fondée en 1983 (selon son guide du débutant ; source unique).", date: "1983", source: "FFAAA-GUIDE p. 4", sourceUnique: true }
+  - { fait: "En France, un dan d'aïkido n'est valable que s'il est délivré par la Commission spécialisée des dans et grades équivalents (CSDGE), par délégation de l'État (art. L. 212-5 du code du sport) ; règlement en vigueur validé par arrêté du 22/12/2025 (JO du 31/12/2025).", date: "2025-12-22", source: "CSDGE-L1 p. 6" }
+  - { fait: "Au Luxembourg, l'aïkido relève de la FLAM (8 clubs, ~400 pratiquants) ; son 55e anniversaire y est célébré les 4-5 octobre 2025 avec Ueshiba Mitsuteru, arrière-petit-fils du fondateur.", date: "2025-10-04", source: "CHRONICLE-LU ; FLAM-55" }

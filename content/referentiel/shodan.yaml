@@ -1,0 +1,66 @@
+# Référentiel du niveau shodan (1er dan) — À COMPLÉTER (lexique, themes). Rédigé le 2026-10-19 à partir de :
+# CSDGE Livre 1 et Livre 2 (arrêté du 22/12/2025, JO du 31/12/2025) = colonne vertébrale (texte réglementaire commun FFAB/FFAAA) ;
+# variantes : Aikikai Hombu Dojo, FLAM (règlement CFG 2015).
+level: SHODAN
+nom: "Shodan (1er dan)"
+statut: "à compléter"
+referencePrincipale: "CSDGE, Livre 2 (2025)"
+referentielPrincipal: "CSDGE, Livre 2 (2025)"
+etat: a-completer
+conditions:   # CSDGE-L1 tableau art. 2.2.1 p. 11 et art. 2.6 p. 15
+  - "Grade précédent : 1er kyu ; âge minimum révolu 15 ans (autorisation parentale si mineur)."
+  - "Temps minimum en tant que licencié : 1 an ; 3 licences minimum (lecture du tableau à faire relire : mise en page en colonnes)."
+  - "Dossier : certificat médical de moins d'un an ; preuve d'au moins 3 stages fédéraux FFAB/FFAAA dans les 12 mois ; envoi à la ligue au moins 2 mois avant l'examen."
+  - "Variante FLAM : 15 ans, 1 an depuis le 1er kyu, 40 h de stage (20 h FLAM + 20 h divers) depuis le 6e kyu (FLAM-CFG-2015 p. 7)."
+  - "Variante Aikikai : 70 jours de pratique après le 1er kyu, 15 ans minimum (AIK-EXAM-EN)."
+deroulement:   # CSDGE-L2 p. 4 et p. 10
+  - "Prestation de 15 minutes (± 3 min). Partenaire choisi parmi les candidats ; après au moins 4 minutes, le jury désigne d'autres partenaires."
+  - "Notation sur 20 : composante 1 (/12) connaissance formelle et réalisation des techniques selon principes et fondations ; composante 2 (/8) attitude comme tori et uke, zanshin, reishiki, cadre de l'examen. 10/20 suffit."
+programmeOfficiel:   # CSDGE-L2 p. 10 (ordre préconisé ; suwari + hanmi handachi en ~5 min)
+  - { categorie: "Suwari waza", attaque: "Shomen uchi, yokomen uchi, kata dori", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Yonkyo", "Gokyo", "Irimi nage", "Kote gaeshi", "Kokyu nage"], prioritaires: ["Shomen uchi ikkyo", "Shomen uchi irimi nage", "Yokomen uchi ikkyo", "Yokomen uchi kote gaeshi"], source: &l2 { ref: "CSDGE Livre 2, Annexe I §1.3 et Annexe II II-2", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "10, 21" } }
+  - { categorie: "Hanmi handachi waza", attaque: "Katate dori, ryote dori, ushiro ryokata dori", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Irimi nage", "Kote gaeshi", "Shiho nage", "Kaiten nage", "Kokyu nage"], prioritaires: ["Katate dori shiho nage", "Ushiro ryokata dori ikkyo", "Ushiro ryokata dori kokyu nage"], source: { ref: "CSDGE Livre 2, II-2 B", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "21-22" } }
+  - { categorie: "Tachi waza (saisies et frappes)", attaque: "Ai hanmi katate dori, katate dori, kata dori, muna dori, ryote dori, ryokata dori, katate ryote dori, chudan tsuki, jodan tsuki, shomen uchi, yokomen uchi, kata dori men uchi", techniques: ["voir liste C-1 à C-12"], prioritaires: ["Ai hanmi katate dori ikkyo", "Ai hanmi katate dori shiho nage", "Katate dori irimi nage", "Katate dori kaiten nage", "Kata dori ikkyo", "Muna dori shiho nage", "Muna dori uchi kaiten sankyo", "Ryote dori irimi nage", "Ryote dori tenchi nage", "Ryokata dori ikkyo", "Ryokata dori kokyu nage", "Katate ryote dori ikkyo", "Katate ryote dori shiho nage", "Katate ryote dori juji garami", "Chudan tsuki hiji kime osae", "Jodan tsuki ikkyo", "Jodan tsuki kaiten nage", "Shomen uchi ikkyo", "Shomen uchi nikyo", "Shomen uchi irimi nage", "Yokomen uchi ikkyo", "Yokomen uchi kote gaeshi", "Yokomen uchi shiho nage", "Kata dori men uchi ikkyo", "Kata dori men uchi nikyo", "Kata dori men uchi koshi nage"], source: { ref: "CSDGE Livre 2, II-2 C", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "22-25" } }
+  - { categorie: "Ushiro waza", attaque: "Ushiro ryote dori, ushiro ryokata dori, ushiro eri dori, ushiro katate dori kubishime", techniques: ["voir liste D-1 à D-4"], prioritaires: ["Ushiro ryote dori ikkyo", "Ushiro ryote dori shiho nage", "Ushiro ryote dori juji garami", "Ushiro ryokata dori ikkyo", "Ushiro ryokata dori ude kime nage", "Ushiro eri dori ikkyo", "Ushiro eri dori irimi nage", "Ushiro katate dori kubishime sankyo", "Ushiro katate dori kubishime koshi nage", "Ushiro katate dori kubishime shiho nage"], source: { ref: "CSDGE Livre 2, II-2 D", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "25-26" } }
+  - { categorie: "Buki waza (2 ou 3 au choix du jury)", attaque: null, techniques: ["Tanto dori", "Jo dori", "Jo nage waza"], source: *l2 }
+  - { categorie: "Randori", attaque: null, techniques: ["Niningake (deux partenaires)"], source: *l2 }
+notesProgramme:
+  - "« prioritaires » = techniques soulignées dans la liste CSDGE p. 21-26 (relevé par analyse du PDF, vérifié visuellement p. 23). Kata dori nikyo / kokyu nage : seul « KATA » souligné, statut ambigu."
+  - "La nomenclature (CSDGE-L2 p. 17-19) liste les formes d'attaque et techniques ; elle ne délimite pas l'enseignement. Le candidat est censé tout connaître dès le 1er dan, mais l'interrogation porte sur les fondamentaux (p. 20)."
+  - "Exemple d'interrogation shodan : CSDGE-L2 p. 27 (à retranscrire : À COMPLÉTER)."
+variantes:
+  - referentiel: "Aikikai Hombu Dojo"
+    source: { ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", page: "ligne 1st Dan" }
+    texte: "Techniques à mains nues en suwari, hanmi handachi et tachi waza sur shomen uchi, yokomen uchi, tsuki, toutes les saisies (épaules, coudes, col, poignets, mains) et toutes les attaques arrière."
+  - referentiel: "FLAM (règlement CFG 2015, Annexe 2)"
+    source: { ref: "FLAM, Commission fédérale des grades, Règlement intérieur (nov. 2015)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-AIKIDO-Commission-F%C3%A9d%C3%A9rale-des-grades-R%C3%A8glement-int%C3%A9rieur.pdf", page: "17-18" }
+    lignes:
+      - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Ikkyo O/U", "Nikyo O/U", "Sankyo O/U", "Yonkyo O/U", "Gokyo", "Irimi nage", "Kote gaeshi"] }
+      - { categorie: "Hanmi handachi waza", attaque: "Katate dori", techniques: ["Ikkyo", "Shiho nage O/U", "Kaiten nage"] }
+      - { categorie: "Hanmi handachi waza", attaque: "Tsuki", techniques: ["Kote gaeshi"] }
+      - { categorie: "Tachi waza", attaque: "Kata dori", techniques: ["Ikkyo O/U", "Nikyo O/U"] }
+      - { categorie: "Tachi waza", attaque: "Kata dori men uchi", techniques: ["Ikkyo O/U", "Shiho nage", "Kote gaeshi"] }
+      - { categorie: "Tachi waza", attaque: "Ryote dori", techniques: ["Tenchi nage"] }
+      - { categorie: "Tachi waza", attaque: "Yokomen uchi", techniques: ["Koshi nage", "Ikkyo", "Shiho nage", "Irimi nage"] }
+      - { categorie: "Ushiro waza", attaque: "Ryote dori", techniques: ["Ikkyo", "Irimi nage", "Kote gaeshi", "Shiho nage", "Koshi nage"] }
+      - { categorie: "Bokken / Jo", attaque: null, techniques: ["Suburi au ken", "Suburi au jo", "Jo nage waza"] }
+      - { categorie: "Ninninzu gake", attaque: "Ryokata dori", techniques: ["Randori contre 2 partenaires"] }
+competences:   # CSDGE-L2 p. 10 « capacités à vérifier »
+  - "Respecter le cadre de l'examen."
+  - "Connaître la nomenclature des techniques et des formes d'attaque, comme tori et comme uke."
+  - "Comprendre la logique de construction des techniques ; attention portée à l'attitude et au centrage (shisei)."
+  - "Les autres éléments d'évaluation doivent « apparaître en germe »."
+criteresEvaluation:   # CSDGE-L2 Annexe I p. 7-9 (paraphrase)
+  - "Respect (reigisaho), sérénité, concentration, vigilance (kamae, zanshin), détermination (kiryoku)."
+  - "Attitude (shisei), unité du corps, équilibre, relâchement, condition physique."
+  - "Connaissance de la nomenclature, dont omote/ura."
+  - "Logique de construction : déséquilibre issu d'un placement initial (de ai) adéquat ; gestion du ma ai ; principe irimi."
+  - "Atemi potentiels, absence d'ouverture, pertinence des déplacements (tai sabaki, irimi, tenkan)."
+  - "Connexion (kimusubi, awase), disponibilité, caractère non traumatisant de la technique."
+  - "Évaluation pendant toute la présence dans le dojo (montée sur le tapis, saluts, attente)."
+lexique: []    # à compléter (tanto dori, jo dori, jo nage waza, randori, futari gake, zanshin, shisei, ma ai, kimusubi : voir terminologie.yaml)
+themes: []     # à compléter
+sources:
+  - { type: officiel, ref: "CSDGE Livre 2 (arrêté du 22/12/2025)", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "4, 7-10, 17-27", consulte: "2026-10-19" }
+  - { type: officiel, ref: "CSDGE Livre 1 (arrêté du 22/12/2025)", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre1_reglementation_generale.pdf", page: "6, 11, 15", consulte: "2026-10-19" }
+  - { type: aikikai, ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", consulte: "2026-10-19" }
+  - { type: federation, ref: "FLAM, Règlement CFG (2015)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-AIKIDO-Commission-F%C3%A9d%C3%A9rale-des-grades-R%C3%A8glement-int%C3%A9rieur.pdf", page: "7, 17-18", consulte: "2026-10-19" }

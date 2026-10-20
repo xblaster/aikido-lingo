@@ -1,0 +1,106 @@
+# Plan de l’unité 6k-u5 (types par leçon, dans l’ordre des exercices).
+unit: 6k-u5
+level: 6K
+theme: Chuter et premières attaques
+referentiel:
+  fichier: content/referentiel/6k.yaml
+  section: themes[4]
+  sources:
+    - BUDOKAN-II
+    - BUDOKAN-VII
+    - CSDGE-L2
+    - FFAB-KYU
+    - FFAAA-GUIDE
+    - AIK-EXAM-JA
+    - NWU-GLOSS
+adaptation: "Les leçons de chute n'enseignent pas le geste : elles en donnent le vocabulaire, le but et les règles de sécurité, et renvoient l'apprentissage du geste à l'enseignant."
+lessons:
+  - id: 6k-u5-l1
+    theme: "Pourquoi chuter : ukemi"
+    types:
+      - meaning_choice
+      - true_false
+      - kanji_choice
+      - scenario
+      - term_choice
+      - listen_choose
+      - missing_word
+      - typed_term
+  - id: 6k-u5-l2
+    theme: Ushiro ukemi
+    types:
+      - image_choice
+      - meaning_choice
+      - kanji_choice
+      - true_false
+      - tile_build
+      - listen_type
+      - missing_word
+      - typed_term
+  - id: 6k-u5-l3
+    theme: Mae ukemi
+    types:
+      - image_choice
+      - meaning_choice
+      - kanji_choice
+      - match_pairs
+      - true_false
+      - scenario
+      - match_pairs_audio
+      - typed_term
+  - id: 6k-u5-l4
+    theme: Chuter avec un partenaire
+    types:
+      - true_false
+      - scenario
+      - story
+      - meaning_choice
+      - order_steps
+      - missing_word
+      - listen_type
+      - term_choice
+  - id: 6k-u5-l5
+    theme: Katate dori
+    types:
+      - technique_decoder
+      - image_choice
+      - listen_choose
+      - kanji_choice
+      - scenario
+      - meaning_choice
+      - true_false
+      - typed_term
+  - id: 6k-u5-l6
+    theme: Ai hanmi katate dori
+    types:
+      - tile_build
+      - technique_decoder
+      - scenario
+      - true_false
+      - listen_choose
+      - match_pairs
+      - missing_word
+      - listen_type
+  - id: 6k-u5-l7
+    theme: Shomen uchi
+    types:
+      - image_choice
+      - meaning_choice
+      - technique_decoder
+      - kanji_choice
+      - term_choice
+      - true_false
+      - match_pairs_audio
+      - typed_term
+  - id: 6k-u5-l8
+    theme: "Révision : chuter et premières attaques"
+    isReview: true
+    types:
+      - listen_choose
+      - technique_decoder
+      - tile_build
+      - match_pairs
+      - image_choice
+      - scenario
+      - true_false
+      - typed_term

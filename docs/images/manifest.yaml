@@ -18,10 +18,10 @@
 
 scenes:              # public/images/scenes/ — situations réelles, pour image_choice, intros de leçon, lexique
   # étiquette et postures (au dojo, sur le tatami)
-  - { id: seiza,          emoji: "🧎", scene: "un pratiquant assis en seiza sur le tatami, dos droit, mains posées sur les cuisses, vu de profil" }
-  - { id: ritsurei,       emoji: "🙇", scene: "un pratiquant salue debout (ritsurei) au bord du tatami, en direction du kamiza" }
-  - { id: zarei,          emoji: "🙇", scene: "deux partenaires en seiza face à face se saluent à genoux (zarei), mains posées devant eux sur le tatami" }
-  - { id: shikko,         emoji: "🧎", scene: "un pratiquant se déplace à genoux (shikko) sur le tatami, une jambe avancée, vu de 3/4" }
+  - { id: seiza,          emoji: "🧎", scene: "un pratiquant assis en seiza sur le tatami, dos droit, mains posées sur les cuisses, vu de profil", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: ritsurei,       emoji: "🙇", scene: "un pratiquant salue debout (ritsurei) au bord du tatami, en direction du kamiza", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: zarei,          emoji: "🙇", scene: "deux partenaires en seiza face à face se saluent à genoux (zarei), mains posées devant eux sur le tatami", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: shikko,         emoji: "🧎", scene: "un pratiquant se déplace à genoux (shikko) sur le tatami, une jambe avancée, vu de 3/4", origine: { type: genere }, relecture: { statut: a-relire } }
   - { id: ai-hanmi,       emoji: "🧍", scene: "deux partenaires face à face en garde, MÊME pied avant (ai hanmi), distance de garde, plan large montrant les pieds" }
   - { id: gyaku-hanmi,    emoji: "🧍", scene: "deux partenaires face à face en garde, pieds avant OPPOSÉS (gyaku hanmi), plan large montrant les pieds" }
   - { id: mae-ukemi,      emoji: "🤸", scene: "un pratiquant en pleine chute avant roulée (mae ukemi) sur l'épaule, sur le tatami" }
@@ -29,8 +29,8 @@ scenes:              # public/images/scenes/ — situations réelles, pour image
   - { id: irimi,          emoji: "➡️", scene: "tori entre à côté d'uke qui attaque (irimi), en passant sur sa ligne d'attaque, plan large" }
   - { id: tenkan,         emoji: "🔄", scene: "tori pivote derrière son pied avant (tenkan) alors qu'uke lui saisit le poignet, plan large" }
   # attaques (deux partenaires : tori en hakama, uke en keikogi)
-  - { id: katate-dori,    emoji: "✊", scene: "uke saisit d'une main un poignet de tori" }
-  - { id: ryote-dori,     emoji: "✊", scene: "uke saisit les deux poignets de tori, une main pour chaque poignet" }
+  - { id: katate-dori,    emoji: "✊", scene: "uke saisit d'une main un poignet de tori", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: ryote-dori,     emoji: "✊", scene: "uke saisit les deux poignets de tori, une main pour chaque poignet", origine: { type: genere }, relecture: { statut: a-relire } }
   - { id: morote-dori,    emoji: "✊", scene: "uke saisit à deux mains un seul avant-bras de tori" }
   - { id: kata-dori,      emoji: "🫱", scene: "uke saisit le keikogi de tori à l'épaule" }
   - { id: shomen-uchi,    emoji: "✋", scene: "uke frappe verticalement vers le sommet de la tête de tori avec le tranchant de la main ; tori va à la rencontre" }
@@ -48,7 +48,7 @@ scenes:              # public/images/scenes/ — situations réelles, pour image
   - { id: kamiza,   emoji: "⛩️", scene: "le kamiza d'un dojo : place d'honneur au mur, sobre (calligraphie floue ou absente, aucun portrait identifiable)" }
 
 covers:              # public/images/covers/ — bandeau d'unité, réutilisable entre niveaux
-  - { id: dojo,            emoji: "⛩️", scene: "un dojo d'aikido vu de l'entrée : tatami, kamiza au fond, lumière douce" }
+  - { id: dojo,            emoji: "⛩️", scene: "un dojo d'aikido vu de l'entrée : tatami, kamiza au fond, lumière douce", origine: { type: genere }, relecture: { statut: a-relire } }
   - { id: reishiki,        emoji: "🙇", scene: "début de cours : pratiquants alignés en seiza saluant le professeur" }
   - { id: posture,         emoji: "🧍", scene: "deux partenaires en garde (hanmi) se font face, concentration" }
   - { id: ukemi,           emoji: "🤸", scene: "un pratiquant en chute roulée, d'autres attendent au bord du tatami" }
@@ -71,9 +71,9 @@ modules:             # public/images/modules/ — bandeau des onglets
   - { id: examen,    emoji: "⏱️", scene: "un jury de grade prend des notes pendant une démonstration" }
 
 mascotte:            # public/images/mascotte/ — personnage d'interface (dessin), pas une illustration de situation
-  - { id: neutre,      emoji: "🙂", scene: "debout, sourire calme" }
-  - { id: salut,       emoji: "🙇", scene: "ritsurei (salut debout)" }
-  - { id: bravo,       emoji: "🎉", scene: "bras levés, joyeux" }
+  - { id: neutre,      emoji: "🙂", scene: "debout, sourire calme", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: salut,       emoji: "🙇", scene: "ritsurei (salut debout)", origine: { type: genere }, relecture: { statut: a-relire } }
+  - { id: bravo,       emoji: "🎉", scene: "bras levés, joyeux", origine: { type: genere }, relecture: { statut: a-relire } }
   - { id: encourage,   emoji: "💪", scene: "poing serré, regard bienveillant (« Ganbatte ! »)" }
   - { id: reflechit,   emoji: "🤔", scene: "main au menton" }
   - { id: oups,        emoji: "😅", scene: "assis sur le tatami après une chute, sourire gêné" }

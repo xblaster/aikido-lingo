@@ -27,6 +27,14 @@ Identifiants fixes, dans l'ordre : `6K`, `5K`, `4K`, `3K`, `1K`, `SHODAN`
 `content/niveaux/6k/`, …, `content/niveaux/shodan/`. Référentiel : `content/referentiel/<id minuscule>.yaml`
 (`6k.yaml`, `5k.yaml`, `4k.yaml`, `3k.yaml`, `2k-1k.yaml` pour `1K`, `shodan.yaml`).
 
+Chaque fichier de référentiel de grade déclare :
+- `level` : identifiant (`6K`, `5K`, `4K`, `3K`, `1K`, `SHODAN`)
+- `nom` : intitulé du grade (ex. "5e kyu")
+- `referencePrincipale` : référence principale du programme (ex. "FFAB, Grades KYU", "CSDGE, Livre 2 (2025)", ou fondamentaux pour le 6K)
+- `etat` : `complet` ou `a-completer`. Règle : aucune unité ne peut être au statut `publie` si le référentiel du niveau est `a-completer`.
+- `variantes` : programmes ou progressions d'autres organismes (ex. FFAAA, FLAM Luxembourg, Aikikai Hombu Dojo), présentés comme tels.
+- `programmeOfficiel` : découpage par forme de travail, attaque, techniques et sources.
+
 ## Volumes
 
 Par niveau : **5 unités × 8 leçons × 8 exercices**. La leçon 8 de chaque unité est une révision
@@ -118,7 +126,8 @@ Ce qui varie selon les écoles/fédérations est présenté comme tel (« selon 
 
 - `content/lexique.yaml` : `[{ id, romaji, kanji?, kana?, sens, categorie, note?, source }]` (dictionnaire)
 - `content/etiquette.yaml` : fiches du module « Reishiki » `[{ id, titre, jp?, etapes: [..], pourquoi, source }]`
-- `content/examen.yaml` : simulateur de passage de grade `[{ level, epreuves: [{ categorie, appel (ce que dit le jury, ex. "Ai hanmi katate dori ikkyo"), attaque, technique, variante?, conseils: [..] }], criteres: [..], sources }]`
+- `content/examen.yaml` : simulateur de passage de grade `[{ level, dureeAppel?: number, epreuves: [{ categorie, appel (ce que dit le jury, ex. "Ai hanmi katate dori ikkyo"), attaque, technique, variante?, conseils: [..] }], criteres: [..], sources }]` (`dureeAppel` en secondes, 30 s par défaut)
+- `content/referentiel/histoire.yaml` : faits historiques `[{ fait, date?, source, sourceUnique?: boolean }]` (`sourceUnique: true` pour un fait reposant sur une source unique non recoupée, présenté avec « selon … »)
 
 ## Images et vidéos
 
@@ -142,3 +151,5 @@ change OpenSpec `generation-images`. Besoin d'un média absent : `docs/demandes.
 - 2026-10-19 (orchestration) : section « Images » complétée (tâche 1.4 de `generation-images`) : champs `origine` (`libre|genere|filme`), `video` (`fichier|embed`, `public/videos/`), `relecture`.
 - 2026-10-19 (session principale) : médias = vraies images de situation (photo ou dessin), pas des icônes ; famille `pictos` renommée `scenes` ; champ `video` ; origines `libre|filme|genere`.
 - 2026-10-19 (orchestration) : `.agents/` (commandes et skills OpenSpec pour Antigravity) ajouté au périmètre orchestration.
+- 2026-10-19 (orchestration) : consolidation-m1 (tâche 1.1) : ajout au contrat des champs `referencePrincipale`, `etat` (`complet` | `a-completer`) et `variantes` sur le référentiel de grade ; `sourceUnique` (booléen) sur les faits historiques de `histoire.yaml` ; `dureeAppel` (secondes, 30 s par défaut) sur le simulateur d'examen (`content/examen.yaml`).
+

@@ -1,0 +1,104 @@
+# Plan de l’unité 6k-u1 (types par leçon, dans l’ordre des exercices).
+unit: 6k-u1
+level: 6K
+theme: Le dojo et l'étiquette
+referentiel:
+  fichier: content/referentiel/6k.yaml
+  section: themes[0]
+  sources:
+    - FFAAA-GUIDE
+    - BUDOKAN-I
+    - BUDOKAN-II
+    - NWU-GLOSS
+    - FLAM-ETIQ-2011
+adaptation: Aucune.
+lessons:
+  - id: 6k-u1-l1
+    theme: Entrer au dojo et saluer
+    types:
+      - meaning_choice
+      - kanji_choice
+      - true_false
+      - term_choice
+      - missing_word
+      - scenario
+      - match_pairs
+      - typed_term
+  - id: 6k-u1-l2
+    theme: Le kamiza et le shomen
+    types:
+      - image_choice
+      - meaning_choice
+      - kanji_choice
+      - match_pairs
+      - true_false
+      - listen_choose
+      - missing_word
+      - typed_term
+  - id: 6k-u1-l3
+    theme: Seiza et zarei
+    types:
+      - image_choice
+      - meaning_choice
+      - term_choice
+      - kanji_choice
+      - order_steps
+      - match_pairs_audio
+      - true_false
+      - listen_type
+  - id: 6k-u1-l4
+    theme: Onegai shimasu, arigato gozaimashita
+    types:
+      - missing_word
+      - listen_choose
+      - order_steps
+      - scenario
+      - story
+      - true_false
+      - meaning_choice
+      - typed_term
+  - id: 6k-u1-l5
+    theme: Pendant le cours
+    types:
+      - scenario
+      - order_steps
+      - true_false
+      - scenario
+      - meaning_choice
+      - missing_word
+      - kanji_choice
+      - listen_type
+  - id: 6k-u1-l6
+    theme: La tenue
+    types:
+      - image_choice
+      - match_pairs
+      - kanji_choice
+      - true_false
+      - term_choice
+      - listen_choose
+      - typed_term
+      - missing_word
+  - id: 6k-u1-l7
+    theme: Sensei, sempai, kohai
+    types:
+      - match_pairs
+      - kanji_choice
+      - term_choice
+      - true_false
+      - scenario
+      - match_pairs_audio
+      - meaning_choice
+      - listen_type
+  - id: 6k-u1-l8
+    theme: "Révision : le dojo et l'étiquette"
+    isReview: true
+    types:
+      - technique_decoder
+      - tile_build
+      - order_steps
+      - match_pairs
+      - scenario
+      - true_false
+      - listen_choose
+      - typed_term

@@ -1,0 +1,122 @@
+# Référentiel du niveau 6e kyu. Rédigé le 2026-10-19 à partir de : Budokan (manuel aïkido, chap. Ⅰ-Ⅱ, Ⅶ),
+# FFAAA (guide du débutant, page Grades), FFAB (page Grades KYU), FLAM (programme kyu 2011, étiquette),
+# CSDGE Livre 2 (critères d'évaluation), Aikikai (What is Aikido?, Examination Guidelines).
+#
+# IMPORTANT — pourquoi ce niveau n'a pas de « programme officiel » technique :
+#  - FFAB et FFAAA annoncent six kyu avant le 1er dan, mais aucune ne publie de contenu pour le 6e kyu
+#    (la FFAB détaille du 5e au 1er kyu ; la FFAAA ne publie pas de programme kyu, délivré en club) ;
+#  - l'Aikikai Hombu Dojo ne compte que cinq kyu (5e → 1er) ;
+#  - la FLAM fait commencer son programme au 5e kyu (« 20 cours depuis l'inscription ») et compte
+#    les heures de stage du shodan « depuis le 6e kyu » : le 6e kyu y apparaît comme le point de départ.
+# Le niveau 6K de l'application couvre donc les FONDAMENTAUX préalables au 5e kyu, chacun sourcé :
+# étiquette, postures, déplacements, chutes, rôles tori/uke et noms des premières attaques.
+# Aucun de ces éléments n'est présenté comme « exigé au 6e kyu ».
+level: 6K
+nom: "6e kyu"
+referencePrincipale: "Aucun programme officiel ; fondamentaux sourcés (Budokan chap. Ⅱ, FFAAA-GUIDE, FLAM-KYU-2011 5e kyu, CSDGE-L2 Annexe I)"
+referentielPrincipal: "Aucun programme officiel ; fondamentaux sourcés (Budokan chap. Ⅱ, FFAAA-GUIDE, FLAM-KYU-2011 5e kyu, CSDGE-L2 Annexe I)"
+etat: complet
+variantes:
+  - referentiel: "Nippon Budokan (base des cours enfants)"
+  - referentiel: "FLAM (Luxembourg, 2011, à titre indicatif)"
+  - referentiel: "FFAAA (exemple de progression, non normatif)"
+
+programmeOfficiel:
+  - categorie: "Fondamentaux (préalables au 5e kyu)"
+    referentiel: "Nippon Budokan (base des cours enfants, adossée au 5e kyu du Hombu Dojo)"
+    attaque: null
+    techniques: ["Reiho : seiza, zarei", "Kamae : hanmi (ai hanmi, gyaku hanmi)", "Tai sabaki : okuri ashi, ayumi ashi, tenkai ashi, tenkan ashi, tenkan", "Ukemi : ushiro ukemi, mae ukemi, ukemi roulées avant/arrière", "Kiza et shikko"]
+    source: { ref: "Nippon Budokan, 少年少女武道指導書 合気道, chap. Ⅱ 基本指導 §1-5", url: "https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf", page: "14-24" }
+  - categorie: "Fondamentaux listés avec le 5e kyu"
+    referentiel: "FLAM (Luxembourg), 2011, à titre indicatif"
+    attaque: "Katate dori (exemple de sotai dosa)"
+    techniques: ["Ukemi waza : travail des chutes", "Shikko : déplacements à genoux", "Tai sabaki : mouvement essentiel de base", "Sotai dosa (ex. katate dori – tai sabaki)"]
+    source: { ref: "FLAM, Commission des grades, Annexe 2.1 Passages de grades KYU (oct. 2011)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18" }
+  - categorie: "Fondamentaux listés avec le 5e kyu"
+    referentiel: "FFAAA, exemple de progression (non normatif)"
+    attaque: null
+    techniques: ["Shikko (déplacement)"]
+    source: { ref: "FFAAA, Guide du débutant, Exemples de progression pour les grades kyu", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "18" }
+  - categorie: "Formes d'attaque à connaître (nomenclature)"
+    referentiel: "CSDGE (nomenclature des examens dan) / FFAAA (positions relatives)"
+    attaque: "Ai hanmi katate dori ; katate dori (gyaku hanmi) ; shomen uchi"
+    techniques: []
+    note: "Ce sont les attaques du 5e kyu FFAB ; les nommer correctement (tori ET uke) est un critère dès le shodan."
+    source: { ref: "CSDGE Livre 2, Annexe II §3 Kogekiho ; FFAAA-GUIDE Formes d'attaques", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "CSDGE p. 18 ; FFAAA p. 7-8" }
+
+competences:
+  - "Saluer en montant et en quittant le tapis, et en direction du shomen / du portrait du fondateur (FFAAA-GUIDE p. 16)."
+  - "Commencer le cours par « onegai shimasu » et le finir par « arigato gozaimashita » (BUDOKAN-I ; FFAAA-GUIDE p. 17)."
+  - "S'asseoir en seiza, saluer en zarei, attendre en seiza (BUDOKAN-II ; FFAAA-GUIDE règles 5, 7, 11)."
+  - "Arriver en retard : attendre au bord du tapis le signe de l'enseignant (FFAAA-GUIDE règle 6)."
+  - "Tenue propre, pas de bijoux, armes rangées, ne pas emprunter le gi ou les armes d'autrui (FFAAA-GUIDE règles 3, 4, 21)."
+  - "Comprendre les rôles : tori exécute, uke attaque et chute ; on alterne gauche/droite et les rôles (AIK-WHAT ; BUDOKAN-I)."
+  - "Comprendre que l'aïkido n'a pas de compétition (AIK-WHAT-EN ; FFAAA-GUIDE p. 5)."
+  - "Savoir ce qu'est un hanmi, ai hanmi, gyaku hanmi (BUDOKAN-II/-VII)."
+  - "Connaître le sens des chutes : se protéger et se relever vite ; en pratique à deux, chuter sous l'action du partenaire et non de soi-même (BUDOKAN-II §4)."
+  - "Savoir que les kyu sont délivrés en club par l'enseignant (FFAB-KYU ; FFAAA-GRADES)."
+  - "Compter de un à dix en japonais (FFAAA-GUIDE p. 24 ; NWU-GLOSS)."
+
+criteresEvaluation:
+  - "Aucun critère publié pour le 6e kyu."
+  - "À titre d'orientation seulement : la CSDGE évalue dès l'entrée dans le dojo le respect (reigisaho), la sérénité, la vigilance, l'attitude (shisei) — CSDGE-L2 Annexe I p. 7. Ne pas présenter comme critère du 6e kyu."
+
+lexique:
+  - { romaji: "Dojo", kanji: "道場", sens: "lieu où l'on pratique (« lieu de la voie »)", source: "NWU-GLOSS" }
+  - { romaji: "Kamiza", kanji: "上座", sens: "place d'honneur du dojo", source: "NWU-GLOSS ; FFAAA-GUIDE p. 22" }
+  - { romaji: "Shomen", kanji: "正面", sens: "face avant, direction du salut", source: "NWU-GLOSS ; FFAAA-GUIDE p. 16" }
+  - { romaji: "Sensei", kanji: "先生", sens: "enseignant", source: "NWU-GLOSS" }
+  - { romaji: "Sempai", kanji: "先輩", sens: "pratiquant plus ancien", source: "NWU-GLOSS" }
+  - { romaji: "Kohai", kanji: "後輩", sens: "pratiquant plus récent", source: "NWU-GLOSS" }
+  - { romaji: "Rei", kanji: "礼", sens: "salut", source: "BUDOKAN-II" }
+  - { romaji: "Zarei", kanji: "座礼", sens: "salut à genoux", source: "BUDOKAN-II" }
+  - { romaji: "Ritsurei", sens: "salut debout (kanji non vérifié)", source: "FFAAA-GUIDE p. 23" }
+  - { romaji: "Reishiki", sens: "étiquette du dojo (kanji non vérifié)", source: "FFAAA-GUIDE p. 23" }
+  - { romaji: "Onegai shimasu", kana: "お願いします", sens: "formule du salut de début", source: "BUDOKAN-I" }
+  - { romaji: "Arigato gozaimashita", kana: "ありがとうございました", sens: "merci (fin de cours)", source: "BUDOKAN-I" }
+  - { romaji: "Seiza", kanji: "正座", sens: "assis à genoux sur les talons", source: "BUDOKAN-II" }
+  - { romaji: "Kiza", kanji: "跪座", sens: "seiza orteils retournés", source: "BUDOKAN-II" }
+  - { romaji: "Shikko", kanji: "膝行", sens: "déplacement à genoux", source: "BUDOKAN-II" }
+  - { romaji: "Keikogi", kanji: "稽古着", sens: "tenue d'entraînement", source: "NWU-GLOSS" }
+  - { romaji: "Obi", kanji: "帯", sens: "ceinture", source: "NWU-GLOSS" }
+  - { romaji: "Hakama", kanji: "袴", sens: "pantalon plissé", source: "NWU-GLOSS" }
+  - { romaji: "Keiko", kanji: "稽古", sens: "pratique", source: "NWU-GLOSS" }
+  - { romaji: "Tori", kanji: "取り", sens: "celui qui exécute la technique", source: "AIK-WHAT-JA" }
+  - { romaji: "Uke", kanji: "受け", sens: "celui qui attaque et reçoit", source: "AIK-WHAT-JA" }
+  - { romaji: "Kamae", kanji: "構え", sens: "garde", source: "BUDOKAN-II" }
+  - { romaji: "Hanmi", kanji: "半身", sens: "position de profil, une jambe devant", source: "BUDOKAN-II" }
+  - { romaji: "Ai hanmi", kanji: "相半身", sens: "même pied devant", source: "BUDOKAN-VII" }
+  - { romaji: "Gyaku hanmi", kanji: "逆半身", sens: "pieds opposés devant", source: "BUDOKAN-VII" }
+  - { romaji: "Tai sabaki", kanji: "体さばき", sens: "déplacement du corps", source: "BUDOKAN-II" }
+  - { romaji: "Irimi", kanji: "入身", sens: "entrer", source: "CSDGE-L2 p. 8" }
+  - { romaji: "Tenkan", kanji: "転換", sens: "pivoter", source: "CSDGE-L2 p. 8" }
+  - { romaji: "Ukemi", kanji: "受身", sens: "chute", source: "BUDOKAN-VII" }
+  - { romaji: "Mae ukemi", kanji: "前受身", sens: "chute avant", source: "BUDOKAN-II" }
+  - { romaji: "Ushiro ukemi", kanji: "後ろ受身", sens: "chute arrière", source: "BUDOKAN-II" }
+  - { romaji: "Katate dori", kanji: "片手取", sens: "saisie d'un poignet", source: "AIK-EXAM-JA" }
+  - { romaji: "Shomen uchi", kanji: "正面打", sens: "frappe verticale de face", source: "AIK-EXAM-JA" }
+  - { romaji: "Aikido", kanji: "合気道", sens: "voie de l'harmonie des énergies", source: "AIK-WHAT-JA ; FFAAA-GUIDE p. 3" }
+  - { romaji: "O sensei", kanji: "大先生", sens: "le fondateur, Ueshiba Morihei", source: "NWU-GLOSS" }
+  - { romaji: "Ichi … ju", kanji: "一 … 十", sens: "nombres de 1 à 10", source: "NWU-GLOSS ; FFAAA-GUIDE p. 24" }
+
+themes:   # 5 unités (contrat : 5 × 8 leçons, la 8e = révision)
+  - unite: "Le dojo et l'étiquette"
+    lecons: ["Entrer au dojo et saluer", "Le kamiza et le shomen", "Seiza et zarei", "Onegai shimasu, arigato gozaimashita", "Pendant le cours : écouter, attendre, changer de partenaire", "La tenue : keikogi, obi, hakama", "Sensei, sempai, kohai"]
+  - unite: "Qu'est-ce que l'aïkido ?"
+    lecons: ["Ai, ki, do : le sens du mot", "Le fondateur, Ueshiba Morihei", "Tori et uke", "Pas de compétition", "Les kyu et les dan", "Les fédérations : FFAB, FFAAA, FLAM, Aikikai", "Compter en japonais"]
+  - unite: "Postures"
+    lecons: ["Kamae", "Hanmi : droite et gauche", "Ai hanmi et gyaku hanmi", "Seiza et kiza", "Ma ai : la distance", "Tegatana : la main-sabre", "Le regard et la vigilance (zanshin)"]
+  - unite: "Se déplacer"
+    lecons: ["Okuri ashi", "Ayumi ashi", "Tenkai ashi", "Tenkan ashi et tenkan", "Irimi et tenkan", "Shikko", "Tai sabaki sur katate dori"]
+  - unite: "Chuter et premières attaques"
+    lecons: ["Pourquoi chuter : ukemi", "Ushiro ukemi", "Mae ukemi", "Chuter avec un partenaire", "Katate dori", "Ai hanmi katate dori", "Shomen uchi"]
+
+sources:
+  - { type: ouvrage, ref: "Nippon Budokan, 少年少女武道指導書 合気道, chap. Ⅰ, Ⅱ, Ⅶ", url: "https://www.nipponbudokan.or.jp/shidosho/aikido/", page: "8-12 ; 14-24 ; 111-113", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAAA, Guide du débutant (non daté)", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "3-8, 16-18, 22-24", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAAA, Grades", url: "https://aikido.com.fr/grades/", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAB, Grades KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", consulte: "2026-10-19" }
+  - { type: federation, ref: "FLAM, Annexe 2.1 Passages de grades KYU (2011)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18", consulte: "2026-10-19" }
+  - { type: officiel, ref: "CSDGE Livre 2 (arrêté du 22/12/2025)", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "7-9, 18", consulte: "2026-10-19" }
+  - { type: aikikai, ref: "Aikikai, What is Aikido? / 合気道とは", url: "https://aikikai.or.jp/eng/aikido/", consulte: "2026-10-19" }
+  - { type: web, ref: "S. Craig, Glossary of Aikidō Terminology (Northwestern)", url: "https://www.earth.northwestern.edu/public/craig/aikido/glossary.html", consulte: "2026-10-19" }

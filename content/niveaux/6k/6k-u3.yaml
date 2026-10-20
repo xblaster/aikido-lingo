@@ -1,0 +1,1535 @@
+# Unité 6k-u3 : généré depuis le brouillon de l’agent contenu ; fiches dans 6k-u3/recherche/.
+id: 6k-u3
+level: 6K
+unitNumber: 3
+title: Postures
+jpTitle: Kamae
+description: La garde, le hanmi à droite et à gauche, ai hanmi et gyaku hanmi, kiza, la distance, la main-sabre et la vigilance.
+themeColor: bg-amber-500
+icon: PersonStanding
+cover: posture
+review:
+  statut: brouillon
+referentiel:
+  ref: 6k.yaml, unité « Postures » (BUDOKAN-II/-VII ; CSDGE-L2 Annexe I p. 7-9)
+  url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+lessons:
+  - id: 6k-u3-l1
+    title: "Kamae : la garde"
+    subtitle: Kamae
+    description: Se tenir prêt, physiquement et mentalement.
+    icon: Shield
+    xpReward: 20
+    focus: Kamae et shisei
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l1.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Kamae
+          kanji: 構え
+          fr: garde ; aussi l'état de vigilance avant l'engagement
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Shisei
+          fr: posture, attitude naturelle, relâchée et verticale
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      note:
+        titre: La garde, une attitude
+        texte: "Kamae désigne la garde. Pour la CSDGE, c'est aussi un état de vigilance qui précède l'engagement : on se tient prêt, sans raideur. La CSDGE parle de shisei pour la posture : une attitude naturelle, relâchée et verticale."
+    exercises:
+      - id: ex-6k-u3-l1-1
+        type: meaning_choice
+        prompt: Que signifie « kamae » ?
+        jpText: Kamae
+        options:
+          - id: o1
+            text: la chute
+          - id: o2
+            text: le salut
+          - id: o3
+            text: la garde
+        correctAnswer: la garde
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-2
+        type: term_choice
+        prompt: Quel terme la CSDGE emploie-t-elle pour la posture ?
+        frText: Attitude naturelle, relâchée et verticale
+        options:
+          - id: o1
+            text: shikko
+          - id: o2
+            text: shisei
+          - id: o3
+            text: seiza
+        correctAnswer: shisei
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Pour la CSDGE, kamae est aussi un état de vigilance, pas seulement une position des pieds.
+        correctAnswer: vrai
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 構え
+        options:
+          - id: o1
+            text: kamiza
+            translation: place d'honneur
+          - id: o2
+            text: keiko
+            translation: pratique
+          - id: o3
+            text: kamae
+            translation: garde
+        correctAnswer: kamae
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-5
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Une bonne posture est naturelle, ___ et verticale.
+        options:
+          - id: o1
+            text: penchée
+          - id: o2
+            text: relâchée
+          - id: o3
+            text: crispée
+        correctAnswer: relâchée
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: かまえ
+        options:
+          - id: o1
+            text: kamae
+            translation: garde
+          - id: o2
+            text: kamiza
+            translation: place d'honneur
+          - id: o3
+            text: hakama
+            translation: pantalon plissé
+        correctAnswer: kamae
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-7
+        type: scenario
+        prompt: Que fait l'élève attentif ?
+        frText: Uke va attaquer dans un instant.
+        options:
+          - id: o1
+            text: Il se raidit et bloque sa respiration
+          - id: o2
+            text: Il regarde ailleurs pour paraître calme
+          - id: o3
+            text: Il se tient en garde, détendu et vigilant
+        correctAnswer: Il se tient en garde, détendu et vigilant
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l1-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la garde
+        correctAnswer: kamae
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u3-l2
+    title: "Hanmi : droite et gauche"
+    subtitle: Hanmi
+    description: Une jambe devant, le corps de profil.
+    icon: Footprints
+    xpReward: 20
+    focus: Migi hanmi, hidari hanmi
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l2.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Hanmi
+          kanji: 半身
+          fr: position asymétrique, une jambe en avant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Migi hanmi
+          fr: pied droit devant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Hidari hanmi
+          fr: pied gauche devant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Le demi-corps
+        texte: "Hanmi (半身, « demi-corps ») est la garde de base : une jambe en avant, le corps légèrement de profil. On parle de migi hanmi quand le pied droit est devant, de hidari hanmi quand c'est le gauche. On travaille toujours des deux côtés."
+    exercises:
+      - id: ex-6k-u3-l2-1
+        type: meaning_choice
+        prompt: Que signifie « migi hanmi » ?
+        jpText: Migi hanmi
+        options:
+          - id: o1
+            text: garde pied gauche devant
+          - id: o2
+            text: les deux pieds alignés
+          - id: o3
+            text: garde pied droit devant
+        correctAnswer: garde pied droit devant
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-2
+        type: term_choice
+        prompt: Quelle garde a le pied gauche devant ?
+        frText: Garde avec le pied gauche en avant
+        options:
+          - id: o1
+            text: seiza
+          - id: o2
+            text: hidari hanmi
+          - id: o3
+            text: migi hanmi
+        correctAnswer: hidari hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-3
+        type: tile_build
+        prompt: Composez le nom de la garde.
+        frText: garde, pied droit devant
+        wordBank:
+          - hanmi
+          - hidari
+          - migi
+          - kamae
+        correctAnswer:
+          - migi
+          - hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 半身
+        options:
+          - id: o1
+            text: ukemi
+            translation: chute
+          - id: o2
+            text: irimi
+            translation: entrer
+          - id: o3
+            text: hanmi
+            translation: garde de profil
+        correctAnswer: hanmi
+        explanation: 身 se retrouve dans ukemi 受身 et irimi 入身.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: On travaille en migi hanmi et en hidari hanmi, des deux côtés.
+        correctAnswer: vrai
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-EN
+            url: https://aikikai.or.jp/eng/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-6
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: みぎはんみ
+            fr: pied droit devant
+          - jp: ひだりはんみ
+            fr: pied gauche devant
+          - jp: かまえ
+            fr: garde
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: はんみ
+        correctAnswer: hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l2-8
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: « Migi » veut dire droite, « ___ » veut dire gauche.
+        options:
+          - id: o1
+            text: mae
+          - id: o2
+            text: hidari
+          - id: o3
+            text: hanmi
+        correctAnswer: hidari
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u3-l3
+    title: Ai hanmi et gyaku hanmi
+    subtitle: Ai hanmi
+    description: La garde des deux partenaires l'un par rapport à l'autre.
+    icon: Users
+    xpReward: 20
+    focus: Même pied devant ou pieds opposés
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l3.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ai hanmi
+          kanji: 相半身
+          fr: tori et uke ont le même pied devant
+          illustration:
+            image: scenes/ai-hanmi
+            emoji: 🧍
+            alt: Deux partenaires face à face en garde, tous deux pied droit devant, à distance de garde ; les pieds sont visibles.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Gyaku hanmi
+          kanji: 逆半身
+          fr: tori et uke ont des pieds opposés devant
+          illustration:
+            image: scenes/gyaku-hanmi
+            emoji: 🧍
+            alt: Deux partenaires face à face en garde, l'un pied droit devant, l'autre pied gauche devant ; les pieds sont visibles.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Se regarder les pieds
+        texte: "Face à face, si les deux partenaires ont le même pied devant (droit et droit, ou gauche et gauche), ils sont en ai hanmi. S'ils ont des pieds opposés devant, ils sont en gyaku hanmi. Ce placement donne son nom à certaines attaques : ai hanmi katate dori, gyaku hanmi katate dori."
+    exercises:
+      - id: ex-6k-u3-l3-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Gyaku hanmi »"
+        jpText: Gyaku hanmi
+        options:
+          - id: o1
+            text: Ai hanmi
+            illustration:
+              image: scenes/ai-hanmi
+              emoji: 🧍
+              alt: Deux partenaires face à face, tous deux pied droit devant.
+          - id: o2
+            text: Seiza
+            illustration:
+              image: scenes/seiza
+              emoji: 🧎
+              alt: Un pratiquant assis sur ses talons, dos droit.
+          - id: o3
+            text: Gyaku hanmi
+            illustration:
+              image: scenes/gyaku-hanmi
+              emoji: 🧍
+              alt: Deux partenaires face à face, l'un pied droit devant, l'autre pied gauche devant.
+        correctAnswer: Gyaku hanmi
+        explanation: "Gyaku : inversé. Les pieds avant sont opposés."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-2
+        type: meaning_choice
+        prompt: Que signifie « ai hanmi » ?
+        jpText: Ai hanmi
+        options:
+          - id: o1
+            text: un partenaire est à genoux
+          - id: o2
+            text: les deux partenaires ont le même pied devant
+          - id: o3
+            text: les partenaires ont des pieds opposés devant
+        correctAnswer: les deux partenaires ont le même pied devant
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-3
+        type: scenario
+        prompt: Quelle est la garde ?
+        frText: Tori a le pied droit devant. Uke, en face, a aussi le pied droit devant.
+        options:
+          - id: o1
+            text: ai hanmi
+          - id: o2
+            text: gyaku hanmi
+          - id: o3
+            text: hidari hanmi pour les deux
+        correctAnswer: ai hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 逆半身
+        options:
+          - id: o1
+            text: ai hanmi
+            translation: même pied
+          - id: o2
+            text: hanmi
+            translation: garde de profil
+          - id: o3
+            text: gyaku hanmi
+            translation: pieds opposés
+        correctAnswer: gyaku hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-5
+        type: technique_decoder
+        prompt: Dans cet appel, quelle partie indique la garde des partenaires ?
+        jpText: Ai hanmi katate dori ikkyo
+        decomposition:
+          attaque: ai hanmi katate dori
+          technique: ikkyo
+        options:
+          - id: o1
+            text: dori
+          - id: o2
+            text: ai hanmi
+          - id: o3
+            text: katate
+        correctAnswer: ai hanmi
+        explanation: "Ai hanmi : même pied devant ; katate dori : saisie d'un poignet. Vous retrouverez cette attaque dans l'unité 5."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "7"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-6
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Si tori est en migi hanmi et uke en hidari hanmi, face à face, ils sont en gyaku hanmi.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-7
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: ai hanmi
+            fr: même pied devant
+          - jp: gyaku hanmi
+            fr: pieds opposés devant
+          - jp: migi
+            fr: droite
+          - jp: hidari
+            fr: gauche
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l3-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: garde où les partenaires ont le même pied devant
+        correctAnswer: ai hanmi
+        acceptedAnswers:
+          - aihanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u3-l4
+    title: Seiza et kiza
+    subtitle: Kiza
+    description: Deux façons d'être à genoux.
+    icon: Armchair
+    xpReward: 20
+    focus: Seiza, kiza, départ du shikko
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l4.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Seiza
+          kanji: 正座
+          fr: à genoux, assis sur les talons
+          illustration:
+            image: scenes/seiza
+            emoji: 🧎
+            alt: Un pratiquant assis sur ses talons, dos droit, mains posées sur les cuisses, vu de profil.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Kiza
+          kanji: 跪座
+          fr: comme seiza, mais orteils retournés, pointe des pieds au sol
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Orteils à plat ou retournés
+        texte: "En seiza, le dessus des pieds repose au sol. En kiza, on retourne les orteils : on est prêt à se relever ou à se déplacer à genoux, car kiza est la position de départ du shikko."
+    exercises:
+      - id: ex-6k-u3-l4-1
+        type: meaning_choice
+        prompt: Que signifie « kiza » ?
+        jpText: Kiza
+        options:
+          - id: o1
+            text: assis en tailleur
+          - id: o2
+            text: debout en garde
+          - id: o3
+            text: à genoux, orteils retournés
+        correctAnswer: à genoux, orteils retournés
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-2
+        type: term_choice
+        prompt: Depuis quelle position part le déplacement à genoux ?
+        frText: Position à genoux, orteils retournés, prête au déplacement
+        options:
+          - id: o1
+            text: hanmi
+          - id: o2
+            text: kiza
+          - id: o3
+            text: seiza
+        correctAnswer: kiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 正座
+        options:
+          - id: o1
+            text: seiza
+            translation: assis sur les talons
+          - id: o2
+            text: kiza
+            translation: orteils retournés
+          - id: o3
+            text: zarei
+            translation: salut à genoux
+        correctAnswer: seiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En kiza, les orteils sont retournés, pointe des pieds au sol.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-5
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Seiza »"
+        jpText: Seiza
+        options:
+          - id: o1
+            text: Zarei
+            illustration:
+              image: scenes/zarei
+              emoji: 🙇
+              alt: Deux partenaires en seiza s'inclinent l'un vers l'autre.
+          - id: o2
+            text: Seiza
+            illustration:
+              image: scenes/seiza
+              emoji: 🧎
+              alt: Un pratiquant assis sur ses talons, dos droit, mains sur les cuisses.
+          - id: o3
+            text: Shikko
+            illustration:
+              image: scenes/shikko
+              emoji: 🧎
+              alt: Un pratiquant se déplace à genoux, une jambe avancée.
+        correctAnswer: Seiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: きざ
+        options:
+          - id: o1
+            text: kiza
+            translation: orteils retournés
+          - id: o2
+            text: seiza
+            translation: assis sur les talons
+          - id: o3
+            text: kamiza
+            translation: place d'honneur
+        correctAnswer: kiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-7
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Seiza
+          - "Retourner les orteils : kiza"
+          - Partir en shikko
+        correctAnswer: steps
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l4-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: きざ
+        correctAnswer: kiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u3-l5
+    title: "Ma ai : la distance"
+    subtitle: Ma ai
+    description: Distance et rythme entre les partenaires.
+    icon: MoveHorizontal
+    xpReward: 20
+    focus: Ma ai
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l5.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ma ai
+          kanji: 間合い
+          fr: distance et rythme entre les partenaires
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Un espace-temps
+        texte: "Ma ai est la distance entre les partenaires, mais la CSDGE la décrit comme un « espace-temps » : elle compte autant en mètres qu'en temps nécessaire pour atteindre l'autre. Trop près, on est surpris ; trop loin, l'attaque n'a plus de sens. L'enseignant vous aidera à la trouver."
+    exercises:
+      - id: ex-6k-u3-l5-1
+        type: meaning_choice
+        prompt: Que désigne « ma ai » ?
+        jpText: Ma ai
+        options:
+          - id: o1
+            text: la garde de profil
+          - id: o2
+            text: le salut debout
+          - id: o3
+            text: la distance et le rythme entre partenaires
+        correctAnswer: la distance et le rythme entre partenaires
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-2
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Pour la CSDGE, ma ai n'est qu'une mesure en mètres.
+        correctAnswer: faux
+        explanation: "La CSDGE parle d'« espace-temps » : distance et rythme."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 間合い
+        options:
+          - id: o1
+            text: ma ai
+            translation: distance
+          - id: o2
+            text: aikido
+            translation: voie de l'harmonie
+          - id: o3
+            text: kamae
+            translation: garde
+        correctAnswer: ma ai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-4
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Votre partenaire et vous ne savez pas à quelle distance vous placer.
+        options:
+          - id: o1
+            text: Je me colle à lui pour être sûr
+          - id: o2
+            text: Je me mets à l'autre bout du tapis
+          - id: o3
+            text: Je demande à l'enseignant de nous montrer la distance juste
+        correctAnswer: Je demande à l'enseignant de nous montrer la distance juste
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-5
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: La CSDGE décrit ma ai comme un « espace-___ ».
+        options:
+          - id: o1
+            text: dojo
+          - id: o2
+            text: temps
+          - id: o3
+            text: vide
+        correctAnswer: temps
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-6
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: ma ai
+            fr: distance et rythme
+          - jp: kamae
+            fr: garde
+          - jp: hanmi
+            fr: une jambe devant
+          - jp: kiza
+            fr: orteils retournés
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-7
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: まあい
+        options:
+          - id: o1
+            text: hanmi
+            translation: garde de profil
+          - id: o2
+            text: kamae
+            translation: garde
+          - id: o3
+            text: ma ai
+            translation: distance
+        correctAnswer: ma ai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l5-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la distance juste entre partenaires
+        correctAnswer: ma ai
+        acceptedAnswers:
+          - maai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u3-l6
+    title: "Tegatana : la main-sabre"
+    subtitle: Tegatana
+    description: Le tranchant de la main.
+    icon: Hand
+    xpReward: 20
+    focus: Tegatana
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l6.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tegatana
+          kanji: 手刀
+          fr: tranchant de la main, « main-sabre »
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: La main comme un sabre
+        texte: "Tegatana (手刀) réunit la main (手) et le sabre (刀) : c'est le tranchant de la main. On le retrouve dans les frappes comme shomen uchi, portée avec le tranchant de la main."
+    exercises:
+      - id: ex-6k-u3-l6-1
+        type: meaning_choice
+        prompt: Que signifie « tegatana » ?
+        jpText: Tegatana
+        options:
+          - id: o1
+            text: le poing fermé
+          - id: o2
+            text: le sabre de bois
+          - id: o3
+            text: le tranchant de la main
+        correctAnswer: le tranchant de la main
+        explanation: Le sabre de bois s'appelle bokken.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-2
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 手刀
+        options:
+          - id: o1
+            text: katate
+            translation: une main
+          - id: o2
+            text: tegatana
+            translation: main-sabre
+          - id: o3
+            text: tanto
+            translation: couteau
+        correctAnswer: tegatana
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Shomen uchi se porte avec le tranchant de la main.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-4
+        type: term_choice
+        prompt: Quel terme désigne le tranchant de la main ?
+        frText: « main-sabre »
+        options:
+          - id: o1
+            text: tsuki
+          - id: o2
+            text: bokken
+          - id: o3
+            text: tegatana
+        correctAnswer: tegatana
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-5
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: てがたな
+        correctAnswer: tegatana
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-6
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: てがたな
+            fr: main-sabre
+          - jp: かまえ
+            fr: garde
+          - jp: まあい
+            fr: distance
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Tegatana réunit « te », la main, et « katana », le ___.
+        options:
+          - id: o1
+            text: bâton
+          - id: o2
+            text: poing
+          - id: o3
+            text: sabre
+        correctAnswer: sabre
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l6-8
+        type: image_choice
+        prompt: Choisissez l'illustration de l'attaque portée avec le tranchant de la main.
+        jpText: Shomen uchi
+        options:
+          - id: o1
+            text: Katate dori
+            illustration:
+              image: scenes/katate-dori
+              emoji: ✊
+              alt: Uke saisit d'une main un poignet de tori.
+          - id: o2
+            text: Shomen uchi
+            illustration:
+              image: scenes/shomen-uchi
+              emoji: ✋
+              alt: Uke frappe verticalement vers le sommet de la tête de tori avec le tranchant de la main.
+          - id: o3
+            text: Tsuki
+            illustration:
+              image: scenes/tsuki
+              emoji: 👊
+              alt: Uke porte un coup de poing direct au ventre de tori.
+        correctAnswer: Shomen uchi
+        explanation: "Shomen uchi : frappe avec le tranchant de la main ; tsuki : coup de poing ; katate dori : saisie."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u3-l7
+    title: Le regard et la vigilance
+    subtitle: Zanshin
+    description: Rester présent avant, pendant et après.
+    icon: Eye
+    xpReward: 20
+    focus: Zanshin et metsuke
+    isReview: false
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l7.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Zanshin
+          kanji: 残心
+          fr: vigilance permanente, avant, pendant et après la technique
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+        - jp: Metsuke
+          fr: regard physique et mental, perception globale
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+      note:
+        titre: Ne pas « décrocher »
+        texte: "Zanshin, c'est la vigilance qui reste : on ne relâche pas son attention une fois la technique finie. Metsuke désigne le regard, à la fois physique et mental : percevoir l'ensemble de la situation plutôt que fixer un point. La CSDGE observe ces qualités dès l'entrée dans le dojo."
+    exercises:
+      - id: ex-6k-u3-l7-1
+        type: meaning_choice
+        prompt: Que signifie « zanshin » ?
+        jpText: Zanshin
+        options:
+          - id: o1
+            text: le salut de fin
+          - id: o2
+            text: la chute arrière
+          - id: o3
+            text: la vigilance qui demeure après la technique
+        correctAnswer: la vigilance qui demeure après la technique
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-2
+        type: term_choice
+        prompt: Quel terme désigne le regard, physique et mental ?
+        frText: Perception globale de la situation
+        options:
+          - id: o1
+            text: kamae
+          - id: o2
+            text: metsuke
+          - id: o3
+            text: zanshin
+        correctAnswer: metsuke
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Une fois la technique terminée, on peut relâcher toute attention.
+        correctAnswer: faux
+        explanation: "Zanshin : la vigilance demeure avant, pendant et après."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 残心
+        options:
+          - id: o1
+            text: sensei
+            translation: enseignant
+          - id: o2
+            text: seiza
+            translation: assis à genoux
+          - id: o3
+            text: zanshin
+            translation: vigilance
+        correctAnswer: zanshin
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-5
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Narrateur
+            text: Tom termine sa technique. Son partenaire est au sol.
+          - speaker: Narrateur
+            text: Tom se retourne aussitôt pour bavarder avec son voisin.
+          - speaker: Sensei
+            text: "Reste présent : ton partenaire est encore là. C'est ça, zanshin."
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 3
+            prompt: Qu'a oublié Tom ?
+            options:
+              - id: o1
+                text: la vigilance après la technique (zanshin)
+              - id: o2
+                text: le salut debout
+              - id: o3
+                text: de compter en japonais
+            correctAnswer: la vigilance après la technique (zanshin)
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: ざんしん
+        options:
+          - id: o1
+            text: zanshin
+            translation: vigilance
+          - id: o2
+            text: sensei
+            translation: enseignant
+          - id: o3
+            text: shikko
+            translation: marche à genoux
+        correctAnswer: zanshin
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Selon la CSDGE, le respect et la vigilance s'observent dès l'___ dans le dojo.
+        options:
+          - id: o1
+            text: examen
+          - id: o2
+            text: échauffement
+          - id: o3
+            text: entrée
+        correctAnswer: entrée
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "7"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l7-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la vigilance permanente
+        correctAnswer: zanshin
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+  - id: 6k-u3-l8
+    title: "Révision : postures"
+    subtitle: Kamae
+    description: Garde, hanmi, distance, vigilance.
+    icon: RotateCcw
+    xpReward: 30
+    focus: Révision des leçons 1 à 7
+    isReview: true
+    research: niveaux/6k/6k-u3/recherche/6k-u3-l8.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Kamae
+          kanji: 構え
+          fr: garde ; aussi l'état de vigilance avant l'engagement
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Hanmi
+          kanji: 半身
+          fr: position asymétrique, une jambe en avant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Ai hanmi
+          kanji: 相半身
+          fr: tori et uke ont le même pied devant
+          illustration:
+            image: scenes/ai-hanmi
+            emoji: 🧍
+            alt: Deux partenaires face à face en garde, tous deux pied droit devant, à distance de garde ; les pieds sont visibles.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Seiza
+          kanji: 正座
+          fr: à genoux, assis sur les talons
+          illustration:
+            image: scenes/seiza
+            emoji: 🧎
+            alt: Un pratiquant assis sur ses talons, dos droit, mains posées sur les cuisses, vu de profil.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Ma ai
+          kanji: 間合い
+          fr: distance et rythme entre les partenaires
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Tegatana
+          kanji: 手刀
+          fr: tranchant de la main, « main-sabre »
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Zanshin
+          kanji: 残心
+          fr: vigilance permanente, avant, pendant et après la technique
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "9"
+            consulte: 2026-10-19
+      note:
+        titre: Révision
+        texte: Kamae et shisei, hanmi à droite et à gauche, ai hanmi et gyaku hanmi, seiza et kiza, ma ai, tegatana, zanshin et metsuke.
+    exercises:
+      - id: ex-6k-u3-l8-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Ai hanmi »"
+        jpText: Ai hanmi
+        options:
+          - id: o1
+            text: Gyaku hanmi
+            illustration:
+              image: scenes/gyaku-hanmi
+              emoji: 🧍
+              alt: Deux partenaires face à face, pieds avant opposés.
+          - id: o2
+            text: Shikko
+            illustration:
+              image: scenes/shikko
+              emoji: 🧎
+              alt: Un pratiquant se déplace à genoux.
+          - id: o3
+            text: Ai hanmi
+            illustration:
+              image: scenes/ai-hanmi
+              emoji: 🧍
+              alt: Deux partenaires face à face, tous deux pied droit devant.
+        correctAnswer: Ai hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-2
+        type: tile_build
+        prompt: Composez le nom de la garde.
+        frText: garde, pied gauche devant
+        wordBank:
+          - migi
+          - hanmi
+          - hidari
+          - kamae
+          - ai
+        correctAnswer:
+          - hidari
+          - hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-3
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: zanshin
+            fr: vigilance
+          - jp: metsuke
+            fr: regard
+          - jp: tegatana
+            fr: main-sabre
+          - jp: ma ai
+            fr: distance
+        correctAnswer: pairs
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: 8-9
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-4
+        type: technique_decoder
+        prompt: Dans « gyaku hanmi katate dori », quelle partie dit que les pieds avant sont opposés ?
+        jpText: Gyaku hanmi katate dori tenchi nage
+        decomposition:
+          attaque: gyaku hanmi katate dori
+          technique: tenchi nage
+        options:
+          - id: o1
+            text: katate dori
+          - id: o2
+            text: dori
+          - id: o3
+            text: gyaku hanmi
+        correctAnswer: gyaku hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-5
+        type: scenario
+        prompt: Quelle est la garde ?
+        frText: Tori a le pied gauche devant, uke a le pied droit devant, face à face.
+        options:
+          - id: o1
+            text: seiza
+          - id: o2
+            text: gyaku hanmi
+          - id: o3
+            text: ai hanmi
+        correctAnswer: gyaku hanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-6
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Kiza est la position de départ du shikko.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: かまえ
+        correctAnswer: kamae
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u3-l8-8
+        type: meaning_choice
+        prompt: Que signifie « shisei » ?
+        jpText: Shisei
+        options:
+          - id: o1
+            text: la distance
+          - id: o2
+            text: la posture, naturelle et verticale
+          - id: o3
+            text: la vigilance
+        correctAnswer: la posture, naturelle et verticale
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19

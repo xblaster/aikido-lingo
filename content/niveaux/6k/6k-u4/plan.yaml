@@ -1,0 +1,105 @@
+# Plan de l’unité 6k-u4 (types par leçon, dans l’ordre des exercices).
+unit: 6k-u4
+level: 6K
+theme: Se déplacer
+referentiel:
+  fichier: content/referentiel/6k.yaml
+  section: themes[3]
+  sources:
+    - BUDOKAN-II
+    - BUDOKAN-VII
+    - CSDGE-L2
+    - FLAM-KYU-2011
+    - FFAAA-GUIDE
+    - NWU-GLOSS
+adaptation: Aucune.
+lessons:
+  - id: 6k-u4-l1
+    theme: Okuri ashi
+    types:
+      - meaning_choice
+      - order_steps
+      - kanji_choice
+      - term_choice
+      - true_false
+      - listen_choose
+      - missing_word
+      - typed_term
+  - id: 6k-u4-l2
+    theme: Ayumi ashi
+    types:
+      - meaning_choice
+      - scenario
+      - true_false
+      - match_pairs
+      - kanji_choice
+      - listen_type
+      - tile_build
+      - missing_word
+  - id: 6k-u4-l3
+    theme: Tenkai ashi
+    types:
+      - meaning_choice
+      - true_false
+      - kanji_choice
+      - term_choice
+      - match_pairs
+      - scenario
+      - missing_word
+      - typed_term
+  - id: 6k-u4-l4
+    theme: Tenkan ashi et tenkan
+    types:
+      - image_choice
+      - meaning_choice
+      - true_false
+      - kanji_choice
+      - listen_choose
+      - order_steps
+      - match_pairs_audio
+      - typed_term
+  - id: 6k-u4-l5
+    theme: Irimi et tenkan
+    types:
+      - meaning_choice
+      - kanji_choice
+      - true_false
+      - image_choice
+      - technique_decoder
+      - term_choice
+      - listen_type
+      - match_pairs
+  - id: 6k-u4-l6
+    theme: Shikko
+    types:
+      - image_choice
+      - meaning_choice
+      - kanji_choice
+      - true_false
+      - scenario
+      - listen_choose
+      - missing_word
+      - typed_term
+  - id: 6k-u4-l7
+    theme: Tai sabaki sur katate dori
+    types:
+      - technique_decoder
+      - meaning_choice
+      - image_choice
+      - true_false
+      - tile_build
+      - story
+      - listen_type
+      - match_pairs
+  - id: 6k-u4-l8
+    theme: "Révision : se déplacer"
+    isReview: true
+    types:
+      - match_pairs
+      - scenario
+      - technique_decoder
+      - order_steps
+      - true_false
+      - image_choice
+      - listen_choose
+      - typed_term

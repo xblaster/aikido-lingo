@@ -1,0 +1,153 @@
+# Fixture technique : une leçon avec un exercice de chacun des 16 types (docs/contrat.md).
+# Sert aux tests du moteur et à /demo?fixture=1. Contenu volontairement simple ; ce n'est PAS du
+# contenu pédagogique relu (celui-ci est dans content/_exemples/demo-types.yaml, agent contenu).
+id: fixture-types
+title: "Fixture : les 16 types"
+subtitle: "Keiko"
+description: "Un exercice de chaque type, pour tester le moteur."
+icon: Sparkles
+xpReward: 0
+focus: "Test du moteur d'exercices"
+isReview: false
+intro:
+  termes:
+    - { jp: "Dojo", kanji: "道場", fr: "salle d'entraînement" }
+    - { jp: "Rei", kanji: "礼", fr: "salut" }
+    - { jp: "Seiza", fr: "assis à genoux" }
+  note: { titre: "Fixture", texte: "Leçon de test du moteur d'exercices." }
+  points: ["Attaque, puis technique, puis omote/ura."]
+exercises:
+  - id: fx-meaning-choice
+    type: meaning_choice
+    prompt: "Que signifie ce terme ?"
+    jpText: "Seiza"
+    audioText: "せいざ"
+    correctAnswer: "assis à genoux"
+    options: [{ id: o1, text: "assis à genoux" }, { id: o2, text: "debout" }, { id: o3, text: "en marchant" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-term-choice
+    type: term_choice
+    prompt: "Quel terme désigne la salle d'entraînement ?"
+    frText: "la salle d'entraînement"
+    correctAnswer: "Dojo"
+    options: [{ id: o1, text: "Dojo" }, { id: o2, text: "Tatami" }, { id: o3, text: "Obi" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-kanji-choice
+    type: kanji_choice
+    prompt: "Comment se lit ce mot ?"
+    kanji: "礼"
+    correctAnswer: "rei"
+    options: [{ id: o1, text: "rei", translation: "salut" }, { id: o2, text: "do", translation: "voie" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-image-choice
+    type: image_choice
+    prompt: "Choisissez l'illustration : « Bokken »"
+    jpText: "Bokken"
+    correctAnswer: "Bokken"
+    options:
+      - { id: o1, text: "Bokken", illustration: { image: scenes/bokken, emoji: "🗡️", alt: "un sabre de bois" } }
+      - { id: o2, text: "Jo", illustration: { image: scenes/jo, emoji: "🦯", alt: "un bâton droit" } }
+      - { id: o3, text: "Obi", illustration: { image: scenes/obi, emoji: "🎗️", alt: "une ceinture" } }
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-match-pairs
+    type: match_pairs
+    prompt: "Associez."
+    correctAnswer: pairs
+    pairs: [{ jp: "Hidari", fr: "gauche" }, { jp: "Migi", fr: "droite" }, { jp: "Mae", fr: "devant" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-match-pairs-audio
+    type: match_pairs_audio
+    prompt: "Écoutez et associez."
+    correctAnswer: pairs
+    pairs: [{ jp: "Ichi", fr: "un" }, { jp: "Ni", fr: "deux" }, { jp: "San", fr: "trois" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-listen-choose
+    type: listen_choose
+    prompt: "Qu'entendez-vous ?"
+    audioText: "かたてどり"
+    correctAnswer: "Katate-dori"
+    options: [{ id: o1, text: "Katate-dori" }, { id: o2, text: "Kata-dori" }, { id: o3, text: "Ryote-dori" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-listen-type
+    type: listen_type
+    prompt: "Écrivez ce que vous entendez (romaji)."
+    audioText: "れい"
+    correctAnswer: "rei"
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-typed-term
+    type: typed_term
+    prompt: "Écrivez le terme japonais."
+    frText: "le lieu de pratique"
+    correctAnswer: "dōjō"
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-tile-build
+    type: tile_build
+    prompt: "Composez l'appel."
+    frText: "Saisie d'un poignet, première immobilisation, forme devant"
+    correctAnswer: ["katate-dori", "ikkyo", "omote"]
+    wordBank: ["ikkyo", "omote", "katate-dori", "ura", "nikyo"]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-missing-word
+    type: missing_word
+    prompt: "Complétez."
+    frText: "On dit « Onegai ___ » avant de travailler."
+    correctAnswer: "shimasu"
+    options: [{ id: o1, text: "shimasu" }, { id: o2, text: "gozaimasu" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-order-steps
+    type: order_steps
+    prompt: "Remettez dans l'ordre."
+    steps: ["Debout", "Un genou au sol", "Les deux genoux", "Assis sur les talons"]
+    correctAnswer: steps
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-true-false
+    type: true_false
+    prompt: "Vrai ou faux ?"
+    statement: "Uke est le partenaire qui reçoit la technique."
+    correctAnswer: "vrai"
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-scenario
+    type: scenario
+    prompt: "Que répondez-vous ?"
+    dialogue:
+      - { speaker: "Partenaire", text: "Onegaishimasu." }
+      - { speaker: "Vous", text: "", missing: true }
+    correctAnswer: "Onegaishimasu."
+    options: [{ id: o1, text: "Onegaishimasu." }, { id: o2, text: "Sayonara." }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-technique-decoder
+    type: technique_decoder
+    prompt: "Quelle est la technique dans cet appel ?"
+    jpText: "Shomen-uchi irimi-nage"
+    decomposition: { attaque: "shomen-uchi", technique: "irimi-nage" }
+    correctAnswer: "irimi-nage"
+    options: [{ id: o1, text: "shomen-uchi" }, { id: o2, text: "irimi-nage" }, { id: o3, text: "omote" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]
+
+  - id: fx-story
+    type: story
+    prompt: "Lisez le récit."
+    correctAnswer: story
+    dialogue:
+      - { speaker: "Narrateur", text: "Tom entre au dojo et salue." }
+      - { speaker: "Enseignant", text: "Seiza !" }
+    storyQuestions:
+      - afterLine: 1
+        prompt: "Que demande l'enseignant ?"
+        correctAnswer: "s'asseoir à genoux"
+        options: [{ id: o1, text: "s'asseoir à genoux" }, { id: o2, text: "courir" }]
+    sources: [{ type: relecture, ref: "fixture technique", consulte: "2026-10-19" }]

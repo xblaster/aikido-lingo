@@ -1,0 +1,1561 @@
+# Lexique d'Aikido Lingo (dictionnaire de l'app). Généré le 2026-10-19 à partir de
+# content/referentiel/terminologie.yaml (mêmes ids, romaji, kanji, sens) ; codes de source : referentiel/sources.md.
+# Romaji : Hepburn sans macron, mots séparés par des espaces (convention de terminologie.yaml).
+# Kanji absent = non trouvé dans une source consultée (ne pas l'inventer).
+# Entrées au-delà du 5e kyu conservées telles quelles : statut « à compléter » (non relues pour le parcours).
+- id: kogekiho
+  romaji: kogekiho
+  sens: formes d'attaque (terme utilisé par la nomenclature CSDGE)
+  categorie: attaque
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: katate-dori
+  romaji: katate dori
+  kanji: 片手取
+  sens: saisie d'un poignet par une main
+  categorie: attaque
+  note: Le Budokan écrit 片手取り. Dans la nomenclature CSDGE, « katate dori » seul désigne la saisie en gyaku hanmi.
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-II ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: ai-hanmi-katate-dori
+  romaji: ai hanmi katate dori
+  kanji: 相半身片手取り
+  sens: saisie du poignet en garde identique (main droite sur main droite ou gauche sur gauche)
+  categorie: attaque
+  note: Composition de 相半身 et 片手取り (BUDOKAN-II/-VII). CSDGE écrit « aihanmi katate dori ».
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 7 ; BUDOKAN-VII
+    consulte: 2026-10-19
+- id: gyaku-hanmi-katate-dori
+  romaji: gyaku hanmi katate dori
+  kanji: 逆半身片手取り
+  sens: saisie du poignet en garde inversée (main droite sur poignet gauche, ou l'inverse)
+  categorie: attaque
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II (逆半身片手取り四方投げ) ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: ryote-dori
+  romaji: ryote dori
+  kanji: 両手取
+  sens: saisie des deux poignets par les deux mains
+  categorie: attaque
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 7
+    consulte: 2026-10-19
+- id: morote-dori
+  romaji: morote dori
+  kanji: 諸手取
+  sens: saisie d'un seul avant-bras par les deux mains
+  categorie: attaque
+  note: "Synonyme CSDGE : katate ryote dori. L'Aikikai précise « two hands holding one hand »."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; AIK-EXAM-EN ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: katate-ryote-dori
+  romaji: katate ryote dori
+  sens: un poignet saisi par les deux mains (= morote dori)
+  categorie: attaque
+  note: Kanji de la forme « katate ryote dori » non vérifié ; voir morote dori.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 7
+    consulte: 2026-10-19
+- id: kata-dori
+  romaji: kata dori
+  kanji: 肩取
+  sens: saisie à l'épaule (du keikogi, au niveau de l'épaule)
+  categorie: attaque
+  source:
+    type: aikikai
+    ref: "AIK-EXAM-JA ; CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 22 (KATA : épaules)"
+    consulte: 2026-10-19
+- id: kata-dori-men-uchi
+  romaji: kata dori men uchi
+  sens: saisie à l'épaule suivie d'une frappe de face à la tête
+  categorie: attaque
+  note: Kanji non vérifié. CSDGE écrit « kata dori men uchi » ; FFAB « kata dori menuchi ».
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAB-KYU
+    consulte: 2026-10-19
+- id: muna-dori
+  romaji: muna dori
+  sens: saisie du revers du keikogi à la poitrine
+  categorie: attaque
+  note: "Kanji de la forme complète non vérifié (胸 « poitrine » apparaît dans AIK-EXAM-JA). Le glossaire FFAAA écrit « mune dori : saisie du revers »."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: ryokata-dori
+  romaji: ryokata dori
+  sens: saisie des deux épaules
+  categorie: attaque
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 7
+    consulte: 2026-10-19
+- id: shomen-uchi
+  romaji: shomen uchi
+  kanji: 正面打
+  sens: frappe verticale de face, au sommet de la tête, avec le tranchant de la main
+  categorie: attaque
+  note: "Budokan : 正面打ち."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-II ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: yokomen-uchi
+  romaji: yokomen uchi
+  kanji: 横面打
+  sens: frappe oblique sur le côté de la tête
+  categorie: attaque
+  note: "NWU : 横面打ち."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; NWU-GLOSS ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: tsuki
+  romaji: tsuki
+  kanji: 突き
+  sens: coup direct de face (poing ou arme)
+  categorie: attaque
+  note: AIK-EXAM-JA écrit 突.
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: chudan-tsuki
+  romaji: chudan tsuki
+  kanji: 中段突き
+  sens: coup de poing direct au niveau moyen (ventre)
+  categorie: attaque
+  note: "Composition : 中段 (NWU, « chudan no kamae ») + 突き."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: jodan-tsuki
+  romaji: jodan tsuki
+  kanji: 上段突き
+  sens: coup de poing direct au niveau haut (visage)
+  categorie: attaque
+  note: "Composition : 上段 (NWU, « jodan no kamae ») + 突き. FFAAA : JODAN = niveau haut."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; NWU-GLOSS ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: mae-geri
+  romaji: mae geri
+  sens: coup de pied direct de face
+  categorie: attaque
+  note: Kanji non vérifié. Figure au 1er kyu FFAB et FLAM ; absent de la liste CSDGE des formes d'attaque.
+  source:
+    type: federation
+    ref: FFAAA-GUIDE p. 23 ; FFAB-KYU
+    consulte: 2026-10-19
+- id: ushiro-ryote-dori
+  romaji: ushiro ryote dori
+  kanji: 後両手取
+  sens: saisie des deux poignets par l'arrière
+  categorie: attaque
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: ushiro-ryokata-dori
+  romaji: ushiro ryokata dori
+  sens: saisie des deux épaules par l'arrière
+  categorie: attaque
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: ushiro-eri-dori
+  romaji: ushiro eri dori
+  sens: saisie du col par l'arrière
+  categorie: attaque
+  note: Kanji non vérifié. L'Aikikai cite les saisies au col (« collar ») au shodan.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; AIK-EXAM-EN
+    consulte: 2026-10-19
+- id: ushiro-ryohiji-dori
+  romaji: ushiro ryohiji dori
+  sens: saisie des deux coudes par l'arrière
+  categorie: attaque
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 7
+    consulte: 2026-10-19
+- id: ushiro-katate-dori-kubi-shime
+  romaji: ushiro katate dori kubi shime
+  sens: par l'arrière, saisie d'un poignet et étranglement du cou avec l'autre bras
+  categorie: attaque
+  note: "Kanji non vérifié. FFAB et FLAM écrivent « katate dori kubishime ». FFAAA : KUBI = cou."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18 ; FFAAA-GUIDE p. 8, p. 22
+    consulte: 2026-10-19
+- id: futari-dori
+  romaji: futari dori
+  sens: saisie simultanée par deux partenaires
+  categorie: attaque
+  note: Kanji de « futari dori » non vérifié ; voir futari gake (二人掛).
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: futari-gake
+  romaji: futari gake
+  kanji: 二人掛
+  sens: travail contre deux partenaires
+  categorie: attaque
+  note: "Budokan : 二人掛け. CSDGE emploie aussi « niningake »."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-VII ; CSDGE-L2 p. 10
+    consulte: 2026-10-19
+- id: taninzu-gake
+  romaji: taninzu gake
+  kanji: 多人数掛
+  sens: travail contre plusieurs partenaires
+  categorie: attaque
+  note: "CSDGE : « Taninzu gake » ; « saningake » = trois partenaires."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 18
+    consulte: 2026-10-19
+- id: atemi
+  romaji: atemi
+  kanji: 当身
+  sens: coup porté au corps ; pour tori, moyen de déséquilibrer ou de provoquer une réaction, pas une fin en soi
+  categorie: attaque
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI ; CSDGE-L2 p. 9
+    consulte: 2026-10-19
+- id: ikkyo
+  romaji: ikkyo
+  kanji: 一教
+  sens: "« premier principe » : contrôle du bras par le coude et le poignet, amenant uke au sol face contre terre"
+  categorie: technique
+  note: Le Budokan écrit 第一教 (dai ikkyo). Famille katame waza (CSDGE).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-II ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: nikyo
+  romaji: nikyo
+  kanji: 二教
+  sens: "« deuxième principe » : immobilisation par torsion du poignet"
+  categorie: technique
+  note: FFAB écrit parfois « nikkyo ».
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: sankyo
+  romaji: sankyo
+  kanji: 三教
+  sens: "« troisième principe » : immobilisation par torsion du poignet et de l'avant-bras"
+  categorie: technique
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: yonkyo
+  romaji: yonkyo
+  kanji: 四教
+  sens: "« quatrième principe » : immobilisation par pression sur l'avant-bras"
+  categorie: technique
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: gokyo
+  romaji: gokyo
+  kanji: 五教
+  sens: "« cinquième principe » : immobilisation du bras, notamment contre une attaque armée"
+  categorie: technique
+  note: Au tanto dori, l'exemple CSDGE de sandan/yondan demande gokyo sur shomen uchi et tsuki.
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 19, p. 30
+    consulte: 2026-10-19
+- id: shiho-nage
+  romaji: shiho nage
+  kanji: 四方投げ
+  sens: « projection dans les quatre directions »
+  categorie: technique
+  note: FFAAA écrit « shihoo nage » ; CSDGE « shihonage ».
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-II ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: irimi-nage
+  romaji: irimi nage
+  kanji: 入身投げ
+  sens: projection en entrant (irimi) sur le côté de uke
+  categorie: technique
+  note: Forme « sokumen » citée par CSDGE.
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-II ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: kote-gaeshi
+  romaji: kote gaeshi
+  kanji: 小手返し
+  sens: "projection par retournement du poignet (kote : dos de la main / poignet)"
+  categorie: technique
+  note: Classée à la fois en nage waza et en nage katame waza par CSDGE.
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; BUDOKAN-VII (小手) ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: kaiten-nage
+  romaji: kaiten nage
+  kanji: 回転投げ
+  sens: projection en rotation ; formes uchi (intérieure) et soto (extérieure)
+  categorie: technique
+  note: uchi 内 / soto 外 (NWU).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; NWU-GLOSS ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: tenchi-nage
+  romaji: tenchi nage
+  kanji: 天地投げ
+  sens: projection « ciel et terre » (une main monte, l'autre descend)
+  categorie: technique
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: koshi-nage
+  romaji: koshi nage
+  kanji: 腰投げ
+  sens: projection de hanche
+  categorie: technique
+  note: "FFAAA : « projection de hanches »."
+  source:
+    type: web
+    ref: JAWIKI ; CSDGE-L2 p. 19 ; FFAAA-GUIDE p. 12
+    consulte: 2026-10-19
+- id: juji-garami
+  romaji: juji garami
+  sens: projection en croisant les bras de uke
+  categorie: technique
+  note: Kanji non vérifié. FFAB écrit « jugi garami » ; CSDGE « jujigarami ».
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19 ; FFAAA-GUIDE p. 12
+    consulte: 2026-10-19
+- id: ude-kime-nage
+  romaji: ude kime nage
+  sens: projection par contrôle du bras tendu (coude)
+  categorie: technique
+  note: "Kanji non vérifié. CSDGE : « udekimenage »."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19 ; FFAAA-GUIDE p. 12
+    consulte: 2026-10-19
+- id: sumi-otoshi
+  romaji: sumi otoshi
+  kanji: 隅落し
+  sens: « chute dans l'angle » ; projection sur le côté en balayant la jambe (définition CSDGE)
+  categorie: technique
+  source:
+    type: web
+    ref: JAWIKI ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: kokyu-nage
+  romaji: kokyu nage
+  kanji: 呼吸投げ
+  sens: famille de projections fondées sur le rythme, sans contrainte sur les articulations
+  categorie: technique
+  note: Appellation générique (FFAAA).
+  source:
+    type: web
+    ref: JAWIKI ; FFAAA-GUIDE p. 12 ; CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: kokyu-ho
+  romaji: kokyu ho
+  kanji: 呼吸法
+  sens: exercice de respiration/coordination, souvent pratiqué assis (suwari waza) en fin de cours
+  categorie: technique
+  note: "FFAAA écrit « kokyu hoo ». Aikikai : 呼吸法 en 座技 à tous les kyu."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; FFAAA-GUIDE p. 22 ; JAWIKI
+    consulte: 2026-10-19
+- id: hiji-kime-osae
+  romaji: hiji kime osae
+  sens: immobilisation par contrôle du coude
+  categorie: technique
+  note: "Kanji non vérifié. CSDGE : « hijikimeosae » (katame waza)."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19
+    consulte: 2026-10-19
+- id: ude-garami
+  romaji: ude garami
+  sens: immobilisation par enroulement du bras
+  categorie: technique
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19 ; FFAAA-GUIDE p. 11
+    consulte: 2026-10-19
+- id: aiki-otoshi
+  romaji: aiki otoshi
+  sens: projection en soulevant les jambes de uke par l'arrière
+  categorie: technique
+  note: "Kanji non vérifié. Sens descriptif non tiré d'une définition officielle : à faire relire."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 25 ; FFAAA-GUIDE p. 12
+    consulte: 2026-10-19
+- id: ushiro-kiri-otoshi
+  romaji: ushiro kiri otoshi
+  sens: projection en « coupant » vers l'arrière
+  categorie: technique
+  note: "Kanji non vérifié. FFAAA : KIRI = coupe."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19 ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: sokumen-irimi-nage
+  romaji: sokumen irimi nage
+  kanji: 側面入身投げ
+  sens: irimi nage par le côté (forme latérale)
+  categorie: technique
+  note: "Composition : 側面 (NWU) + 入身投げ. CSDGE l'assimile à « naname kokyunage » sur ryokata dori."
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 19, p. 23 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: omote-waza
+  romaji: omote waza / ura waza
+  kanji: 表技・裏技
+  kana: おもてわざ・うらわざ
+  sens: même technique exécutée en entrant côté ventre de uke (omote) ou en passant côté dos (ura)
+  categorie: technique
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII
+    consulte: 2026-10-19
+- id: nage-waza
+  romaji: nage waza
+  sens: techniques de projection
+  categorie: technique
+  note: Kanji de l'expression non vérifié (投げ et 技 attestés séparément par NWU).
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: katame-waza
+  romaji: katame waza
+  sens: techniques de contrôle ou d'immobilisation
+  categorie: technique
+  note: Kanji non vérifié. FFAAA emploie aussi « osae waza ».
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 17 ; FFAAA-GUIDE p. 9
+    consulte: 2026-10-19
+- id: nage-katame-waza
+  romaji: nage katame waza
+  sens: projection suivie d'un contrôle
+  categorie: technique
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: jiyu-waza
+  romaji: jiyu waza
+  kanji: 自由技
+  sens: techniques libres sur une attaque donnée
+  categorie: technique
+  note: CSDGE écrit « jyuwaza », FFAAA « ju waza ». Mode d'interrogation utilisable à tout moment (CSDGE).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 20
+    consulte: 2026-10-19
+- id: henka-waza
+  romaji: henka waza
+  kanji: 変化技
+  sens: variations et enchaînements à partir d'une technique de base
+  categorie: technique
+  source:
+    type: web
+    ref: NWU-GLOSS ; CSDGE-L2 p. 13 ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: kaeshi-waza
+  romaji: kaeshi waza
+  kanji: 返し技
+  sens: contre-techniques (uke retourne la technique de tori)
+  categorie: technique
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: suwari-waza
+  romaji: suwari waza
+  kanji: 座技
+  sens: techniques où les deux partenaires sont à genoux (à partir de seiza)
+  categorie: position
+  note: "L'Aikikai lit aussi « zagi ». CSDGE : « suwariwaza »."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; AIK-EXAM-EN ; CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: hanmi-handachi-waza
+  romaji: hanmi handachi waza
+  kanji: 半身半立
+  sens: tori à genoux, uke debout
+  categorie: position
+  note: "NWU : 半身半立技 (hanmi hantachi waza)."
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; NWU-GLOSS ; CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: tachi-waza
+  romaji: tachi waza
+  kanji: 立技
+  sens: techniques debout
+  categorie: position
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: ushiro-waza
+  romaji: ushiro waza
+  sens: techniques sur attaques par l'arrière
+  categorie: position
+  note: ushiro 後ろ (NWU) ; kanji de l'expression complète non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 10 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: seiza
+  romaji: seiza
+  kanji: 正座
+  sens: position assise à genoux, sur les talons ; posture de base du salut assis
+  categorie: position
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS ; CSDGE-L2 p. 17
+    consulte: 2026-10-19
+- id: kiza
+  romaji: kiza
+  kanji: 跪座
+  sens: seiza avec les orteils retournés (pointe des pieds au sol), position de départ du shikko
+  categorie: position
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II
+    consulte: 2026-10-19
+- id: shikko
+  romaji: shikko
+  kanji: 膝行
+  sens: déplacement à genoux
+  categorie: position
+  note: "Forme longue : shikkō."
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS ; FLAM-KYU-2011 p. 4
+    consulte: 2026-10-19
+- id: kamae
+  romaji: kamae
+  kanji: 構え
+  sens: garde ; pour la CSDGE aussi l'état de vigilance qui précède l'engagement
+  categorie: position
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS ; CSDGE-L2 p. 8
+    consulte: 2026-10-19
+- id: hanmi
+  romaji: hanmi
+  kanji: 半身
+  kana: はんみ
+  sens: "position asymétrique, une jambe en avant (migi hanmi : pied droit devant ; hidari hanmi : pied gauche devant)"
+  categorie: position
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; BUDOKAN-VII ; CSDGE-L2 p. 8
+    consulte: 2026-10-19
+- id: ai-hanmi
+  romaji: ai hanmi
+  kanji: 相半身
+  kana: あいはんみ
+  sens: tori et uke ont le même pied en avant
+  categorie: position
+  note: NWU écrit 合半身.
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: gyaku-hanmi
+  romaji: gyaku hanmi
+  kanji: 逆半身
+  kana: ぎゃくはんみ
+  sens: tori et uke ont des pieds opposés en avant
+  categorie: position
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: omote
+  romaji: omote
+  kanji: 表
+  sens: l'endroit, la face visible ; forme qui entre devant uke (plutôt logique de pression, CSDGE)
+  categorie: concept
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 8-9 ; BUDOKAN-VII ; FFAAA-GUIDE p. 13
+    consulte: 2026-10-19
+- id: ura
+  romaji: ura
+  kanji: 裏
+  sens: l'envers, la face cachée ; forme qui passe derrière uke (plutôt logique de contournement, CSDGE)
+  categorie: concept
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 8-9 ; BUDOKAN-VII ; FFAAA-GUIDE p. 13
+    consulte: 2026-10-19
+- id: irimi
+  romaji: irimi
+  kanji: 入身
+  sens: entrer, pénétrer dans la garde de uke ; élément fondamental du placement initial
+  categorie: concept
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 8 ; BUDOKAN-II ; NWU-GLOSS ; AIK-DOSHU-EN
+    consulte: 2026-10-19
+- id: tenkan
+  romaji: tenkan
+  kanji: 転換
+  sens: pivot qui efface le corps devant l'action de uke, sans changer de hanmi ; complément d'irimi
+  categorie: concept
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 8 ; BUDOKAN-II ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: tai-sabaki
+  romaji: tai sabaki
+  kanji: 体さばき
+  sens: déplacement du corps en réponse à l'attaque, qui crée l'ouverture et le déséquilibre
+  categorie: concept
+  note: Graphie du Budokan (体さばき). La graphie tout-kanji n'a été vue qu'avec une coquille (休捌き) dans NWU-GLOSS.
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; CSDGE-L2 p. 9
+    consulte: 2026-10-19
+- id: tai-no-henko
+  romaji: tai no henko
+  kanji: 体の変更
+  sens: exercice de base de rotation du corps sur saisie du poignet
+  categorie: concept
+  note: Aussi appelé tai no tenkan (体の転換).
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: okuri-ashi
+  romaji: okuri ashi
+  kanji: 送り足
+  kana: おくりあし
+  sens: "pas chassé : le pied avant avance, le pied arrière suit aussitôt"
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; BUDOKAN-VII
+    consulte: 2026-10-19
+- id: ayumi-ashi
+  romaji: ayumi ashi
+  kanji: 歩み足
+  kana: あゆみあし
+  sens: "pas marché : les pieds alternent et le hanmi change de côté"
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: tenkai-ashi
+  romaji: tenkai ashi
+  kanji: 転回足
+  kana: てんかいそく
+  sens: demi-tour sur place (180°) en changeant l'orientation du corps
+  categorie: concept
+  note: Le Budokan lit « tenkaisoku », NWU « tenkai ashi ».
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: tenkan-ashi
+  romaji: tenkan ashi
+  kanji: 転換足
+  kana: てんかんそく
+  sens: rotation du corps autour du pied avant
+  categorie: concept
+  note: Le Budokan lit « tenkansoku ».
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: ma-ai
+  romaji: ma ai
+  kanji: 間合い
+  sens: distance et rythme entre les partenaires (« espace-temps », CSDGE)
+  categorie: concept
+  source:
+    type: web
+    ref: NWU-GLOSS ; CSDGE-L2 p. 8 ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: metsuke
+  romaji: metsuke
+  sens: regard physique et mental, perception globale
+  categorie: concept
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 9
+    consulte: 2026-10-19
+- id: zanshin
+  romaji: zanshin
+  kanji: 残心
+  sens: vigilance permanente, avant, pendant et après la technique
+  categorie: concept
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 9 ; NWU-GLOSS ; BUDOKAN-II
+    consulte: 2026-10-19
+- id: kiai
+  romaji: kiai
+  kanji: 気合
+  sens: cri, souffle ou impulsion qui accompagne l'action
+  categorie: concept
+  note: "NWU : 氣合い (forme ancienne)."
+  source:
+    type: web
+    ref: JAWIKI ; FFAAA-GUIDE p. 22 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: ki
+  romaji: ki
+  kanji: 気
+  sens: énergie vitale, esprit
+  categorie: concept
+  note: Forme ancienne 氣 (NWU).
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 3, p. 22
+    consulte: 2026-10-19
+- id: kokyu
+  romaji: kokyu
+  kanji: 呼吸
+  sens: respiration ; fluidité du souffle et rythme de l'échange
+  categorie: concept
+  source:
+    type: web
+    ref: NWU-GLOSS ; CSDGE-L2 p. 8
+    consulte: 2026-10-19
+- id: kokyu-ryoku
+  romaji: kokyu ryoku
+  kanji: 呼吸力
+  kana: こきゅうりょく
+  sens: force produite par tout le corps ; coordination puissance, souffle et rythme
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; CSDGE-L2 p. 9
+    consulte: 2026-10-19
+- id: shisei
+  romaji: shisei
+  sens: posture, attitude naturelle et relâchée, verticale
+  categorie: concept
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 8
+    consulte: 2026-10-19
+- id: kimusubi
+  romaji: kimusubi
+  kanji: 気結び
+  sens: connexion mentale et physique entre les partenaires
+  categorie: concept
+  note: NWU écrit 氣結び (forme ancienne), transcrit ici en shinjitai.
+  source:
+    type: web
+    ref: NWU-GLOSS ; CSDGE-L2 p. 7
+    consulte: 2026-10-19
+- id: awase
+  romaji: awase
+  sens: harmonisation avec le mouvement du partenaire
+  categorie: concept
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 7
+    consulte: 2026-10-19
+- id: de-ai
+  romaji: de ai
+  sens: placement initial, prise de contact
+  categorie: concept
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 7
+    consulte: 2026-10-19
+- id: tegatana
+  romaji: tegatana
+  kanji: 手刀
+  sens: tranchant de la main (« main-sabre »)
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: uke
+  romaji: uke
+  kanji: 受け
+  kana: うけ
+  sens: celui qui attaque et reçoit la technique
+  categorie: concept
+  note: CSDGE écrit « Aïte/Uke ».
+  source:
+    type: aikikai
+    ref: AIK-WHAT-JA ; BUDOKAN-VII ; CSDGE-L2 p. 4
+    consulte: 2026-10-19
+- id: tori
+  romaji: tori
+  kanji: 取り
+  kana: とり
+  sens: celui qui exécute la technique (projette ou immobilise)
+  categorie: concept
+  note: Aussi appelé nage ou shite (FFAAA).
+  source:
+    type: aikikai
+    ref: AIK-WHAT-JA ; BUDOKAN-VII ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: nage
+  romaji: nage
+  kanji: 投げ
+  sens: projection ; par extension, celui qui projette
+  categorie: concept
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: aite
+  romaji: aite
+  sens: le partenaire (terme employé par la CSDGE à côté de uke)
+  categorie: concept
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 4
+    consulte: 2026-10-19
+- id: ukemi
+  romaji: ukemi
+  kanji: 受身
+  kana: うけみ
+  sens: art de chuter pour se protéger et se remettre vite en position
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-VII ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: mae-ukemi
+  romaji: mae ukemi
+  kanji: 前受身
+  sens: chute avant
+  categorie: concept
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: ushiro-ukemi
+  romaji: ushiro ukemi
+  kanji: 後ろ受身
+  sens: chute arrière
+  categorie: concept
+  note: "NWU : 後受身."
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: randori
+  romaji: randori
+  kanji: 乱取り
+  sens: travail libre et continu contre plusieurs partenaires (examens dan)
+  categorie: concept
+  source:
+    type: web
+    ref: NWU-GLOSS ; CSDGE-L2 p. 10 ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: rei
+  romaji: rei
+  kanji: 礼
+  sens: salut ; expression du respect envers le partenaire et le lieu
+  categorie: etiquette
+  source:
+    type: ouvrage
+    ref: BUDOKAN-I ; BUDOKAN-II ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: zarei
+  romaji: zarei
+  kanji: 座礼
+  sens: salut à genoux, depuis seiza
+  categorie: etiquette
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II ; NWU-GLOSS ; FFAAA-GUIDE p. 25
+    consulte: 2026-10-19
+- id: ritsurei
+  romaji: ritsurei
+  sens: salut debout
+  categorie: etiquette
+  note: Kanji non vérifié pour la lecture « ritsurei » ; NWU donne 立ち礼 lu « tachi rei ».
+  source:
+    type: federation
+    ref: FFAAA-GUIDE p. 23 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: reishiki
+  romaji: reishiki
+  sens: étiquette, règles de comportement au dojo
+  categorie: etiquette
+  note: Kanji non vérifié. Son respect est noté à l'examen (composante 2, CSDGE).
+  source:
+    type: federation
+    ref: FFAAA-GUIDE p. 23 ; CSDGE-L2 p. 4
+    consulte: 2026-10-19
+- id: reigisaho
+  romaji: reigisaho
+  sens: comportement général qui donne du sens au reishiki (respect du cadre, du partenaire, de soi)
+  categorie: etiquette
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 7, p. 9
+    consulte: 2026-10-19
+- id: reiho
+  romaji: reiho
+  kanji: 礼法
+  sens: manières de saluer et de se tenir
+  categorie: etiquette
+  note: Lecture « reiho » non donnée en kana par la source.
+  source:
+    type: ouvrage
+    ref: BUDOKAN-II
+    consulte: 2026-10-19
+- id: onegai-shimasu
+  romaji: onegai shimasu
+  kana: お願いします
+  sens: "« je vous en prie » : formule dite au salut du début du cours ou avant de pratiquer avec un partenaire"
+  categorie: etiquette
+  source:
+    type: ouvrage
+    ref: BUDOKAN-I ; FFAAA-GUIDE p. 17 ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: arigato-gozaimashita
+  romaji: arigato gozaimashita
+  kana: ありがとうございました
+  sens: "« merci » : formule de fin de cours"
+  categorie: etiquette
+  note: FFAAA écrit « arigatoo gozaïmashita » ; NWU « domo arigato gozaimashita ».
+  source:
+    type: ouvrage
+    ref: BUDOKAN-I ; FFAAA-GUIDE p. 17
+    consulte: 2026-10-19
+- id: dojo
+  romaji: dojo
+  kanji: 道場
+  sens: "« lieu de la voie » : salle où l'on pratique"
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA
+    consulte: 2026-10-19
+- id: kamiza
+  romaji: kamiza
+  kanji: 上座
+  sens: place d'honneur du dojo, souvent avec le portrait du fondateur, vers laquelle on salue
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 22 ; FLAM-ETIQ-2011
+    consulte: 2026-10-19
+- id: shimoza
+  romaji: shimoza
+  kanji: 下座
+  sens: côté du dojo opposé au kamiza, où se placent les élèves
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS
+    consulte: 2026-10-19
+- id: shomen
+  romaji: shomen
+  kanji: 正面
+  sens: "« face avant » : le devant (de la tête, ou du dojo, direction du salut)"
+  categorie: etiquette
+  note: La FFAAA demande de saluer « en direction du shomen et du portrait du fondateur ».
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 16
+    consulte: 2026-10-19
+- id: keiko
+  romaji: keiko
+  kanji: 稽古
+  sens: pratique, entraînement
+  categorie: etiquette
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; NWU-GLOSS ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: sensei
+  romaji: sensei
+  kanji: 先生
+  sens: enseignant, professeur
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: sempai
+  romaji: sempai
+  kanji: 先輩
+  sens: pratiquant plus ancien que soi
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS
+    consulte: 2026-10-19
+- id: kohai
+  romaji: kohai
+  kanji: 後輩
+  sens: pratiquant plus récent que soi
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS
+    consulte: 2026-10-19
+- id: shihan
+  romaji: shihan
+  kanji: 師範
+  sens: maître, enseignant de très haut grade
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: mokuso
+  romaji: mokuso
+  kanji: 黙想
+  sens: court moment de méditation en début ou fin de cours
+  categorie: etiquette
+  source:
+    type: web
+    ref: NWU-GLOSS
+    consulte: 2026-10-19
+- id: buki-waza
+  romaji: buki waza
+  sens: travail avec les armes
+  categorie: arme
+  note: Kanji non vérifié. FFAAA écrit « bukki waza ».
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 18, p. 20 ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: bokken
+  romaji: bokken
+  kanji: 木剣
+  sens: sabre de bois
+  categorie: arme
+  note: "Synonyme : bokuto 木刀 (NWU)."
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: ken
+  romaji: ken
+  kanji: 剣
+  sens: sabre
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: tachi
+  romaji: tachi
+  kanji: 太刀
+  sens: sabre long
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA (太刀取)
+    consulte: 2026-10-19
+- id: jo
+  romaji: jo
+  kanji: 杖
+  sens: bâton de bois
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: tanto
+  romaji: tanto
+  kanji: 短刀
+  sens: couteau, poignard (en bois ou caoutchouc en pratique)
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: suburi
+  romaji: suburi
+  kanji: 素振り
+  sens: exercice individuel de coupes ou de frappes répétées au bokken ou au jo
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 23 ; FLAM-CFG-2015 p. 18
+    consulte: 2026-10-19
+- id: kumitachi
+  romaji: kumitachi
+  kanji: 組太刀
+  sens: travail du sabre à deux
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: kumijo
+  romaji: kumijo
+  kanji: 組杖
+  sens: travail du bâton à deux
+  categorie: arme
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 22
+    consulte: 2026-10-19
+- id: tanto-dori
+  romaji: tanto dori
+  kanji: 短刀取
+  sens: techniques à mains nues contre un couteau
+  categorie: arme
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 10
+    consulte: 2026-10-19
+- id: jo-dori
+  romaji: jo dori
+  kanji: 杖取
+  sens: techniques à mains nues contre une attaque au bâton
+  categorie: arme
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 10
+    consulte: 2026-10-19
+- id: tachi-dori
+  romaji: tachi dori
+  kanji: 太刀取
+  sens: techniques à mains nues contre un sabre (de bois)
+  categorie: arme
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 12
+    consulte: 2026-10-19
+- id: jo-nage-waza
+  romaji: jo nage waza
+  sens: tori tient le jo et projette uke qui tente de s'en saisir
+  categorie: arme
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 10 ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: ken-tai-ken
+  romaji: ken tai ken
+  sens: les deux partenaires armés d'un sabre de bois
+  categorie: arme
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 12 ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: jo-tai-jo
+  romaji: jo tai jo
+  sens: les deux partenaires armés d'un bâton
+  categorie: arme
+  note: Kanji non vérifié.
+  source:
+    type: officiel
+    ref: CSDGE-L2 p. 12 ; FFAAA-GUIDE p. 15
+    consulte: 2026-10-19
+- id: keikogi
+  romaji: keikogi
+  kanji: 稽古着
+  sens: tenue d'entraînement (veste et pantalon)
+  categorie: tenue
+  note: Aussi dogi 道着 ou gi (NWU). FLAM écrit « keigogi ».
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: hakama
+  romaji: hakama
+  kanji: 袴
+  sens: pantalon large plissé porté par-dessus le keikogi
+  categorie: tenue
+  note: "Le moment où on le porte varie : souvent au dan, parfois dès un kyu fixé par l'enseignant (FFAAA-GRADES)."
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI ; FFAAA-GRADES
+    consulte: 2026-10-19
+- id: obi
+  romaji: obi
+  kanji: 帯
+  sens: ceinture
+  categorie: tenue
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: kuro-obi
+  romaji: kuro obi
+  kanji: 黒帯
+  sens: ceinture noire (titulaire d'un dan)
+  categorie: tenue
+  source:
+    type: web
+    ref: NWU-GLOSS ; JAWIKI
+    consulte: 2026-10-19
+- id: kyu
+  romaji: kyu
+  kanji: 級
+  sens: grade précédant les dan (on progresse du 6e au 1er kyu en France)
+  categorie: grade
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA ; FFAAA-GRADES
+    consulte: 2026-10-19
+- id: dan
+  romaji: dan
+  kanji: 段
+  sens: grade de ceinture noire
+  categorie: grade
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA
+    consulte: 2026-10-19
+- id: shodan
+  romaji: shodan
+  kanji: 初段
+  sens: 1er dan ; « sho » = le début (CSDGE)
+  categorie: grade
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; CSDGE-L2 p. 10
+    consulte: 2026-10-19
+- id: nidan
+  romaji: nidan
+  kanji: 弐段
+  sens: 2e dan
+  categorie: grade
+  note: Graphie du Hombu Dojo (chiffre « formel » 弐).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA
+    consulte: 2026-10-19
+- id: sandan
+  romaji: sandan
+  kanji: 参段
+  sens: 3e dan
+  categorie: grade
+  note: Graphie du Hombu Dojo (参).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA
+    consulte: 2026-10-19
+- id: yondan
+  romaji: yondan
+  kanji: 四段
+  sens: 4e dan
+  categorie: grade
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA
+    consulte: 2026-10-19
+- id: yudansha
+  romaji: yudansha
+  kanji: 有段者
+  sens: pratiquant titulaire d'un dan
+  categorie: grade
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 25
+    consulte: 2026-10-19
+- id: aikido
+  romaji: aikido
+  kanji: 合気道
+  sens: "« voie de l'harmonie des énergies » (ai : union ; ki : énergie ; do : voie)"
+  categorie: histoire
+  note: Forme ancienne 合氣道 (NWU). Nom adopté en 1942 (Aikikai).
+  source:
+    type: aikikai
+    ref: AIK-WHAT-JA ; FFAAA-GUIDE p. 3 ; AIK-HIST-EN
+    consulte: 2026-10-19
+- id: budo
+  romaji: budo
+  kanji: 武道
+  sens: "« voie martiale » : les arts martiaux japonais"
+  categorie: histoire
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-WHAT-JA
+    consulte: 2026-10-19
+- id: aikikai
+  romaji: Aikikai
+  kanji: 合気会
+  sens: fondation qui gère l'aïkido issu du fondateur et le Hombu Dojo
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; AIK-HIST-EN
+    consulte: 2026-10-19
+- id: hombu-dojo
+  romaji: Hombu Dojo
+  kanji: 本部道場
+  sens: dojo central de l'Aikikai à Tokyo (Wakamatsu-cho, Shinjuku)
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; AIK-HIST-EN
+    consulte: 2026-10-19
+- id: kobukan
+  romaji: Kobukan
+  kanji: 皇武館
+  sens: dojo fondé en 1931 à Tokyo, actuel Hombu Dojo
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: kaiso
+  romaji: kaiso
+  kanji: 開祖
+  sens: le fondateur (Ueshiba Morihei)
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-WHAT-JA ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: o-sensei
+  romaji: O sensei
+  kanji: 大先生
+  sens: "« grand maître » : surnom du fondateur"
+  categorie: histoire
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 23
+    consulte: 2026-10-19
+- id: doshu
+  romaji: Doshu
+  kanji: 道主
+  sens: "« maître de la voie » : chef de lignée de l'aïkido (Aikikai)"
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-DOSHU-JA ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: ueshiba-morihei
+  romaji: Ueshiba Morihei
+  kanji: 植芝盛平
+  kana: うえしば もりへい
+  sens: fondateur de l'aïkido (1883-1969)
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: ueshiba-kisshomaru
+  romaji: Ueshiba Kisshomaru
+  kanji: 植芝吉祥丸
+  kana: うえしば きっしょうまる
+  sens: fils du fondateur, 2e Doshu (1921-1999)
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: ueshiba-moriteru
+  romaji: Ueshiba Moriteru
+  kanji: 植芝守央
+  kana: うえしば もりてる
+  sens: petit-fils du fondateur, Doshu actuel (né en 1951, Doshu depuis 1999)
+  categorie: histoire
+  source:
+    type: aikikai
+    ref: AIK-HIST-JA ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: ichi
+  romaji: ichi
+  kanji: 一
+  sens: un (1)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: ni
+  romaji: ni
+  kanji: 二
+  sens: deux (2)
+  categorie: nombre
+  note: NWU affiche par erreur le katakana ニ ; 二 confirmé par AIK-EXAM-JA (二教).
+  source:
+    type: aikikai
+    ref: AIK-EXAM-JA ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: san
+  romaji: san
+  kanji: 三
+  sens: trois (3)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA (三教)
+    consulte: 2026-10-19
+- id: shi-yon
+  romaji: shi / yon
+  kanji: 四
+  sens: quatre (4)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: go
+  romaji: go
+  kanji: 五
+  sens: cinq (5)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; AIK-EXAM-JA (五教)
+    consulte: 2026-10-19
+- id: roku
+  romaji: roku
+  kanji: 六
+  sens: six (6)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: shichi-nana
+  romaji: shichi / nana
+  kanji: 七
+  sens: sept (7)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: hachi
+  romaji: hachi
+  kanji: 八
+  sens: huit (8)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: kyu-ku
+  romaji: kyu / ku
+  kanji: 九
+  sens: neuf (9)
+  categorie: nombre
+  note: Homophone de kyu 級 (grade).
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: ju
+  romaji: ju
+  kanji: 十
+  sens: dix (10)
+  categorie: nombre
+  source:
+    type: web
+    ref: NWU-GLOSS ; FFAAA-GUIDE p. 24
+    consulte: 2026-10-19
+- id: migi
+  romaji: migi
+  sens: droite
+  categorie: concept
+  note: "Ajout contenu : tiré de l'entrée hanmi de terminologie.yaml (migi hanmi). Kanji non vérifié."
+  source:
+    type: web
+    ref: NWU-GLOSS ; BUDOKAN-I (via terminologie hanmi)
+    consulte: 2026-10-19
+- id: hidari
+  romaji: hidari
+  sens: gauche
+  categorie: concept
+  note: "Ajout contenu : tiré de l'entrée hanmi de terminologie.yaml (hidari hanmi). Kanji non vérifié."
+  source:
+    type: web
+    ref: NWU-GLOSS ; BUDOKAN-I (via terminologie hanmi)
+    consulte: 2026-10-19
+- id: migi-hanmi
+  romaji: migi hanmi
+  sens: garde pied droit devant
+  categorie: position
+  note: Ajout contenu (terminologie, entrée hanmi).
+  source:
+    type: web
+    ref: NWU-GLOSS ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: hidari-hanmi
+  romaji: hidari hanmi
+  sens: garde pied gauche devant
+  categorie: position
+  note: Ajout contenu (terminologie, entrée hanmi).
+  source:
+    type: web
+    ref: NWU-GLOSS ; BUDOKAN-I
+    consulte: 2026-10-19
+- id: mae
+  romaji: mae
+  sens: devant
+  categorie: concept
+  note: "Ajout contenu : élément de mae ukemi (前受身). Kanji 前 attesté dans 前受身."
+  source:
+    type: web
+    ref: BUDOKAN-II ; NWU-GLOSS
+    consulte: 2026-10-19
+- id: ushiro
+  romaji: ushiro
+  sens: derrière
+  categorie: concept
+  note: "Ajout contenu : élément de ushiro ukemi (後ろ受身) et ushiro waza."
+  source:
+    type: web
+    ref: BUDOKAN-II ; NWU-GLOSS ; CSDGE-L2 p. 10
+    consulte: 2026-10-19

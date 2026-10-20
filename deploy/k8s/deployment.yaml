@@ -1,0 +1,51 @@
+# Aikido Lingo : site statique (nginx), sans état ni secret.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aikido-lingo
+  namespace: aikido-lingo
+  labels:
+    app: aikido-lingo
+    app.kubernetes.io/name: aikido-lingo
+    app.kubernetes.io/part-of: aikido-lingo
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  # bascule sans coupure : le nouveau pod doit être prêt avant l'arrêt de l'ancien,
+  # et l'ancien attend que l'ingress l'ait retiré de ses endpoints
+  minReadySeconds: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: { maxUnavailable: 0, maxSurge: 1 }
+  selector:
+    matchLabels:
+      app: aikido-lingo
+  template:
+    metadata:
+      labels:
+        app: aikido-lingo
+        app.kubernetes.io/name: aikido-lingo
+        app.kubernetes.io/part-of: aikido-lingo
+    spec:
+      terminationGracePeriodSeconds: 20
+      containers:
+        - name: aikido-lingo
+          # Tag daté AAAAMMJJ-<sha7>. JAMAIS :latest.
+          image: xblaster/aikido-lingo:20261017-7c25af2
+          ports:
+            - name: http
+              containerPort: 80
+          lifecycle:
+            preStop:
+              exec: { command: ["sleep", "8"] }
+          readinessProbe:
+            httpGet: { path: /healthz, port: http }
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /healthz, port: http }
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests: { cpu: 20m, memory: 32Mi }
+            limits: { cpu: 200m, memory: 128Mi }

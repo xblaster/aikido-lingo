@@ -1,0 +1,25 @@
+# Entrée publique : Cloudflare (TLS) -> ingress-nginx 146.59.242.169 -> Service.
+# ssl-redirect à "false" : Cloudflare termine le TLS, une redirection ici bouclerait.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: aikido-lingo-ingress
+  namespace: aikido-lingo
+  labels:
+    app.kubernetes.io/name: aikido-lingo
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: aikido-lingo.lo2k.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: aikido-lingo-service
+                port:
+                  number: 80

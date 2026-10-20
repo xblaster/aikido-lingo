@@ -27,12 +27,12 @@
 
 ## 4. Contenu
 
-- [ ] 4.1 [contenu] Ajouter `image: scenes/<id>` aux illustrations quand une entrée correspond (emoji conservé) et l'utiliser dans les intros de leçon (postures, attaques) — vérif : `npm run validate:content` passe
-- [ ] 4.2 [contenu] Associer chaque unité à une couverture (`cover:`) — vérif : validation passe, chaque unité a une couverture
+- [x] 4.1 [contenu] Ajouter `image: scenes/<id>` aux illustrations quand une entrée correspond (emoji conservé) et l'utiliser dans les intros de leçon (postures, attaques) — vérif : `npm run validate:content` passe
+- [x] 4.2 [contenu] Associer chaque unité à une couverture (`cover:`) — vérif : validation passe, chaque unité a une couverture
 
 ## 5. Génération (Antigravity) — entrées sans source libre retenue
 
-- [ ] 5.1 [antigravity] Générer `scenes/seiza` et `scenes/katate-dori` (références de style et de personnages) — vérif : validées par l'utilisateur avant la suite
+- [x] 5.1 [antigravity] Générer `scenes/seiza` et `scenes/katate-dori` (références de style et de personnages) — vérif : validées par l'utilisateur avant la suite
 - [ ] 5.2 [antigravity] Générer les autres `scenes` à générer — vérif : auto-contrôle du prompt coché pour chacune
 - [ ] 5.3 [antigravity] Générer les `covers`, `modules`, `mascotte` et `badges` à générer — vérif : un fichier WebP par entrée `genere`, tailles conformes
 

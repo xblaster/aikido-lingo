@@ -17,6 +17,9 @@ les lacunes (kanji non vérifiés, faits à source unique) ne sont pas encore vi
   `a-completer`) ; les variantes (FFAAA, FLAM Luxembourg, Aikikai) sont affichées comme telles.
 - Lacunes du référentiel traitées : kanji absents affichés sans kanji (jamais inventés), faits à source
   unique signalés, lecture du livret kyu FFAB et des ouvrages de référence à faire.
+- Retours du contenu 6K : illustrations sur les termes de l'apport, `audioText` en kana pour la
+  synthèse ja-JP, report des 6 ajouts du lexique dans `terminologie.yaml`, traçabilité `auteur` des
+  leçons, liste des points à faire relire par un enseignant, clôture des demandes déjà traitées.
 - Hors périmètre : déploiement, niveaux 4e kyu et au-delà, médias (change `generation-images`).
 
 ## Capabilities

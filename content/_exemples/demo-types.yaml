@@ -1,0 +1,221 @@
+# Leçon de démonstration : un exercice de chacun des 16 types du catalogue
+# (docs/types-exercices.md, docs/contrat.md). Servie sur /demo pour vérifier le moteur
+# d'exercices ; elle ne fait pas partie du parcours et n'est pas soumise aux volumes.
+# Illustrations : `image: <famille>/<id>` pris dans docs/images/manifest.yaml (liste fermée),
+# toujours accompagné d'un `emoji` de repli et d'un `alt`.
+# Les sources citées renvoient aux entrées de content/referentiel/sources.md (codes de la colonne « Code »).
+id: demo-types
+title: "Démonstration des types d'exercices"
+subtitle: "Onegaishimasu"
+description: "Un exercice de chaque type."
+icon: Sparkles
+xpReward: 0
+focus: "Démonstration du moteur d'exercices"
+isReview: false
+intro:
+  termes:
+    - { jp: "Dojo", kanji: "道場", fr: "lieu où l'on étudie la Voie ; la salle d'entraînement" }
+    - { jp: "Rei", kanji: "礼", fr: "salut ; politesse" }
+    - { jp: "Seiza", kanji: "正座", fr: "position assise à genoux, assis sur les talons" }
+    - { jp: "Katate dori", fr: "saisie d'un poignet" }
+  note:
+    titre: "Lire un nom de technique"
+    texte: >-
+      Le nom d'une technique se lit comme une phrase : on annonce d'abord l'attaque (par exemple
+      katate dori, la saisie d'un poignet), puis la technique qui y répond (ikkyo), puis, s'il y a
+      lieu, la forme : omote (devant) ou ura (derrière).
+  points:
+    - "Attaque d'abord, technique ensuite."
+    - "Omote / ura précisent la forme."
+exercises:
+  - id: demo-meaning-choice
+    type: meaning_choice
+    prompt: "Que signifie ce terme ?"
+    jpText: "Seiza"
+    correctAnswer: "position assise à genoux, sur les talons"
+    options:
+      - { id: o1, text: "position assise à genoux, sur les talons" }
+      - { id: o2, text: "position debout, un pied en avant" }
+      - { id: o3, text: "déplacement à genoux" }
+    explanation: "Seiza est la position assise formelle ; le déplacement à genoux s'appelle shikko, la garde debout kamae."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-term-choice
+    type: term_choice
+    prompt: "Quel terme désigne la chute ?"
+    frText: "L'art de chuter et de recevoir la technique"
+    correctAnswer: "Ukemi"
+    options:
+      - { id: o1, text: "Ukemi" }
+      - { id: o2, text: "Uke" }
+      - { id: o3, text: "Tori" }
+    explanation: "Uke est le partenaire qui reçoit la technique ; ukemi est la façon dont il la reçoit, souvent par une chute. Tori exécute la technique."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-kanji-choice
+    type: kanji_choice
+    prompt: "Comment se lit ce mot ?"
+    kanji: "道場"
+    correctAnswer: "dojo"
+    options:
+      - { id: o1, text: "dojo", translation: "salle d'entraînement" }
+      - { id: o2, text: "aikido", translation: "la Voie de l'harmonie de l'énergie" }
+      - { id: o3, text: "sensei", translation: "enseignant" }
+    explanation: "道 (do) est la Voie, 場 (jo) le lieu : le dojo est le lieu où l'on étudie la Voie."
+    sources: [{ type: aikikai, ref: "AIK-EXAM-JA (道場) ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-image-choice
+    type: image_choice
+    prompt: "Choisissez l'illustration : « Tatami »"
+    jpText: "Tatami"
+    correctAnswer: "Tatami"
+    options:
+      - { id: o1, text: "Tatami", illustration: { image: scenes/tatami, emoji: "🟫", alt: "la surface de tatami d'un dojo" } }
+      - { id: o2, text: "Bokken", illustration: { image: scenes/bokken, emoji: "🗡️", alt: "un pratiquant en garde avec un sabre de bois" } }
+      - { id: o3, text: "Obi", illustration: { image: scenes/obi, emoji: "🎗️", alt: "une ceinture nouée à la taille" } }
+    explanation: "Le tatami est le tapis sur lequel on pratique ; le bokken est le sabre en bois, l'obi la ceinture."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-match-pairs
+    type: match_pairs
+    prompt: "Associez chaque terme à son sens."
+    correctAnswer: pairs
+    pairs:
+      - { jp: "Tori", fr: "celui qui exécute la technique" }
+      - { jp: "Uke", fr: "celui qui attaque et reçoit la technique" }
+      - { jp: "Sensei", fr: "enseignant" }
+      - { jp: "Keiko", fr: "pratique, entraînement" }
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-match-pairs-audio
+    type: match_pairs_audio
+    prompt: "Écoutez et associez chaque nombre."
+    correctAnswer: pairs
+    pairs:
+      - { jp: "Ichi", fr: "un" }
+      - { jp: "Ni", fr: "deux" }
+      - { jp: "San", fr: "trois" }
+      - { jp: "Shi", fr: "quatre" }
+    explanation: "Quatre se dit aussi « yon » ; les deux lectures existent (glossaire Northwestern ; guide FFAAA)."
+    sources: [{ type: ouvrage, ref: "NWU-GLOSS ; FFAAA-GUIDE p. 24", consulte: "2026-10-19" }]
+
+  - id: demo-listen-choose
+    type: listen_choose
+    prompt: "Qu'entendez-vous ?"
+    audioText: "かたてどり"
+    correctAnswer: "Katate dori"
+    options:
+      - { id: o1, text: "Katate dori", translation: "saisie d'un poignet" }
+      - { id: o2, text: "Kata dori", translation: "saisie à l'épaule" }
+      - { id: o3, text: "Ryote dori", translation: "saisie des deux poignets" }
+    explanation: "Katate (une main) + dori (saisie). Kata dori, très proche à l'oreille, est la saisie du vêtement à l'épaule."
+    sources: [{ type: federation, ref: "CSDGE-L2 Annexe II p. 18-19 ; AIK-EXAM-JA", consulte: "2026-10-19" }]
+
+  - id: demo-listen-type
+    type: listen_type
+    prompt: "Écoutez et écrivez le terme en romaji."
+    audioText: "れい"
+    correctAnswer: "rei"
+    explanation: "Rei : le salut."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-typed-term
+    type: typed_term
+    prompt: "Écrivez le terme japonais."
+    frText: "le salut debout"
+    correctAnswer: "ritsurei"
+    acceptedAnswers: ["ritsu rei"]
+    explanation: "Ritsurei est le salut debout ; zarei, le salut à genoux depuis seiza."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 22-25 ; NWU-GLOSS", consulte: "2026-10-19" }]
+
+  - id: demo-tile-build
+    type: tile_build
+    prompt: "Composez l'appel de la technique."
+    frText: "Sur saisie d'un poignet, première immobilisation, forme devant"
+    correctAnswer: ["katate dori", "ikkyo", "omote"]
+    wordBank: ["ikkyo", "omote", "katate dori", "ura", "nikyo", "ryote dori"]
+    explanation: "L'attaque d'abord (katate dori), puis la technique (ikkyo), puis la forme (omote)."
+    sources: [{ type: federation, ref: "CSDGE-L2 Annexe II p. 18-19 ; AIK-EXAM-JA", consulte: "2026-10-19" }]
+
+  - id: demo-missing-word
+    type: missing_word
+    prompt: "Choisissez le mot qui manque."
+    frText: "Au début du cours, on salue le partenaire en disant : « Onegai ___ »."
+    correctAnswer: "shimasu"
+    options:
+      - { id: o1, text: "shimasu" }
+      - { id: o2, text: "gozaimasu" }
+      - { id: o3, text: "hajime" }
+    explanation: "« Onegaishimasu » : formule de demande polie avant de travailler ensemble. « Arigato gozaimasu » sert à remercier."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 16-17 ; BUDOKAN-II", consulte: "2026-10-19" }]
+
+  - id: demo-order-steps
+    type: order_steps
+    prompt: "Remettez dans l'ordre le passage de la position debout à seiza."
+    steps:
+      - "Se tenir debout, droit"
+      - "Poser un genou au sol"
+      - "Poser le second genou"
+      - "S'asseoir sur les talons, le dos droit"
+    correctAnswer: steps
+    explanation: "On descend un genou après l'autre. Le genou posé en premier (gauche ou droit) varie selon les écoles : fiez-vous à votre enseignant."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 16-17 ; BUDOKAN-II", consulte: "2026-10-19" }]
+
+  - id: demo-true-false
+    type: true_false
+    prompt: "Vrai ou faux ?"
+    statement: "Morihei Ueshiba est le fondateur de l'aikido."
+    correctAnswer: "vrai"
+    explanation: "Morihei Ueshiba (1883–1969) a fondé l'aikido ; ses élèves l'appellent O-Sensei."
+    sources: [{ type: aikikai, ref: "AIK-HIST-EN ; FFAB-MAITRES", consulte: "2026-10-19" }]
+
+  - id: demo-scenario
+    type: scenario
+    prompt: "Que faites-vous ?"
+    frText: "Vous arrivez en retard : le cours a commencé et tout le monde travaille."
+    correctAnswer: "Attendre au bord du tatami que l'enseignant vous autorise à entrer, puis saluer"
+    options:
+      - { id: o1, text: "Attendre au bord du tatami que l'enseignant vous autorise à entrer, puis saluer" }
+      - { id: o2, text: "Rejoindre discrètement un groupe sans rien dire" }
+      - { id: o3, text: "Interrompre le cours pour expliquer votre retard" }
+    explanation: "Dans la plupart des dojos, l'élève en retard attend le signe de l'enseignant ; la manière exacte de saluer en entrant varie selon les dojos."
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 16-17 ; BUDOKAN-II", consulte: "2026-10-19" }]
+
+  - id: demo-technique-decoder
+    type: technique_decoder
+    prompt: "Quelle est l'attaque dans cet appel ?"
+    jpText: "Shomen uchi ikkyo"
+    decomposition: { attaque: "shomen uchi", technique: "ikkyo" }
+    correctAnswer: "shomen uchi"
+    options:
+      - { id: o1, text: "shomen uchi", translation: "frappe verticale au front" }
+      - { id: o2, text: "ikkyo", translation: "première immobilisation" }
+      - { id: o3, text: "katate dori", translation: "saisie d'un poignet" }
+    explanation: "Shomen uchi est l'attaque (frappe au front) ; ikkyo est la technique qui y répond."
+    sources: [{ type: federation, ref: "CSDGE-L2 Annexe II p. 18-19 ; AIK-EXAM-JA", consulte: "2026-10-19" }]
+
+  - id: demo-story
+    type: story
+    prompt: "Lisez le récit."
+    correctAnswer: story
+    dialogue:
+      - { speaker: "Narrateur", text: "Léa entre au dojo pour son premier cours. Elle salue en franchissant la porte." }
+      - { speaker: "Enseignant", text: "Bienvenue. Mettons-nous en seiza pour le salut." }
+      - { speaker: "Narrateur", text: "Tous saluent ensemble, puis chacun se tourne vers un partenaire." }
+      - { speaker: "Léa", text: "Onegaishimasu." }
+    storyQuestions:
+      - afterLine: 2
+        prompt: "Dans quelle position se fait le salut du début de cours ?"
+        correctAnswer: "seiza"
+        options:
+          - { id: o1, text: "seiza" }
+          - { id: o2, text: "debout, en garde" }
+          - { id: o3, text: "en marchant" }
+      - afterLine: 4
+        prompt: "Pourquoi Léa dit-elle « onegaishimasu » ?"
+        correctAnswer: "pour demander poliment à travailler avec son partenaire"
+        options:
+          - { id: o1, text: "pour demander poliment à travailler avec son partenaire" }
+          - { id: o2, text: "pour remercier à la fin du cours" }
+          - { id: o3, text: "pour annoncer une attaque" }
+    sources: [{ type: federation, ref: "FFAAA-GUIDE p. 16-17 ; BUDOKAN-II", consulte: "2026-10-19" }]

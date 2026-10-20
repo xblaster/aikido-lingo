@@ -1,0 +1,104 @@
+# Plan de l’unité 6k-u3 (types par leçon, dans l’ordre des exercices).
+unit: 6k-u3
+level: 6K
+theme: Postures
+referentiel:
+  fichier: content/referentiel/6k.yaml
+  section: themes[2]
+  sources:
+    - BUDOKAN-II
+    - BUDOKAN-VII
+    - CSDGE-L2
+    - NWU-GLOSS
+    - FFAAA-GUIDE
+adaptation: Aucune.
+lessons:
+  - id: 6k-u3-l1
+    theme: "Kamae : la garde"
+    types:
+      - meaning_choice
+      - term_choice
+      - true_false
+      - kanji_choice
+      - missing_word
+      - listen_choose
+      - scenario
+      - typed_term
+  - id: 6k-u3-l2
+    theme: "Hanmi : droite et gauche"
+    types:
+      - meaning_choice
+      - term_choice
+      - tile_build
+      - kanji_choice
+      - true_false
+      - match_pairs_audio
+      - listen_type
+      - missing_word
+  - id: 6k-u3-l3
+    theme: Ai hanmi et gyaku hanmi
+    types:
+      - image_choice
+      - meaning_choice
+      - scenario
+      - kanji_choice
+      - technique_decoder
+      - true_false
+      - match_pairs
+      - typed_term
+  - id: 6k-u3-l4
+    theme: Seiza et kiza
+    types:
+      - meaning_choice
+      - term_choice
+      - kanji_choice
+      - true_false
+      - image_choice
+      - listen_choose
+      - order_steps
+      - listen_type
+  - id: 6k-u3-l5
+    theme: "Ma ai : la distance"
+    types:
+      - meaning_choice
+      - true_false
+      - kanji_choice
+      - scenario
+      - missing_word
+      - match_pairs
+      - listen_choose
+      - typed_term
+  - id: 6k-u3-l6
+    theme: "Tegatana : la main-sabre"
+    types:
+      - meaning_choice
+      - kanji_choice
+      - true_false
+      - term_choice
+      - listen_type
+      - match_pairs_audio
+      - missing_word
+      - image_choice
+  - id: 6k-u3-l7
+    theme: Le regard et la vigilance
+    types:
+      - meaning_choice
+      - term_choice
+      - true_false
+      - kanji_choice
+      - story
+      - listen_choose
+      - missing_word
+      - typed_term
+  - id: 6k-u3-l8
+    theme: "Révision : postures"
+    isReview: true
+    types:
+      - image_choice
+      - tile_build
+      - match_pairs
+      - technique_decoder
+      - scenario
+      - true_false
+      - listen_type
+      - meaning_choice

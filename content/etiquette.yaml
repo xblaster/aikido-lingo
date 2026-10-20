@@ -1,0 +1,70 @@
+# Module « Reishiki » : fiches d'étiquette (contrat : { id, titre, jp?, etapes, pourquoi, source }).
+# Limité à ce qu'il faut pour le 6e et le 5e kyu. Codes de source : referentiel/sources.md.
+# Ce qui varie selon les dojos est signalé dans `pourquoi` ; les étapes ne détaillent pas le geste.
+- id: entrer-tapis
+  titre: "Monter sur le tapis et le quitter"
+  jp: "Ritsurei"
+  etapes:
+    - "Arriver en tenue propre, sans bijoux."
+    - "Au bord du tapis, saluer debout en direction du shomen ou du portrait du fondateur."
+    - "Monter sur le tapis."
+    - "En partant, saluer de nouveau avant de quitter le tapis."
+  pourquoi: "Le salut marque l'entrée dans la pratique et le respect du lieu. Le salut en franchissant la porte du dojo est répandu mais n'est pas écrit dans les sources lues : suivez l'usage de votre dojo."
+  source: { type: federation, ref: "FFAAA-GUIDE", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "16-17", consulte: "2026-10-19" }
+- id: seiza-zarei
+  titre: "Seiza et salut à genoux"
+  jp: "Zarei"
+  etapes:
+    - "Se mettre en seiza : à genoux, assis sur les talons, le dos droit."
+    - "Saluer en s'inclinant, mains posées devant soi (zarei)."
+    - "Revenir en seiza."
+  pourquoi: "C'est le salut du début et de la fin du cours. L'ordre des genoux pour descendre et le placement exact des mains varient selon les écoles : l'enseignant les montre."
+  source: { type: ouvrage, ref: "BUDOKAN-II", url: "https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf", page: "14-16", consulte: "2026-10-19" }
+- id: debut-fin-cours
+  titre: "Début et fin du cours"
+  jp: "Onegai shimasu / arigato gozaimashita"
+  etapes:
+    - "Les élèves s'alignent en seiza face au kamiza."
+    - "Salut collectif ; on dit « onegai shimasu »."
+    - "Pratique."
+    - "Salut collectif de fin ; on dit « arigato gozaimashita »."
+  pourquoi: "On demande à pratiquer ensemble, puis on remercie. Certains dojos ajoutent un temps de méditation (mokuso) ; les formules shomen ni rei / sensei ni rei / otagai ni rei ne sont attestées que par un glossaire et varient selon les dojos."
+  source: { type: ouvrage, ref: "BUDOKAN-I ; FFAAA-GUIDE p. 17 ; NWU-GLOSS", url: "https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf", consulte: "2026-10-19" }
+- id: retard
+  titre: "Arriver en retard"
+  etapes:
+    - "Attendre au bord du tapis, sans interrompre le cours."
+    - "Attendre le signe de l'enseignant."
+    - "Saluer, monter sur le tapis et rejoindre la pratique."
+  pourquoi: "L'enseignant décide du moment où l'on peut entrer (règle du guide FFAAA). La position d'attente (debout ou en seiza) dépend de l'usage du dojo."
+  source: { type: federation, ref: "FFAAA-GUIDE", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "16-17", consulte: "2026-10-19" }
+- id: partenaire
+  titre: "Travailler avec un partenaire"
+  jp: "Onegai shimasu"
+  etapes:
+    - "Saluer le partenaire en disant « onegai shimasu »."
+    - "Alterner les rôles de tori et de uke, et travailler des deux côtés."
+    - "En tant que uke, chuter sous l'action de tori, pas avant."
+    - "En tant que tori, adapter sa vitesse au niveau de uke."
+    - "À la fin, saluer et remercier le partenaire."
+  pourquoi: "Il n'y a pas de compétition en aïkido : chacun progresse grâce à l'autre, et la sécurité du partenaire passe d'abord."
+  source: { type: ouvrage, ref: "BUDOKAN-I ; BUDOKAN-II ; AIK-WHAT-EN", url: "https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf", consulte: "2026-10-19" }
+- id: tenue-armes
+  titre: "Tenue et armes"
+  etapes:
+    - "Venir avec un keikogi propre."
+    - "Retirer montre, bagues et bijoux."
+    - "Ranger ses armes (bokken, jo, tanto) à l'endroit prévu."
+    - "Ne pas emprunter la tenue ni les armes d'un autre pratiquant."
+  pourquoi: "Règles du guide FFAAA ; elles protègent aussi les partenaires. Le moment où l'on porte le hakama varie selon les fédérations et les dojos."
+  source: { type: federation, ref: "FFAAA-GUIDE", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "16-17", consulte: "2026-10-19" }
+- id: examen-kyu
+  titre: "Le jour d'un passage de grade"
+  etapes:
+    - "Tenue propre et complète."
+    - "Saluer en entrant sur le tapis, puis saluer le portrait du fondateur."
+    - "Saluer le partenaire et le jury."
+    - "Ranger les armes à l'endroit prévu."
+    - "Saluer partenaire et jury à la fin du passage."
+  pourquoi: "Règles et étiquette de la FLAM pour les passages de grade (2011). En France, les kyu sont délivrés en club par l'enseignant : la forme du passage dépend du club."
+  source: { type: federation, ref: "FLAM-ETIQ-2011 ; FFAB-KYU", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-R%C3%A8gles-et-Etiquette.pdf", page: "14-15/18", consulte: "2026-10-19" }

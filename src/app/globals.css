@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-aiki-nuit text-slate-100 antialiased min-h-screen selection:bg-aiki-shu/30 selection:text-white;
+  }
+}
+
+/* Dark canvas: hakama navy with a faint tatami-like dotted grid */
+.bg-duo-canvas-dark {
+  background-color: #0B1020;
+  background-image: radial-gradient(#1A2348 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.font-jp {
+  font-feature-settings: "palt";
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+.animate-bounce-subtle { animation: bounceSubtle 2.5s ease-in-out infinite; }
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spinSlow 12s linear infinite; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in { animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }

@@ -1,0 +1,1665 @@
+# Unité 6k-u1 : généré depuis le brouillon de l’agent contenu ; fiches dans 6k-u1/recherche/.
+id: 6k-u1
+level: 6K
+unitNumber: 1
+title: Le dojo et l'étiquette
+jpTitle: Reishiki
+description: Entrer au dojo, saluer, s'asseoir en seiza, les formules du cours, la tenue et les relations entre pratiquants.
+themeColor: bg-emerald-500
+icon: Landmark
+cover: reishiki
+review:
+  statut: brouillon
+referentiel:
+  ref: 6k.yaml, unité « Le dojo et l'étiquette » (FFAAA-GUIDE p. 16-17 ; BUDOKAN-I/-II)
+  url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+lessons:
+  - id: 6k-u1-l1
+    title: Entrer au dojo et saluer
+    subtitle: Rei
+    description: Le dojo, le salut et le moment où l'on salue.
+    icon: DoorOpen
+    xpReward: 20
+    focus: Saluer en montant sur le tapis et en le quittant
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l1.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Dojo
+          kanji: 道場
+          fr: "« lieu de la voie » : la salle où l'on pratique"
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Rei
+          kanji: 礼
+          fr: salut ; marque de respect
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Ritsurei
+          fr: salut debout
+          illustration:
+            image: scenes/ritsurei
+            emoji: 🙇
+            alt: Un pratiquant debout au bord du tatami s'incline vers la place d'honneur du dojo.
+          source:
+            type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+        - jp: Reishiki
+          fr: l'étiquette du dojo
+          source:
+            type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      note:
+        titre: Le salut, porte d'entrée du dojo
+        texte: "Le guide de la FFAAA demande de saluer en montant sur le tapis et en le quittant, en direction du shomen ou du portrait du fondateur. Ce salut debout s'appelle ritsurei. Le salut n'est pas une formalité : il marque le passage du monde extérieur à la pratique, et le respect du lieu et des partenaires."
+      points:
+        - On salue en montant sur le tapis.
+        - On salue en le quittant.
+        - Le salut se fait vers le shomen ou le portrait du fondateur.
+    exercises:
+      - id: ex-6k-u1-l1-1
+        type: meaning_choice
+        prompt: Que signifie « dojo » ?
+        jpText: Dojo
+        options:
+          - id: o1
+            text: l'enseignant
+          - id: o2
+            text: la salle où l'on pratique la voie
+          - id: o3
+            text: la ceinture
+        correctAnswer: la salle où l'on pratique la voie
+        explanation: "Dojo s'écrit 道場 : 道 la voie, 場 le lieu."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-2
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 道場
+        options:
+          - id: o1
+            text: dojo
+            translation: salle de pratique
+          - id: o2
+            text: aikido
+            translation: voie de l'harmonie des énergies
+          - id: o3
+            text: keiko
+            translation: pratique
+        correctAnswer: dojo
+        explanation: 道場 se lit dojo. Aikido s'écrit 合気道 et keiko 稽古.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: On salue en montant sur le tapis, et aussi en le quittant.
+        correctAnswer: vrai
+        explanation: "Le guide FFAAA demande les deux : le salut ouvre et ferme le temps passé sur le tapis."
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "16"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-4
+        type: term_choice
+        prompt: Quel terme désigne le salut debout ?
+        frText: Le salut fait debout, par exemple en montant sur le tapis
+        options:
+          - id: o1
+            text: seiza
+          - id: o2
+            text: ritsurei
+          - id: o3
+            text: zarei
+        correctAnswer: ritsurei
+        explanation: Ritsurei se fait debout ; zarei se fait à genoux, depuis seiza, qui est la position assise.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-5
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: On monte sur le tapis en saluant en direction du ___ ou du portrait du fondateur.
+        options:
+          - id: o1
+            text: shomen
+          - id: o2
+            text: shimoza
+          - id: o3
+            text: tatami
+        correctAnswer: shomen
+        explanation: Le shomen est la « face avant » du dojo, vers laquelle on salue. Le shimoza est le côté opposé.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "16"
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-6
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Vous êtes prêt et vous allez monter sur le tapis.
+        options:
+          - id: o1
+            text: Je monte directement, le salut se fait plus tard
+          - id: o2
+            text: Je salue seulement si l'enseignant me regarde
+          - id: o3
+            text: Je salue en direction du shomen, puis je monte
+        correctAnswer: Je salue en direction du shomen, puis je monte
+        explanation: Le salut en montant sur le tapis est une règle de l'étiquette, que l'enseignant regarde ou non.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "16"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-7
+        type: match_pairs
+        prompt: Associez chaque terme à son sens.
+        pairs:
+          - jp: dojo
+            fr: salle de pratique
+          - jp: rei
+            fr: salut
+          - jp: ritsurei
+            fr: salut debout
+          - jp: reishiki
+            fr: étiquette du dojo
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l1-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: le salut (un seul mot, trois lettres)
+        correctAnswer: rei
+        explanation: "Rei 礼 : le salut, et plus largement la politesse."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u1-l2
+    title: Le kamiza et le shomen
+    subtitle: Kamiza
+    description: "S'orienter dans le dojo : place d'honneur, face avant, côté des élèves."
+    icon: Compass
+    xpReward: 20
+    focus: Kamiza, shomen, shimoza
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l2.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Kamiza
+          kanji: 上座
+          fr: place d'honneur du dojo
+          illustration:
+            image: scenes/kamiza
+            emoji: ⛩️
+            alt: Le mur d'honneur d'un dojo, sobre, face au tatami.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shomen
+          kanji: 正面
+          fr: "« face avant » : le devant du dojo, direction du salut"
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shimoza
+          kanji: 下座
+          fr: côté opposé au kamiza, où se placent les élèves
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Un dojo a un « devant »
+        texte: "Le kamiza est la place d'honneur ; on y trouve souvent le portrait du fondateur, et c'est vers lui qu'on salue. Shomen veut dire « face avant » : le mot désigne le devant du dojo (et aussi le devant de la tête, comme dans shomen uchi). Les élèves se placent du côté opposé, le shimoza."
+    exercises:
+      - id: ex-6k-u1-l2-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Kamiza »"
+        jpText: Kamiza
+        options:
+          - id: o1
+            text: Ritsurei
+            illustration:
+              image: scenes/ritsurei
+              emoji: 🙇
+              alt: Un pratiquant debout s'incline au bord du tatami.
+          - id: o2
+            text: Kamiza
+            illustration:
+              image: scenes/kamiza
+              emoji: ⛩️
+              alt: Le mur d'honneur d'un dojo, sobre, face au tatami.
+          - id: o3
+            text: Tatami
+            illustration:
+              image: scenes/tatami
+              emoji: 🟫
+              alt: La surface de tatami d'un dojo vue en légère plongée.
+        correctAnswer: Kamiza
+        explanation: Le kamiza est un lieu (la place d'honneur), le tatami est le sol de pratique, ritsurei est un geste.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "22"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-2
+        type: meaning_choice
+        prompt: Que signifie « shomen » ?
+        jpText: Shomen
+        options:
+          - id: o1
+            text: la face avant
+          - id: o2
+            text: le côté des élèves
+          - id: o3
+            text: la porte d'entrée
+        correctAnswer: la face avant
+        explanation: "Shomen 正面 : la face avant. Le côté des élèves est le shimoza."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-3
+        type: kanji_choice
+        prompt: Que signifie ce mot ?
+        kanji: 上座
+        options:
+          - id: o1
+            text: shimoza
+            translation: côté des élèves
+          - id: o2
+            text: shomen
+            translation: face avant
+          - id: o3
+            text: kamiza
+            translation: place d'honneur
+        correctAnswer: kamiza
+        explanation: "上 (haut) : le kamiza est la place « haute », d'honneur ; 下 (bas) se retrouve dans shimoza 下座."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-4
+        type: match_pairs
+        prompt: Associez chaque terme à son sens.
+        pairs:
+          - jp: kamiza
+            fr: place d'honneur
+          - jp: shimoza
+            fr: côté des élèves
+          - jp: shomen
+            fr: face avant
+          - jp: dojo
+            fr: salle de pratique
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Dans tous les dojos du monde, le kamiza est aménagé exactement de la même façon.
+        correctAnswer: faux
+        explanation: On y trouve souvent le portrait du fondateur, mais l'aménagement varie d'un dojo à l'autre.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "22"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: かみざ
+        options:
+          - id: o1
+            text: kamae
+            translation: garde
+          - id: o2
+            text: keiko
+            translation: pratique
+          - id: o3
+            text: kamiza
+            translation: place d'honneur
+        correctAnswer: kamiza
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Les élèves se placent du côté opposé au kamiza, appelé ___.
+        options:
+          - id: o1
+            text: kamae
+          - id: o2
+            text: shimoza
+          - id: o3
+            text: shomen
+        correctAnswer: shimoza
+        explanation: "Kami-za / shimo-za : haut / bas, place d'honneur / côté des élèves."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l2-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la place d'honneur du dojo
+        correctAnswer: kamiza
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u1-l3
+    title: Seiza et zarei
+    subtitle: Seiza
+    description: S'asseoir à genoux et saluer depuis cette position.
+    icon: Armchair
+    xpReward: 20
+    focus: Seiza et salut à genoux
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l3.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Seiza
+          kanji: 正座
+          fr: assis à genoux, sur les talons, le dos droit
+          illustration:
+            image: scenes/seiza
+            emoji: 🧎
+            alt: Un pratiquant assis à genoux sur ses talons, dos droit, mains posées sur les cuisses, vu de profil.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Zarei
+          kanji: 座礼
+          fr: salut à genoux, depuis seiza
+          illustration:
+            image: scenes/zarei
+            emoji: 🙇
+            alt: Deux partenaires en seiza face à face s'inclinent, mains posées devant eux sur le tatami.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Reiho
+          kanji: 礼法
+          fr: manières de saluer et de se tenir
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: La position du salut
+        texte: "Seiza est la position assise de base : à genoux, assis sur les talons. Le salut fait dans cette position s'appelle zarei. Le manuel du Nippon Budokan commence l'enseignement de base par ces manières de saluer (reiho). Le guide FFAAA demande aussi d'attendre en seiza, par exemple pendant les explications."
+      points:
+        - "Seiza : à genoux, assis sur les talons."
+        - "Zarei : salut depuis seiza."
+        - On attend souvent en seiza.
+    exercises:
+      - id: ex-6k-u1-l3-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Zarei »"
+        jpText: Zarei
+        options:
+          - id: o1
+            text: Ritsurei
+            illustration:
+              image: scenes/ritsurei
+              emoji: 🙇
+              alt: Un pratiquant debout s'incline au bord du tatami.
+          - id: o2
+            text: Zarei
+            illustration:
+              image: scenes/zarei
+              emoji: 🙇
+              alt: Deux partenaires en seiza face à face s'inclinent, mains posées devant eux.
+          - id: o3
+            text: Seiza
+            illustration:
+              image: scenes/seiza
+              emoji: 🧎
+              alt: Un pratiquant assis sur ses talons, dos droit, mains sur les cuisses.
+        correctAnswer: Zarei
+        explanation: Zarei est le salut à genoux ; seiza est la position assise sans salut ; ritsurei est le salut debout.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-2
+        type: meaning_choice
+        prompt: Que signifie « seiza » ?
+        jpText: Seiza
+        options:
+          - id: o1
+            text: assis à genoux, sur les talons
+          - id: o2
+            text: debout, un pied en avant
+          - id: o3
+            text: déplacement à genoux
+        correctAnswer: assis à genoux, sur les talons
+        explanation: Seiza 正座. Le pied en avant, c'est le hanmi ; le déplacement à genoux, le shikko.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-3
+        type: term_choice
+        prompt: Quel terme désigne le salut à genoux ?
+        frText: Le salut fait depuis la position assise à genoux
+        options:
+          - id: o1
+            text: ritsurei
+          - id: o2
+            text: kamiza
+          - id: o3
+            text: zarei
+        correctAnswer: zarei
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "25"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 座礼
+        options:
+          - id: o1
+            text: reiho
+            translation: manières de saluer
+          - id: o2
+            text: zarei
+            translation: salut à genoux
+          - id: o3
+            text: seiza
+            translation: assis à genoux
+        correctAnswer: zarei
+        explanation: "座 (s'asseoir) + 礼 (salut) : zarei. Seiza s'écrit 正座, reiho 礼法."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-5
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Se mettre en seiza
+          - Saluer (zarei)
+          - Rester en seiza en attendant la suite
+        correctAnswer: steps
+        explanation: Le salut à genoux se fait depuis seiza, et l'on attend en seiza.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-6
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: せいざ
+            fr: assis à genoux
+          - jp: ざれい
+            fr: salut à genoux
+          - jp: れい
+            fr: salut
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-7
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Pendant les explications de l'enseignant, on attend souvent en seiza.
+        correctAnswer: vrai
+        explanation: Le guide FFAAA demande d'attendre en seiza. Si une douleur aux genoux vous en empêche, parlez-en à l'enseignant.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l3-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: せいざ
+        correctAnswer: seiza
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u1-l4
+    title: Onegai shimasu, arigato gozaimashita
+    subtitle: Onegai shimasu
+    description: Les deux formules qui ouvrent et ferment la pratique.
+    icon: MessageCircle
+    xpReward: 20
+    focus: Formules de début et de fin
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l4.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Onegai shimasu
+          fr: "« je vous en prie » : au salut du début, ou avant de pratiquer avec un partenaire"
+          note: お願いします
+          source:
+            type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+        - jp: Arigato gozaimashita
+          fr: "« merci » : à la fin du cours"
+          note: ありがとうございました
+          source:
+            type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+        - jp: Mokuso
+          kanji: 黙想
+          fr: court moment de méditation en début ou fin de cours
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Demander, puis remercier
+        texte: "Au salut du début, on dit « onegai shimasu » : on demande à pratiquer ensemble. À la fin, « arigato gozaimashita » remercie pour la pratique qui vient d'avoir lieu (la forme au passé). Certains dojos ajoutent un court moment de méditation, mokuso."
+    exercises:
+      - id: ex-6k-u1-l4-1
+        type: missing_word
+        prompt: Choisissez la fin de la formule.
+        frText: "Au salut du début du cours : « Onegai ___ »."
+        options:
+          - id: o1
+            text: sensei
+          - id: o2
+            text: shimasu
+          - id: o3
+            text: gozaimashita
+        correctAnswer: shimasu
+        explanation: « Onegai shimasu » ouvre la pratique ; « arigato gozaimashita » la clôt.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-2
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: ありがとうございました
+        options:
+          - id: o1
+            text: arigato gozaimashita
+            translation: merci (fin de cours)
+          - id: o2
+            text: onegai shimasu
+            translation: je vous en prie (début)
+          - id: o3
+            text: mokuso
+            translation: méditation
+        correctAnswer: arigato gozaimashita
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-3
+        type: order_steps
+        prompt: Remettez le cours dans l'ordre.
+        steps:
+          - "Salut du début : « onegai shimasu »"
+          - Pratique avec les partenaires
+          - "Salut de fin : « arigato gozaimashita »"
+        correctAnswer: steps
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-4
+        type: scenario
+        prompt: Que dites-vous ?
+        frText: Le cours se termine ; tout le monde salue l'enseignant.
+        options:
+          - id: o1
+            text: Mokuso
+          - id: o2
+            text: Arigato gozaimashita
+          - id: o3
+            text: Onegai shimasu
+        correctAnswer: Arigato gozaimashita
+        explanation: "En fin de cours on remercie : « arigato gozaimashita »."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-5
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Narrateur
+            text: Le cours commence. Les élèves sont alignés en seiza, face au kamiza.
+          - speaker: Élèves
+            text: Onegai shimasu !
+          - speaker: Narrateur
+            text: Une heure plus tard, la pratique est finie. Les élèves s'alignent de nouveau.
+          - speaker: Élèves
+            text: Arigato gozaimashita !
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 2
+            prompt: Que demandent les élèves en disant « onegai shimasu » ?
+            options:
+              - id: o1
+                text: la fin du cours
+              - id: o2
+                text: un changement de partenaire
+              - id: o3
+                text: à pratiquer ensemble
+            correctAnswer: à pratiquer ensemble
+          - afterLine: 4
+            prompt: Pourquoi dit-on « arigato gozaimashita » ?
+            options:
+              - id: o1
+                text: pour annoncer une attaque
+              - id: o2
+                text: pour remercier de la pratique
+              - id: o3
+                text: pour commencer l'échauffement
+            correctAnswer: pour remercier de la pratique
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-6
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: « Onegai shimasu » se dit aussi avant de pratiquer avec un partenaire.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-7
+        type: meaning_choice
+        prompt: Que désigne « mokuso » ?
+        jpText: Mokuso
+        options:
+          - id: o1
+            text: la fin du cours
+          - id: o2
+            text: un court moment de méditation
+          - id: o3
+            text: le salut debout
+        correctAnswer: un court moment de méditation
+        explanation: "Mokuso 黙想 : un bref moment de silence et de méditation, pratiqué dans certains dojos."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l4-8
+        type: typed_term
+        prompt: Écrivez la formule de début de cours.
+        frText: « je vous en prie » (salut du début)
+        correctAnswer: onegai shimasu
+        acceptedAnswers:
+          - onegaishimasu
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+  - id: 6k-u1-l5
+    title: Pendant le cours
+    subtitle: Keiko
+    description: Arriver en retard, attendre, changer de partenaire, prendre soin de ses affaires.
+    icon: Users
+    xpReward: 20
+    focus: Les règles de vie sur le tapis
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l5.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Keiko
+          kanji: 稽古
+          fr: la pratique, l'entraînement
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: L'étiquette, c'est aussi la sécurité
+        texte: "Le guide de la FFAAA réunit les règles du dojo : en retard, on attend au bord du tapis que l'enseignant fasse signe ; on attend en seiza ; on vient avec une tenue propre et sans bijoux ; on range ses armes et on n'emprunte pas la tenue ou les armes d'un autre. Beaucoup de ces règles protègent les partenaires."
+      points:
+        - "En retard : attendre le signe de l'enseignant."
+        - Pas de bijoux sur le tapis.
+        - On n'emprunte ni la tenue ni les armes d'autrui.
+    exercises:
+      - id: ex-6k-u1-l5-1
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: "Vous arrivez en retard : le cours a commencé."
+        options:
+          - id: o1
+            text: J'interromps le cours pour m'excuser
+          - id: o2
+            text: J'attends au bord du tapis que l'enseignant me fasse signe
+          - id: o3
+            text: Je rejoins un groupe sans rien dire
+        correctAnswer: J'attends au bord du tapis que l'enseignant me fasse signe
+        explanation: "La règle du guide FFAAA : attendre au bord du tapis le signe de l'enseignant."
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-2
+        type: order_steps
+        prompt: Vous arrivez en retard. Remettez dans l'ordre.
+        steps:
+          - Attendre au bord du tapis
+          - Recevoir le signe de l'enseignant
+          - Saluer en montant sur le tapis
+          - Rejoindre la pratique
+        correctAnswer: steps
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: On peut garder sa montre et ses bagues sur le tapis si l'on fait attention.
+        correctAnswer: faux
+        explanation: Le guide FFAAA demande de retirer les bijoux avant la pratique.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-4
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Vous avez oublié votre bokken. Celui d'un autre élève est posé au bord du tapis.
+        options:
+          - id: o1
+            text: Je travaille avec un bâton trouvé dans le vestiaire
+          - id: o2
+            text: Je demande à l'enseignant comment faire, sans prendre celui de l'élève
+          - id: o3
+            text: Je l'emprunte, il ne s'en sert pas
+        correctAnswer: Je demande à l'enseignant comment faire, sans prendre celui de l'élève
+        explanation: On n'emprunte pas les armes ni la tenue d'un autre pratiquant.
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-5
+        type: meaning_choice
+        prompt: Que signifie « keiko » ?
+        jpText: Keiko
+        options:
+          - id: o1
+            text: la pratique, l'entraînement
+          - id: o2
+            text: le partenaire
+          - id: o3
+            text: la ceinture
+        correctAnswer: la pratique, l'entraînement
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-6
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: "Avant de pratiquer avec un nouveau partenaire, on lui dit : « ___ shimasu »."
+        options:
+          - id: o1
+            text: Arigato
+          - id: o2
+            text: Rei
+          - id: o3
+            text: Onegai
+        correctAnswer: Onegai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-7
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 稽古
+        options:
+          - id: o1
+            text: reiho
+            translation: manières de saluer
+          - id: o2
+            text: keiko
+            translation: pratique
+          - id: o3
+            text: dojo
+            translation: salle de pratique
+        correctAnswer: keiko
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l5-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: けいこ
+        correctAnswer: keiko
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u1-l6
+    title: La tenue
+    subtitle: Keikogi
+    description: Keikogi, obi, hakama.
+    icon: Shirt
+    xpReward: 20
+    focus: Les pièces de la tenue
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l6.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Keikogi
+          kanji: 稽古着
+          fr: tenue d'entraînement (veste et pantalon)
+          illustration:
+            image: scenes/keikogi
+            emoji: 🥋
+            alt: Un pratiquant debout en tenue blanche et ceinture blanche, au dojo.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Obi
+          kanji: 帯
+          fr: ceinture
+          illustration:
+            image: scenes/obi
+            emoji: 🎗️
+            alt: Gros plan sur une ceinture nouée à la taille d'un pratiquant en keikogi.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Hakama
+          kanji: 袴
+          fr: pantalon large plissé porté par-dessus le keikogi
+          illustration:
+            image: scenes/hakama
+            emoji: 👖
+            alt: Un pratiquant debout en hakama sombre, plis visibles.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Une tenue propre, toujours
+        texte: "On pratique en keikogi, serré par une ceinture, l'obi. Le hakama est un large pantalon plissé porté par-dessus. Le moment où l'on commence à porter le hakama dépend des fédérations et des dojos : demandez à votre enseignant. Le guide FFAAA insiste sur une tenue propre."
+    exercises:
+      - id: ex-6k-u1-l6-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Hakama »"
+        jpText: Hakama
+        options:
+          - id: o1
+            text: Obi
+            illustration:
+              image: scenes/obi
+              emoji: 🎗️
+              alt: Gros plan sur une ceinture nouée à la taille.
+          - id: o2
+            text: Hakama
+            illustration:
+              image: scenes/hakama
+              emoji: 👖
+              alt: Un pratiquant debout en hakama sombre, plis visibles.
+          - id: o3
+            text: Keikogi
+            illustration:
+              image: scenes/keikogi
+              emoji: 🥋
+              alt: Un pratiquant en tenue blanche et ceinture blanche.
+        correctAnswer: Hakama
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-2
+        type: match_pairs
+        prompt: Associez chaque terme à son sens.
+        pairs:
+          - jp: keikogi
+            fr: tenue d'entraînement
+          - jp: obi
+            fr: ceinture
+          - jp: hakama
+            fr: pantalon large plissé
+          - jp: keiko
+            fr: pratique
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-3
+        type: kanji_choice
+        prompt: Que signifie ce kanji ?
+        kanji: 帯
+        options:
+          - id: o1
+            text: hakama
+            translation: pantalon plissé
+          - id: o2
+            text: rei
+            translation: salut
+          - id: o3
+            text: obi
+            translation: ceinture
+        correctAnswer: obi
+        explanation: "帯 : obi. Hakama s'écrit 袴, rei 礼."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Toutes les fédérations fixent le même grade pour commencer à porter le hakama.
+        correctAnswer: faux
+        explanation: C'est une coutume qui varie selon les fédérations et les dojos.
+        sources:
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-5
+        type: term_choice
+        prompt: Quel terme désigne la tenue d'entraînement ?
+        frText: La veste et le pantalon portés pour pratiquer
+        options:
+          - id: o1
+            text: keikogi
+          - id: o2
+            text: keiko
+          - id: o3
+            text: kamiza
+        correctAnswer: keikogi
+        explanation: Keikogi = keiko (pratique) + gi (vêtement). Keiko seul désigne la pratique.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: はかま
+        options:
+          - id: o1
+            text: hanmi
+            translation: garde de profil
+          - id: o2
+            text: kamae
+            translation: garde
+          - id: o3
+            text: hakama
+            translation: pantalon plissé
+        correctAnswer: hakama
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-7
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la ceinture
+        correctAnswer: obi
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l6-8
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Le hakama se porte par-dessus le ___.
+        options:
+          - id: o1
+            text: keikogi
+          - id: o2
+            text: obi
+          - id: o3
+            text: tatami
+        correctAnswer: keikogi
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u1-l7
+    title: Sensei, sempai, kohai
+    subtitle: Sensei
+    description: Qui est qui au dojo.
+    icon: GraduationCap
+    xpReward: 20
+    focus: Les relations entre pratiquants
+    isReview: false
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l7.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Sensei
+          kanji: 先生
+          fr: enseignant
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Sempai
+          kanji: 先輩
+          fr: pratiquant plus ancien que soi
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Kohai
+          kanji: 後輩
+          fr: pratiquant plus récent que soi
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shihan
+          kanji: 師範
+          fr: maître, enseignant de très haut grade
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Avant et après
+        texte: "Sempai et kohai ne parlent pas de niveau mais d'ancienneté : le sempai a commencé avant vous, le kohai après. 先 (avant) se retrouve dans sensei et sempai, 後 (après) dans kohai. L'enseignant est le sensei ; shihan désigne un maître de très haut grade."
+    exercises:
+      - id: ex-6k-u1-l7-1
+        type: match_pairs
+        prompt: Associez chaque terme à son sens.
+        pairs:
+          - jp: sensei
+            fr: enseignant
+          - jp: sempai
+            fr: plus ancien que soi
+          - jp: kohai
+            fr: plus récent que soi
+          - jp: shihan
+            fr: maître de très haut grade
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-2
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 先生
+        options:
+          - id: o1
+            text: sensei
+            translation: enseignant
+          - id: o2
+            text: sempai
+            translation: plus ancien
+          - id: o3
+            text: shihan
+            translation: maître
+        correctAnswer: sensei
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-3
+        type: term_choice
+        prompt: Comment appelle-t-on un pratiquant qui a commencé avant vous ?
+        frText: Un pratiquant plus ancien que soi au dojo
+        options:
+          - id: o1
+            text: kohai
+          - id: o2
+            text: sensei
+          - id: o3
+            text: sempai
+        correctAnswer: sempai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Un kohai est un pratiquant qui a commencé après vous.
+        correctAnswer: vrai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-5
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Vous n'avez pas compris la technique montrée. L'enseignant passe près de vous.
+        options:
+          - id: o1
+            text: Je lui demande poliment de m'aider
+          - id: o2
+            text: J'invente une technique à la place
+          - id: o3
+            text: J'arrête et je quitte le tapis sans saluer
+        correctAnswer: Je lui demande poliment de m'aider
+        explanation: Demander de l'aide au sensei est normal ; quitter le tapis se fait en saluant.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "16"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-6
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: せんせい
+            fr: enseignant
+          - jp: せんぱい
+            fr: plus ancien
+          - jp: こうはい
+            fr: plus récent
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-7
+        type: meaning_choice
+        prompt: Que signifie « shihan » ?
+        jpText: Shihan
+        options:
+          - id: o1
+            text: salle de pratique
+          - id: o2
+            text: maître, enseignant de très haut grade
+          - id: o3
+            text: élève débutant
+        correctAnswer: maître, enseignant de très haut grade
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l7-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: せんせい
+        correctAnswer: sensei
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u1-l8
+    title: "Révision : le dojo et l'étiquette"
+    subtitle: Reishiki
+    description: Tout ce qu'il faut savoir avant de monter sur le tapis.
+    icon: RotateCcw
+    xpReward: 30
+    focus: Révision des leçons 1 à 7
+    isReview: true
+    research: niveaux/6k/6k-u1/recherche/6k-u1-l8.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Dojo
+          kanji: 道場
+          fr: "« lieu de la voie » : la salle où l'on pratique"
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Kamiza
+          kanji: 上座
+          fr: place d'honneur du dojo
+          illustration:
+            image: scenes/kamiza
+            emoji: ⛩️
+            alt: Le mur d'honneur d'un dojo, sobre, face au tatami.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Seiza
+          kanji: 正座
+          fr: assis à genoux, sur les talons, le dos droit
+          illustration:
+            image: scenes/seiza
+            emoji: 🧎
+            alt: Un pratiquant assis à genoux sur ses talons, dos droit, mains posées sur les cuisses, vu de profil.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Onegai shimasu
+          fr: "« je vous en prie » : au salut du début, ou avant de pratiquer avec un partenaire"
+          note: お願いします
+          source:
+            type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+        - jp: Keiko
+          kanji: 稽古
+          fr: la pratique, l'entraînement
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Keikogi
+          kanji: 稽古着
+          fr: tenue d'entraînement (veste et pantalon)
+          illustration:
+            image: scenes/keikogi
+            emoji: 🥋
+            alt: Un pratiquant debout en tenue blanche et ceinture blanche, au dojo.
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Sensei
+          kanji: 先生
+          fr: enseignant
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Révision
+        texte: "Saluer en montant et en quittant le tapis, s'asseoir en seiza, dire onegai shimasu et arigato gozaimashita, respecter les règles du dojo : c'est le reishiki."
+    exercises:
+      - id: ex-6k-u1-l8-1
+        type: technique_decoder
+        prompt: Shomen veut dire « face avant ». Dans le nom d'attaque « shomen uchi », que vise la frappe ?
+        jpText: Shomen uchi ikkyo
+        decomposition:
+          attaque: shomen uchi
+          technique: ikkyo
+        options:
+          - id: o1
+            text: le ventre
+          - id: o2
+            text: le devant (le haut) de la tête
+          - id: o3
+            text: le côté de la tête
+        correctAnswer: le devant (le haut) de la tête
+        explanation: "Shomen (face avant) + uchi (frappe) : frappe verticale au sommet de la tête. La frappe sur le côté est yokomen uchi, le coup au ventre chudan tsuki."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-2
+        type: tile_build
+        prompt: Composez la formule de fin de cours.
+        frText: Merci (pour la pratique qui vient d'avoir lieu)
+        wordBank:
+          - gozaimashita
+          - onegai
+          - arigato
+          - shimasu
+        correctAnswer:
+          - arigato
+          - gozaimashita
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-3
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Saluer en montant sur le tapis
+          - "Salut du début en seiza : « onegai shimasu »"
+          - Pratique
+          - "Salut de fin : « arigato gozaimashita »"
+          - Saluer en quittant le tapis
+        correctAnswer: steps
+        sources:
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-4
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: seiza
+            fr: assis à genoux
+          - jp: zarei
+            fr: salut à genoux
+          - jp: ritsurei
+            fr: salut debout
+          - jp: kamiza
+            fr: place d'honneur
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-5
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Vous avez fini de travailler avec un partenaire et l'enseignant annonce un changement.
+        options:
+          - id: o1
+            text: Je salue mon partenaire avant d'en rejoindre un autre
+          - id: o2
+            text: Je pars aussitôt sans rien dire
+          - id: o3
+            text: Je reste avec le même partenaire
+        correctAnswer: Je salue mon partenaire avant d'en rejoindre un autre
+        explanation: Le salut encadre chaque pratique à deux ; sa forme exacte varie selon les dojos.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-6
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le shimoza est la place d'honneur du dojo.
+        correctAnswer: faux
+        explanation: La place d'honneur est le kamiza ; le shimoza est le côté opposé.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-7
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: おねがいします
+        options:
+          - id: o1
+            text: sensei
+            translation: enseignant
+          - id: o2
+            text: onegai shimasu
+            translation: je vous en prie
+          - id: o3
+            text: arigato gozaimashita
+            translation: merci
+        correctAnswer: onegai shimasu
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u1-l8-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la tenue d'entraînement
+        correctAnswer: keikogi
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19

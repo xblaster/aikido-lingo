@@ -1,0 +1,1589 @@
+# Unité 6k-u4 : généré depuis le brouillon de l’agent contenu ; fiches dans 6k-u4/recherche/.
+id: 6k-u4
+level: 6K
+unitNumber: 4
+title: Se déplacer
+jpTitle: Tai sabaki
+description: Les pas de base, irimi et tenkan, le déplacement à genoux et le premier travail sur saisie.
+themeColor: bg-violet-500
+icon: Footprints
+cover: deplacements
+review:
+  statut: brouillon
+referentiel:
+  ref: 6k.yaml, unité « Se déplacer » (BUDOKAN-II §3 ; CSDGE-L2 p. 8 ; FLAM-KYU-2011 p. 4)
+  url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+lessons:
+  - id: 6k-u4-l1
+    title: Okuri ashi
+    subtitle: Okuri ashi
+    description: Le pas chassé.
+    icon: ArrowRight
+    xpReward: 20
+    focus: Avancer en gardant son hanmi
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l1.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tai sabaki
+          kanji: 体さばき
+          fr: déplacement du corps en réponse à l'attaque
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Okuri ashi
+          kanji: 送り足
+          fr: "pas chassé : le pied avant avance, le pied arrière suit aussitôt"
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Le pied arrière suit
+        texte: "Le manuel du Nippon Budokan range les pas de base sous le nom de tai sabaki, les déplacements du corps. Le premier est okuri ashi : le pied avant avance, le pied arrière suit aussitôt. On garde donc la même garde (le même hanmi)."
+    exercises:
+      - id: ex-6k-u4-l1-1
+        type: meaning_choice
+        prompt: Que désigne « okuri ashi » ?
+        jpText: Okuri ashi
+        options:
+          - id: o1
+            text: le demi-tour sur place
+          - id: o2
+            text: "le pas chassé : le pied arrière suit le pied avant"
+          - id: o3
+            text: "le pas marché : les pieds alternent"
+        correctAnswer: "le pas chassé : le pied arrière suit le pied avant"
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-2
+        type: order_steps
+        prompt: Remettez okuri ashi dans l'ordre.
+        steps:
+          - Être en hanmi
+          - Le pied avant avance
+          - Le pied arrière suit aussitôt
+        correctAnswer: steps
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 送り足
+        options:
+          - id: o1
+            text: ayumi ashi
+            translation: pas marché
+          - id: o2
+            text: tenkan ashi
+            translation: rotation
+          - id: o3
+            text: okuri ashi
+            translation: pas chassé
+        correctAnswer: okuri ashi
+        explanation: "足 (ashi) : le pied, le pas."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-4
+        type: term_choice
+        prompt: Quel nom regroupe les déplacements du corps ?
+        frText: Déplacement du corps en réponse à l'attaque
+        options:
+          - id: o1
+            text: ukemi
+          - id: o2
+            text: tai sabaki
+          - id: o3
+            text: kamae
+        correctAnswer: tai sabaki
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En okuri ashi, le pied avant reste devant.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: おくりあし
+        options:
+          - id: o1
+            text: ayumi ashi
+            translation: pas marché
+          - id: o2
+            text: ukemi
+            translation: chute
+          - id: o3
+            text: okuri ashi
+            translation: pas chassé
+        correctAnswer: okuri ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: En okuri ashi, le pied ___ suit aussitôt le pied avant.
+        options:
+          - id: o1
+            text: levé
+          - id: o2
+            text: arrière
+          - id: o3
+            text: gauche
+        correctAnswer: arrière
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l1-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: les déplacements du corps
+        correctAnswer: tai sabaki
+        acceptedAnswers:
+          - taisabaki
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u4-l2
+    title: Ayumi ashi
+    subtitle: Ayumi ashi
+    description: Le pas marché.
+    icon: Footprints
+    xpReward: 20
+    focus: Les pieds alternent, le hanmi change
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l2.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ayumi ashi
+          kanji: 歩み足
+          fr: "pas marché : les pieds alternent et le hanmi change de côté"
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Comme en marchant
+        texte: "En ayumi ashi, on avance comme en marchant : le pied arrière passe devant. La garde change donc de côté, de migi hanmi à hidari hanmi ou l'inverse."
+    exercises:
+      - id: ex-6k-u4-l2-1
+        type: meaning_choice
+        prompt: Que désigne « ayumi ashi » ?
+        jpText: Ayumi ashi
+        options:
+          - id: o1
+            text: le pivot sur le pied avant
+          - id: o2
+            text: le pas marché, les pieds alternent
+          - id: o3
+            text: le pas chassé
+        correctAnswer: le pas marché, les pieds alternent
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-2
+        type: scenario
+        prompt: Que devient la garde ?
+        frText: Vous êtes en migi hanmi et faites un pas en ayumi ashi.
+        options:
+          - id: o1
+            text: Je passe en hidari hanmi
+          - id: o2
+            text: Je reste en migi hanmi
+          - id: o3
+            text: Je me retrouve en seiza
+        correctAnswer: Je passe en hidari hanmi
+        explanation: "Le pied arrière (gauche) passe devant : la garde devient hidari hanmi."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En ayumi ashi, le hanmi change de côté.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-4
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: okuri ashi
+            fr: pas chassé
+          - jp: ayumi ashi
+            fr: pas marché
+          - jp: tai sabaki
+            fr: déplacement du corps
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-5
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 歩み足
+        options:
+          - id: o1
+            text: ayumi ashi
+            translation: pas marché
+          - id: o2
+            text: okuri ashi
+            translation: pas chassé
+          - id: o3
+            text: tenkai ashi
+            translation: demi-tour
+        correctAnswer: ayumi ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-6
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: あゆみあし
+        correctAnswer: ayumi ashi
+        acceptedAnswers:
+          - ayumiashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-7
+        type: tile_build
+        prompt: Composez le nom du pas marché.
+        frText: le pas marché
+        wordBank:
+          - okuri
+          - ashi
+          - ayumi
+          - tenkan
+        correctAnswer:
+          - ayumi
+          - ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l2-8
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: En ayumi ashi, c'est le pied ___ qui passe devant.
+        options:
+          - id: o1
+            text: arrière
+          - id: o2
+            text: avant
+          - id: o3
+            text: droit, toujours
+        correctAnswer: arrière
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u4-l3
+    title: Tenkai ashi
+    subtitle: Tenkai
+    description: Le demi-tour sur place.
+    icon: RefreshCw
+    xpReward: 20
+    focus: Pivoter de 180° sur place
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l3.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tenkai ashi
+          kanji: 転回足
+          fr: demi-tour sur place (180°) en changeant l'orientation du corps
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Se retourner sans se déplacer
+        texte: "Tenkai ashi est un demi-tour sur place : les pieds pivotent et le corps fait face à la direction opposée. Le nom ressemble à tenkan : ne les confondez pas, la leçon suivante présente tenkan."
+    exercises:
+      - id: ex-6k-u4-l3-1
+        type: meaning_choice
+        prompt: Que désigne « tenkai ashi » ?
+        jpText: Tenkai ashi
+        options:
+          - id: o1
+            text: un déplacement à genoux
+          - id: o2
+            text: un demi-tour sur place
+          - id: o3
+            text: un pas chassé
+        correctAnswer: un demi-tour sur place
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-2
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Tenkai ashi et tenkan désignent exactement le même mouvement.
+        correctAnswer: faux
+        explanation: "Tenkai ashi : demi-tour sur place. Tenkan : pivot qui efface le corps devant l'action de uke."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 転回足
+        options:
+          - id: o1
+            text: tenkan ashi
+            translation: rotation autour du pied avant
+          - id: o2
+            text: ayumi ashi
+            translation: pas marché
+          - id: o3
+            text: tenkai ashi
+            translation: demi-tour
+        correctAnswer: tenkai ashi
+        explanation: 回 (tourner) dans tenkai ; 換 (changer) dans tenkan.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-4
+        type: term_choice
+        prompt: Quel déplacement fait faire un demi-tour sur place ?
+        frText: Pivot de 180° sur place
+        options:
+          - id: o1
+            text: ayumi ashi
+          - id: o2
+            text: tenkai ashi
+          - id: o3
+            text: okuri ashi
+        correctAnswer: tenkai ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-5
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: okuri ashi
+            fr: pas chassé
+          - jp: ayumi ashi
+            fr: pas marché
+          - jp: tenkai ashi
+            fr: demi-tour sur place
+          - jp: kamae
+            fr: garde
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-6
+        type: scenario
+        prompt: Quel déplacement utiliser ?
+        frText: L'enseignant demande de faire face à l'autre côté du dojo sans avancer.
+        options:
+          - id: o1
+            text: okuri ashi
+          - id: o2
+            text: ayumi ashi
+          - id: o3
+            text: tenkai ashi
+        correctAnswer: tenkai ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Tenkai ashi fait tourner le corps de ___ degrés.
+        options:
+          - id: o1
+            text: "360"
+          - id: o2
+            text: "180"
+          - id: o3
+            text: "45"
+        correctAnswer: "180"
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l3-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: le demi-tour sur place
+        correctAnswer: tenkai ashi
+        acceptedAnswers:
+          - tenkaiashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u4-l4
+    title: Tenkan ashi et tenkan
+    subtitle: Tenkan
+    description: Tourner autour de son pied avant.
+    icon: RotateCw
+    xpReward: 20
+    focus: Pivot autour du pied avant
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l4.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tenkan ashi
+          kanji: 転換足
+          fr: rotation du corps autour du pied avant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Tenkan
+          kanji: 転換
+          fr: pivot qui efface le corps devant l'action de uke, sans changer de hanmi
+          illustration:
+            image: scenes/tenkan
+            emoji: 🔄
+            alt: Uke saisit le poignet de tori ; tori pivote derrière son pied avant et se retrouve à côté d'uke, tourné dans la même direction.
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      note:
+        titre: S'effacer en pivotant
+        texte: "En tenkan ashi, le corps tourne autour du pied avant. Le mot tenkan désigne ce pivot quand il sert à s'effacer devant l'action de uke : selon la CSDGE, on pivote sans changer de hanmi, et tenkan complète irimi."
+    exercises:
+      - id: ex-6k-u4-l4-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Tenkan »"
+        jpText: Tenkan
+        options:
+          - id: o1
+            text: Shikko
+            illustration:
+              image: scenes/shikko
+              emoji: 🧎
+              alt: Un pratiquant se déplace à genoux, une jambe avancée.
+          - id: o2
+            text: Tenkan
+            illustration:
+              image: scenes/tenkan
+              emoji: 🔄
+              alt: Tori pivote derrière son pied avant alors qu'uke lui saisit le poignet.
+          - id: o3
+            text: Irimi
+            illustration:
+              image: scenes/irimi
+              emoji: ➡️
+              alt: Tori entre à côté d'uke qui attaque, en passant sur sa ligne d'attaque.
+        correctAnswer: Tenkan
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-2
+        type: meaning_choice
+        prompt: Que désigne « tenkan ashi » ?
+        jpText: Tenkan ashi
+        options:
+          - id: o1
+            text: la rotation du corps autour du pied avant
+          - id: o2
+            text: le pas chassé
+          - id: o3
+            text: le demi-tour sur place
+        correctAnswer: la rotation du corps autour du pied avant
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Selon la CSDGE, tenkan se fait sans changer de hanmi.
+        correctAnswer: vrai
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 転換
+        options:
+          - id: o1
+            text: irimi
+            translation: entrer
+          - id: o2
+            text: tenkan
+            translation: pivot
+          - id: o3
+            text: tenkai
+            translation: demi-tour
+        correctAnswer: tenkan
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-5
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: てんかん
+        options:
+          - id: o1
+            text: tenkan
+            translation: pivot
+          - id: o2
+            text: tegatana
+            translation: main-sabre
+          - id: o3
+            text: tanto
+            translation: couteau
+        correctAnswer: tenkan
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-6
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Uke saisit le poignet de tori
+          - Tori pivote autour de son pied avant
+          - Tori se retrouve à côté de uke, tourné dans la même direction
+        correctAnswer: steps
+        explanation: C'est le schéma de l'exercice tenkan sur saisie ; l'enseignant en montrera les détails.
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-7
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: てんかん
+            fr: pivot
+          - jp: おくりあし
+            fr: pas chassé
+          - jp: あゆみあし
+            fr: pas marché
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l4-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: le pivot qui efface le corps devant uke
+        correctAnswer: tenkan
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+  - id: 6k-u4-l5
+    title: Irimi et tenkan
+    subtitle: Irimi
+    description: "Entrer, pivoter : deux principes complémentaires."
+    icon: ArrowRightLeft
+    xpReward: 20
+    focus: Irimi, entrer dans la garde de uke
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l5.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Irimi
+          kanji: 入身
+          fr: entrer, pénétrer dans la garde de uke
+          illustration:
+            image: scenes/irimi
+            emoji: ➡️
+            alt: Uke attaque ; tori entre à côté de lui en passant sur sa ligne d'attaque.
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      note:
+        titre: Entrer plutôt que reculer
+        texte: "Irimi signifie entrer : au lieu de reculer devant l'attaque, tori entre à côté de uke. Pour la CSDGE, c'est un élément fondamental du placement initial ; tenkan, le pivot, en est le complément. L'Aikikai cite irimi parmi les principes de l'aïkido."
+    exercises:
+      - id: ex-6k-u4-l5-1
+        type: meaning_choice
+        prompt: Que signifie « irimi » ?
+        jpText: Irimi
+        options:
+          - id: o1
+            text: chuter en avant
+          - id: o2
+            text: entrer dans la garde de uke
+          - id: o3
+            text: reculer pour éviter
+        correctAnswer: entrer dans la garde de uke
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-2
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 入身
+        options:
+          - id: o1
+            text: irimi
+            translation: entrer
+          - id: o2
+            text: hanmi
+            translation: garde de profil
+          - id: o3
+            text: ukemi
+            translation: chute
+        correctAnswer: irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Pour la CSDGE, tenkan est le complément d'irimi.
+        correctAnswer: vrai
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-4
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Irimi »"
+        jpText: Irimi
+        options:
+          - id: o1
+            text: Ushiro ukemi
+            illustration:
+              image: scenes/ushiro-ukemi
+              emoji: 🤸
+              alt: Un pratiquant chute en arrière, menton rentré.
+          - id: o2
+            text: Irimi
+            illustration:
+              image: scenes/irimi
+              emoji: ➡️
+              alt: Tori entre à côté d'uke qui attaque, en passant sur sa ligne d'attaque.
+          - id: o3
+            text: Tenkan
+            illustration:
+              image: scenes/tenkan
+              emoji: 🔄
+              alt: Tori pivote derrière son pied avant alors qu'uke lui saisit le poignet.
+        correctAnswer: Irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-5
+        type: technique_decoder
+        prompt: « Irimi nage » est une technique du 5e kyu. Quel principe contient son nom ?
+        jpText: Shomen uchi irimi nage
+        decomposition:
+          attaque: shomen uchi
+          technique: irimi nage
+        options:
+          - id: o1
+            text: "irimi : entrer"
+          - id: o2
+            text: "tenkan : pivoter"
+          - id: o3
+            text: "ukemi : chuter"
+        correctAnswer: "irimi : entrer"
+        explanation: "Irimi nage : projection (nage) en entrant (irimi)."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "19"
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-6
+        type: term_choice
+        prompt: Quel principe consiste à entrer à côté de uke ?
+        frText: Entrer dans la garde de uke au lieu de reculer
+        options:
+          - id: o1
+            text: tenkai
+          - id: o2
+            text: kiza
+          - id: o3
+            text: irimi
+        correctAnswer: irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: いりみ
+        correctAnswer: irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l5-8
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: irimi
+            fr: entrer
+          - jp: tenkan
+            fr: pivoter
+          - jp: tenkai ashi
+            fr: demi-tour sur place
+          - jp: okuri ashi
+            fr: pas chassé
+        correctAnswer: pairs
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u4-l6
+    title: Shikko
+    subtitle: Shikko
+    description: Se déplacer à genoux.
+    icon: MoveDown
+    xpReward: 20
+    focus: Shikko depuis kiza
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l6.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Shikko
+          kanji: 膝行
+          fr: déplacement à genoux
+          illustration:
+            image: scenes/shikko
+            emoji: 🧎
+            alt: Un pratiquant se déplace à genoux sur le tatami, une jambe avancée, orteils retournés, vu de trois quarts.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Marcher à genoux
+        texte: "Shikko est le déplacement à genoux. Il part de kiza, orteils retournés. Le Budokan l'enseigne avec les bases, et la FLAM comme la FFAAA le citent dès le 5e kyu. Il prépare le travail à genoux (suwari waza). Allez-y progressivement : si vos genoux souffrent, prévenez l'enseignant."
+    exercises:
+      - id: ex-6k-u4-l6-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Shikko »"
+        jpText: Shikko
+        options:
+          - id: o1
+            text: Zarei
+            illustration:
+              image: scenes/zarei
+              emoji: 🙇
+              alt: Deux partenaires en seiza se saluent.
+          - id: o2
+            text: Shikko
+            illustration:
+              image: scenes/shikko
+              emoji: 🧎
+              alt: Un pratiquant se déplace à genoux, une jambe avancée.
+          - id: o3
+            text: Seiza
+            illustration:
+              image: scenes/seiza
+              emoji: 🧎
+              alt: Un pratiquant assis sur ses talons, immobile.
+        correctAnswer: Shikko
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-2
+        type: meaning_choice
+        prompt: Que signifie « shikko » ?
+        jpText: Shikko
+        options:
+          - id: o1
+            text: déplacement à genoux
+          - id: o2
+            text: salut à genoux
+          - id: o3
+            text: chute avant
+        correctAnswer: déplacement à genoux
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 膝行
+        options:
+          - id: o1
+            text: seiza
+            translation: assis sur les talons
+          - id: o2
+            text: kiza
+            translation: orteils retournés
+          - id: o3
+            text: shikko
+            translation: déplacement à genoux
+        correctAnswer: shikko
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: La FLAM et la FFAAA citent le shikko dès le 5e kyu.
+        correctAnswer: vrai
+        sources:
+          - type: federation
+            ref: FLAM-KYU-2011
+            url: https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf
+            page: "4"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-5
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Pendant le shikko, vous ressentez une douleur au genou.
+        options:
+          - id: o1
+            text: Je m'arrête et je préviens l'enseignant
+          - id: o2
+            text: Je continue en serrant les dents
+          - id: o3
+            text: Je quitte le tapis sans rien dire
+        correctAnswer: Je m'arrête et je préviens l'enseignant
+        explanation: La sécurité passe d'abord ; on quitte le tapis en saluant et en prévenant l'enseignant.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: 16-17
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: しっこう
+        options:
+          - id: o1
+            text: seiza
+            translation: assis
+          - id: o2
+            text: shisei
+            translation: posture
+          - id: o3
+            text: shikko
+            translation: déplacement à genoux
+        correctAnswer: shikko
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Le shikko prépare le travail à genoux, appelé ___ waza.
+        options:
+          - id: o1
+            text: ushiro
+          - id: o2
+            text: suwari
+          - id: o3
+            text: tachi
+        correctAnswer: suwari
+        explanation: "Suwari waza 座技 : les deux partenaires à genoux. Tachi waza : debout."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "17"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l6-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: le déplacement à genoux
+        correctAnswer: shikko
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u4-l7
+    title: Tai sabaki sur katate dori
+    subtitle: Tai no henko
+    description: "Le premier travail à deux : se déplacer sur une saisie."
+    icon: Hand
+    xpReward: 20
+    focus: "Sotai dosa : katate dori et tai sabaki"
+    isReview: false
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l7.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Katate dori
+          kanji: 片手取
+          fr: saisie d'un poignet par une main
+          illustration:
+            image: scenes/katate-dori
+            emoji: ✊
+            alt: Uke saisit d'une main un poignet de tori.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+        - jp: Tai no henko
+          kanji: 体の変更
+          fr: exercice de base de rotation du corps sur saisie du poignet
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Bouger le corps, pas seulement le bras
+        texte: "La FLAM cite, avec le 5e kyu, un travail à deux comme katate dori – tai sabaki : uke saisit un poignet, tori répond en déplaçant tout son corps. L'exercice de rotation sur saisie du poignet s'appelle souvent tai no henko."
+    exercises:
+      - id: ex-6k-u4-l7-1
+        type: technique_decoder
+        prompt: Dans « katate dori », que signifie « katate » ?
+        jpText: Katate dori shiho nage
+        decomposition:
+          attaque: katate dori
+          technique: shiho nage
+        options:
+          - id: o1
+            text: l'épaule
+          - id: o2
+            text: une main
+          - id: o3
+            text: les deux mains
+        correctAnswer: une main
+        explanation: "Katate : une main ; dori : saisie. Les deux mains : ryote ; l'épaule : kata."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-2
+        type: meaning_choice
+        prompt: Que désigne « tai no henko » ?
+        jpText: Tai no henko
+        options:
+          - id: o1
+            text: un exercice de rotation du corps sur saisie du poignet
+          - id: o2
+            text: une chute arrière
+          - id: o3
+            text: un salut debout
+        correctAnswer: un exercice de rotation du corps sur saisie du poignet
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-3
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Katate dori »"
+        jpText: Katate dori
+        options:
+          - id: o1
+            text: Ryote dori
+            illustration:
+              image: scenes/ryote-dori
+              emoji: ✊
+              alt: Uke saisit les deux poignets de tori, une main pour chaque poignet.
+          - id: o2
+            text: Morote dori
+            illustration:
+              image: scenes/morote-dori
+              emoji: ✊
+              alt: Uke saisit à deux mains un seul avant-bras de tori.
+          - id: o3
+            text: Katate dori
+            illustration:
+              image: scenes/katate-dori
+              emoji: ✊
+              alt: Uke saisit d'une main un poignet de tori.
+        correctAnswer: Katate dori
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Sur une saisie de poignet, tori répond en déplaçant tout son corps, pas seulement son bras.
+        correctAnswer: vrai
+        sources:
+          - type: federation
+            ref: FLAM-KYU-2011
+            url: https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf
+            page: "4"
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-5
+        type: tile_build
+        prompt: Composez le nom de l'attaque.
+        frText: saisie d'un poignet par une main
+        wordBank:
+          - dori
+          - ryote
+          - katate
+          - uchi
+        correctAnswer:
+          - katate
+          - dori
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-6
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Sensei
+            text: "Uke, saisis le poignet de ton partenaire : katate dori."
+          - speaker: Narrateur
+            text: Uke saisit. Tori ne tire pas avec son bras.
+          - speaker: Narrateur
+            text: Il pivote autour de son pied avant et se retrouve à côté de uke.
+          - speaker: Sensei
+            text: "Voilà : le corps entier se déplace. On change de rôle."
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 1
+            prompt: Quelle attaque l'enseignant demande-t-il ?
+            options:
+              - id: o1
+                text: ryote dori
+              - id: o2
+                text: katate dori
+              - id: o3
+                text: shomen uchi
+            correctAnswer: katate dori
+          - afterLine: 3
+            prompt: Quel déplacement fait tori ?
+            options:
+              - id: o1
+                text: un pivot autour du pied avant (tenkan)
+              - id: o2
+                text: un pas chassé en arrière
+              - id: o3
+                text: une chute avant
+            correctAnswer: un pivot autour du pied avant (tenkan)
+        sources:
+          - type: federation
+            ref: FLAM-KYU-2011
+            url: https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf
+            page: "4"
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: かたてどり
+        correctAnswer: katate dori
+        acceptedAnswers:
+          - katatedori
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l7-8
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: katate dori
+            fr: saisie d'un poignet
+          - jp: tai no henko
+            fr: rotation sur saisie
+          - jp: tenkan
+            fr: pivot
+          - jp: irimi
+            fr: entrer
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+  - id: 6k-u4-l8
+    title: "Révision : se déplacer"
+    subtitle: Tai sabaki
+    description: Tous les déplacements de l'unité.
+    icon: RotateCcw
+    xpReward: 30
+    focus: Révision des leçons 1 à 7
+    isReview: true
+    research: niveaux/6k/6k-u4/recherche/6k-u4-l8.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tai sabaki
+          kanji: 体さばき
+          fr: déplacement du corps en réponse à l'attaque
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Ayumi ashi
+          kanji: 歩み足
+          fr: "pas marché : les pieds alternent et le hanmi change de côté"
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Tenkai ashi
+          kanji: 転回足
+          fr: demi-tour sur place (180°) en changeant l'orientation du corps
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Tenkan ashi
+          kanji: 転換足
+          fr: rotation du corps autour du pied avant
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Irimi
+          kanji: 入身
+          fr: entrer, pénétrer dans la garde de uke
+          illustration:
+            image: scenes/irimi
+            emoji: ➡️
+            alt: Uke attaque ; tori entre à côté de lui en passant sur sa ligne d'attaque.
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+        - jp: Shikko
+          kanji: 膝行
+          fr: déplacement à genoux
+          illustration:
+            image: scenes/shikko
+            emoji: 🧎
+            alt: Un pratiquant se déplace à genoux sur le tatami, une jambe avancée, orteils retournés, vu de trois quarts.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Katate dori
+          kanji: 片手取
+          fr: saisie d'un poignet par une main
+          illustration:
+            image: scenes/katate-dori
+            emoji: ✊
+            alt: Uke saisit d'une main un poignet de tori.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      note:
+        titre: Révision
+        texte: Okuri ashi, ayumi ashi, tenkai ashi, tenkan ashi ; irimi et tenkan ; shikko ; tai sabaki sur katate dori.
+    exercises:
+      - id: ex-6k-u4-l8-1
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: okuri ashi
+            fr: pas chassé
+          - jp: ayumi ashi
+            fr: pas marché
+          - jp: tenkai ashi
+            fr: demi-tour
+          - jp: tenkan ashi
+            fr: rotation autour du pied avant
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-2
+        type: scenario
+        prompt: Quel déplacement ?
+        frText: Vous voulez avancer sans changer de garde.
+        options:
+          - id: o1
+            text: okuri ashi
+          - id: o2
+            text: ayumi ashi
+          - id: o3
+            text: tenkai ashi
+        correctAnswer: okuri ashi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-3
+        type: technique_decoder
+        prompt: Dans « ai hanmi katate dori », quelle partie nomme la saisie ?
+        jpText: Ai hanmi katate dori irimi nage
+        decomposition:
+          attaque: ai hanmi katate dori
+          technique: irimi nage
+        options:
+          - id: o1
+            text: ai hanmi
+          - id: o2
+            text: ai
+          - id: o3
+            text: katate dori
+        correctAnswer: katate dori
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "7"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-4
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Seiza
+          - Kiza
+          - Shikko
+        correctAnswer: steps
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Irimi consiste à reculer pour éviter l'attaque.
+        correctAnswer: faux
+        explanation: "Irimi : entrer dans la garde de uke."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-6
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Ryote dori »"
+        jpText: Ryote dori
+        options:
+          - id: o1
+            text: Katate dori
+            illustration:
+              image: scenes/katate-dori
+              emoji: ✊
+              alt: Uke saisit d'une main un poignet de tori.
+          - id: o2
+            text: Morote dori
+            illustration:
+              image: scenes/morote-dori
+              emoji: ✊
+              alt: Uke saisit à deux mains un seul avant-bras de tori.
+          - id: o3
+            text: Ryote dori
+            illustration:
+              image: scenes/ryote-dori
+              emoji: ✊
+              alt: Uke saisit les deux poignets de tori, une main pour chaque poignet.
+        correctAnswer: Ryote dori
+        explanation: "Ryote : les deux mains, une sur chaque poignet. Morote : deux mains sur un seul bras."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-7
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: いりみ
+        options:
+          - id: o1
+            text: hanmi
+            translation: garde
+          - id: o2
+            text: irimi
+            translation: entrer
+          - id: o3
+            text: ukemi
+            translation: chute
+        correctAnswer: irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19
+      - id: ex-6k-u4-l8-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: entrer dans la garde de uke
+        correctAnswer: irimi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "8"
+            consulte: 2026-10-19

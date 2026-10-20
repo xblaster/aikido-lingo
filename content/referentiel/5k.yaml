@@ -1,0 +1,98 @@
+# Référentiel du niveau 5e kyu. Rédigé le 2026-10-19 à partir de : FFAB « Grades KYU » (colonne vertébrale),
+# FFAAA Guide du débutant (exemple de progression), FLAM Annexe 2.1 (2011), Aikikai Examination Guidelines,
+# Nippon Budokan (techniques du 5e kyu Hombu), CSDGE Livre 2 (définitions).
+# Colonne vertébrale : FFAB, seul programme kyu officiel et actuel publié en ligne en France.
+# Les autres référentiels figurent dans `variantes` : ne jamais les présenter comme la règle unique.
+level: 5K
+nom: "5e kyu"
+referencePrincipale: "FFAB, Grades KYU"
+referentielPrincipal: "FFAB, Grades KYU"
+etat: complet
+prerequis:
+  - { referentiel: "FFAB", texte: "Minimum 2 mois de pratique ou 20 heures", source: "FFAB-KYU" }
+  - { referentiel: "FFAAA", texte: "2 mois (minimum réglementaire ; en pratique souvent le double)", source: "FFAAA-GUIDE p. 21" }
+  - { referentiel: "FLAM", texte: "20 cours de pratique depuis l'inscription ; ceinture jaune", source: "FLAM-KYU-2011 p. 4" }
+  - { referentiel: "Aikikai Hombu", texte: "30 jours de pratique", source: "AIK-EXAM-EN" }
+
+programmeOfficiel:   # FFAB
+  - { categorie: "Suwari waza", attaque: "Ai hanmi katate dori", techniques: ["Ikkyo", "Irimi nage"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+  - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+  - { categorie: "Suwari waza", attaque: "Ryote dori", techniques: ["Kokyu ho"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+  - { categorie: "Tachi waza", attaque: "Ai hanmi katate dori", techniques: ["Ikkyo", "Shiho nage", "Irimi nage"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+  - { categorie: "Tachi waza", attaque: "Gyaku hanmi katate dori", techniques: ["Tenchi nage"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+  - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"], source: { ref: "FFAB, Grades KYU, 5e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 5e KYU" } }
+
+variantes:
+  - referentiel: "FFAAA (exemple de progression, non normatif)"
+    source: { ref: "FFAAA, Guide du débutant", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "18" }
+    lignes:
+      - { categorie: "Tachi waza", attaque: "Ai hanmi katate dori", techniques: ["Ikkyo", "Shiho nage", "Irimi nage"] }
+      - { categorie: "Tachi waza", attaque: "Katate dori", techniques: ["Shiho nage", "Tenchi nage"] }
+      - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"] }
+      - { categorie: "Suwari waza", attaque: "Ryote dori", techniques: ["Kokyu ho", "Shikko (déplacement)"] }
+  - referentiel: "FLAM Luxembourg (2011, à titre indicatif, décision du professeur)"
+    source: { ref: "FLAM, Annexe 2.1 Passages de grades KYU", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18" }
+    lignes:
+      - { categorie: "Tachi waza", attaque: "Ai hanmi katate dori", techniques: ["Irimi nage omote/ura", "Kote gaeshi omote/ura", "Ikkyo omote/ura", "Shiho nage omote/ura", "Uchi kaiten nage omote/ura", "Sankyo omote/ura"] }
+      - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Irimi nage omote/ura"] }
+      - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Irimi nage omote/ura"] }
+      - { categorie: "Bases", attaque: null, techniques: ["Ukemi waza", "Shikko", "Tai sabaki", "Sotai dosa (ex. katate dori – tai sabaki)"] }
+  - referentiel: "Aikikai Hombu Dojo (Tokyo)"
+    source: { ref: "Aikikai, Examination Guidelines (tableau)", url: "https://aikikai.or.jp/eng/hombudojo/grading/", page: "ligne 5th Kyu" }
+    lignes:
+      - { categorie: "Non précisé (tachi waza par défaut)", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"] }
+      - { categorie: "Non précisé", attaque: "Katate dori", techniques: ["Shiho nage"] }
+      - { categorie: "Suwari waza (zagi)", attaque: null, techniques: ["Kokyu ho"] }
+    note: "Le Budokan illustre ce programme : shomen uchi dai ikkyo omote/ura, gyaku hanmi katate dori shiho nage omote/ura, shomen uchi irimi nage (BUDOKAN-II p. 25-30). Règle d'examen Aikikai : répéter gauche/droite, omote/ura jusqu'au « stop »."
+
+competences:
+  - "Nommer une technique dans l'ordre forme de travail + attaque + technique (+ omote/ura), ex. « suwari waza shomen uchi ikkyo » (structure de la nomenclature CSDGE-L2 p. 21 ; JAWIKI)."
+  - "Distinguer ai hanmi katate dori et gyaku hanmi katate dori (FFAAA-GUIDE p. 7 ; BUDOKAN-VII)."
+  - "Reconnaître les trois formes de travail du programme : suwari waza, tachi waza (et savoir que hanmi handachi viendra plus tard) (CSDGE-L2 p. 17)."
+  - "Comprendre omote (entrer devant) et ura (passer derrière) (CSDGE-L2 p. 8-9 ; BUDOKAN-VII)."
+  - "Situer ikkyo comme technique d'immobilisation (katame waza) et shiho nage, irimi nage, tenchi nage comme projections (nage waza) (CSDGE-L2 p. 19)."
+  - "Savoir que kokyu ho se pratique souvent assis, en fin de cours (JAWIKI ; AIK-EXAM-JA)."
+  - "Savoir que les délais diffèrent selon les fédérations et que le grade est délivré par l'enseignant du club (FFAB-KYU ; FFAAA-GRADES)."
+
+criteresEvaluation:
+  - "Aucun critère kyu publié par la FFAB : le kyu est délivré « sous la responsabilité de l'enseignant du club » (FFAB-KYU)."
+  - "FFAB : les kyu sont des repères de progression, pas une hiérarchie (FFAB-KYU)."
+  - "Aikikai : uke de même grade ; travailler à gauche et à droite, omote et ura jusqu'au « stop » de l'examinateur (AIK-EXAM-EN)."
+
+lexique:
+  - { romaji: "Suwari waza", kanji: "座技", sens: "techniques à genoux", source: "AIK-EXAM-JA" }
+  - { romaji: "Tachi waza", kanji: "立技", sens: "techniques debout", source: "AIK-EXAM-JA" }
+  - { romaji: "Ai hanmi katate dori", kanji: "相半身片手取り", sens: "saisie du poignet en garde identique (kanji : composition)", source: "BUDOKAN-VII ; CSDGE-L2 p. 18" }
+  - { romaji: "Gyaku hanmi katate dori", kanji: "逆半身片手取り", sens: "saisie du poignet en garde inversée", source: "BUDOKAN-II" }
+  - { romaji: "Ryote dori", kanji: "両手取", sens: "saisie des deux poignets", source: "AIK-EXAM-JA" }
+  - { romaji: "Shomen uchi", kanji: "正面打", sens: "frappe verticale de face", source: "AIK-EXAM-JA" }
+  - { romaji: "Ikkyo", kanji: "一教", sens: "premier principe (immobilisation)", source: "AIK-EXAM-JA" }
+  - { romaji: "Irimi nage", kanji: "入身投げ", sens: "projection en entrant", source: "AIK-EXAM-JA" }
+  - { romaji: "Shiho nage", kanji: "四方投げ", sens: "projection dans les quatre directions", source: "AIK-EXAM-JA" }
+  - { romaji: "Tenchi nage", kanji: "天地投げ", sens: "projection ciel-terre", source: "AIK-EXAM-JA" }
+  - { romaji: "Kokyu ho", kanji: "呼吸法", sens: "exercice de respiration/coordination", source: "AIK-EXAM-JA" }
+  - { romaji: "Omote", kanji: "表", sens: "forme avant", source: "BUDOKAN-VII" }
+  - { romaji: "Ura", kanji: "裏", sens: "forme arrière", source: "BUDOKAN-VII" }
+  - { romaji: "Nage waza", sens: "techniques de projection (kanji non vérifié)", source: "CSDGE-L2 p. 17" }
+  - { romaji: "Katame waza", sens: "techniques d'immobilisation (kanji non vérifié)", source: "CSDGE-L2 p. 17" }
+  - { romaji: "Kyu", kanji: "級", sens: "grade avant le dan", source: "AIK-EXAM-JA" }
+
+themes:
+  - unite: "Lire le nom d'une technique"
+    lecons: ["Forme de travail, attaque, technique", "Suwari waza et tachi waza", "Ai hanmi ou gyaku hanmi ?", "Omote et ura", "Projeter ou immobiliser : nage waza / katame waza", "Le programme du 5e kyu selon la FFAB", "Ce que demandent les autres (FFAAA, FLAM, Aikikai)"]
+  - unite: "Ikkyo"
+    lecons: ["Ikkyo : le premier principe", "Shomen uchi : l'attaque", "Shomen uchi ikkyo debout", "Shomen uchi ikkyo à genoux", "Ai hanmi katate dori ikkyo", "Omote et ura d'ikkyo", "Le rôle de uke dans ikkyo"]
+  - unite: "Irimi nage"
+    lecons: ["Irimi : entrer", "Irimi nage : nom et idée", "Shomen uchi irimi nage", "Ai hanmi katate dori irimi nage", "Irimi nage en suwari waza", "Zanshin après la projection", "Chuter sur irimi nage"]
+  - unite: "Shiho nage et tenchi nage"
+    lecons: ["Shiho nage : les quatre directions", "Ai hanmi katate dori shiho nage", "Gyaku hanmi katate dori shiho nage (exemple Budokan/Hombu)", "Tenchi nage : ciel et terre", "Gyaku hanmi katate dori tenchi nage", "Ryote dori : saisir les deux poignets", "Comparer les projections"]
+  - unite: "Kokyu ho et préparer son premier passage"
+    lecons: ["Kokyu : le souffle", "Suwari waza ryote dori kokyu ho", "Kokyu ho en fin de cours", "Qui délivre le kyu ?", "Délais : FFAB, FFAAA, FLAM, Aikikai", "Le jour du passage : étiquette", "Récapituler le programme"]
+
+sources:
+  - { type: federation, ref: "FFAB, Grades KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "5e KYU", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAAA, Guide du débutant (non daté)", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "7-13, 18, 21", consulte: "2026-10-19" }
+  - { type: federation, ref: "FLAM, Annexe 2.1 Passages de grades KYU (2011)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18", consulte: "2026-10-19" }
+  - { type: aikikai, ref: "Aikikai Hombu Dojo, Examination Guidelines / 審査要項", url: "https://aikikai.or.jp/eng/hombudojo/grading/", consulte: "2026-10-19" }
+  - { type: ouvrage, ref: "Nippon Budokan, 少年少女武道指導書 合気道, chap. Ⅱ §6 基本技", url: "https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf", page: "25-30", consulte: "2026-10-19" }
+  - { type: officiel, ref: "CSDGE Livre 2 (arrêté du 22/12/2025)", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "8-9, 17-19", consulte: "2026-10-19" }

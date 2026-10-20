@@ -1,0 +1,1564 @@
+# Unité 6k-u5 : généré depuis le brouillon de l’agent contenu ; fiches dans 6k-u5/recherche/.
+id: 6k-u5
+level: 6K
+unitNumber: 5
+title: Chuter et premières attaques
+jpTitle: Ukemi
+description: "Pourquoi et comment on apprend à chuter, puis les trois attaques du futur 5e kyu : katate dori, ai hanmi katate dori, shomen uchi."
+themeColor: bg-rose-500
+icon: ShieldCheck
+cover: ukemi
+review:
+  statut: brouillon
+referentiel:
+  ref: 6k.yaml, unité « Chuter et premières attaques » (BUDOKAN-II §4 ; CSDGE-L2 Annexe II p. 18 ; FFAB-KYU)
+  url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+lessons:
+  - id: 6k-u5-l1
+    title: "Pourquoi chuter : ukemi"
+    subtitle: Ukemi
+    description: La chute, une technique de protection.
+    icon: ShieldCheck
+    xpReward: 20
+    focus: Se protéger et se relever vite
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l1.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ukemi
+          kanji: 受身
+          fr: art de chuter pour se protéger et se remettre vite en position
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Bien chuter, c'est se protéger
+        texte: "Ukemi est l'art de chuter : le manuel du Nippon Budokan en fait un moyen de se protéger et de se relever vite. Uke, en recevant la technique, chute. Les chutes s'apprennent progressivement, sur le tatami, sous la conduite de l'enseignant : cette application en donne le vocabulaire, pas le geste."
+      points:
+        - Ukemi protège celui qui chute.
+        - On se relève vite, prêt à continuer.
+        - Le geste s'apprend avec l'enseignant, progressivement.
+    exercises:
+      - id: ex-6k-u5-l1-1
+        type: meaning_choice
+        prompt: Que signifie « ukemi » ?
+        jpText: Ukemi
+        options:
+          - id: o1
+            text: l'art de chuter pour se protéger
+          - id: o2
+            text: l'attaque de uke
+          - id: o3
+            text: la garde
+        correctAnswer: l'art de chuter pour se protéger
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-2
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le but de l'ukemi est de se protéger et de se relever vite.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 受身
+        options:
+          - id: o1
+            text: irimi
+            translation: entrer
+          - id: o2
+            text: ukemi
+            translation: chute
+          - id: o3
+            text: uke
+            translation: celui qui reçoit
+        correctAnswer: ukemi
+        explanation: "受 se retrouve dans uke 受け : celui qui reçoit."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-4
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Vous n'avez jamais chuté et le groupe travaille les chutes.
+        options:
+          - id: o1
+            text: Je préviens l'enseignant et je progresse à mon rythme
+          - id: o2
+            text: Je copie les anciens à pleine vitesse
+          - id: o3
+            text: Je refuse toute chute sans en parler
+        correctAnswer: Je préviens l'enseignant et je progresse à mon rythme
+        explanation: Les chutes s'apprennent progressivement, sous la conduite de l'enseignant.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-5
+        type: term_choice
+        prompt: Quel terme désigne l'art de chuter ?
+        frText: Chuter pour se protéger
+        options:
+          - id: o1
+            text: uke
+          - id: o2
+            text: kamae
+          - id: o3
+            text: ukemi
+        correctAnswer: ukemi
+        explanation: Uke est la personne ; ukemi est la façon dont elle reçoit la technique.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: うけみ
+        options:
+          - id: o1
+            text: irimi
+            translation: entrer
+          - id: o2
+            text: ukemi
+            translation: chute
+          - id: o3
+            text: uke
+            translation: celui qui reçoit
+        correctAnswer: ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Après une chute, on se ___ vite, prêt à continuer.
+        options:
+          - id: o1
+            text: relève
+          - id: o2
+            text: repose
+          - id: o3
+            text: retire
+        correctAnswer: relève
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l1-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: l'art de chuter
+        correctAnswer: ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u5-l2
+    title: Ushiro ukemi
+    subtitle: Ushiro ukemi
+    description: La chute arrière.
+    icon: ArrowDown
+    xpReward: 20
+    focus: Chute arrière
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l2.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ushiro ukemi
+          kanji: 後ろ受身
+          fr: chute arrière
+          illustration:
+            image: scenes/ushiro-ukemi
+            emoji: 🤸
+            alt: Un pratiquant chute en arrière sur le tatami.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Vers l'arrière
+        texte: "Ushiro veut dire « derrière » : ushiro ukemi est la chute arrière. Le Budokan la place parmi les premières chutes enseignées. Le même mot ushiro se retrouve dans les attaques par l'arrière (ushiro waza)."
+    exercises:
+      - id: ex-6k-u5-l2-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Ushiro ukemi »"
+        jpText: Ushiro ukemi
+        options:
+          - id: o1
+            text: Ushiro ukemi
+            illustration:
+              image: scenes/ushiro-ukemi
+              emoji: 🤸
+              alt: Un pratiquant chute en arrière sur le tatami.
+          - id: o2
+            text: Mae ukemi
+            illustration:
+              image: scenes/mae-ukemi
+              emoji: 🤸
+              alt: Un pratiquant en chute avant roulée sur l'épaule.
+          - id: o3
+            text: Seiza
+            illustration:
+              image: scenes/seiza
+              emoji: 🧎
+              alt: Un pratiquant assis sur ses talons.
+        correctAnswer: Ushiro ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-2
+        type: meaning_choice
+        prompt: Que signifie « ushiro » ?
+        jpText: Ushiro
+        options:
+          - id: o1
+            text: devant
+          - id: o2
+            text: à genoux
+          - id: o3
+            text: derrière
+        correctAnswer: derrière
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 後ろ受身
+        options:
+          - id: o1
+            text: ukemi
+            translation: chute
+          - id: o2
+            text: ushiro ukemi
+            translation: chute arrière
+          - id: o3
+            text: mae ukemi
+            translation: chute avant
+        correctAnswer: ushiro ukemi
+        explanation: 後 (derrière) — le même que dans kohai 後輩, celui qui vient après.
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Ushiro ukemi est la chute avant.
+        correctAnswer: faux
+        explanation: "Ushiro : derrière. La chute avant est mae ukemi."
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-5
+        type: tile_build
+        prompt: Composez le nom de la chute.
+        frText: chute arrière
+        wordBank:
+          - mae
+          - ukemi
+          - ushiro
+          - uke
+        correctAnswer:
+          - ushiro
+          - ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-6
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: うしろうけみ
+        correctAnswer: ushiro ukemi
+        acceptedAnswers:
+          - ushiroukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Les techniques sur attaques par l'arrière s'appellent ___ waza.
+        options:
+          - id: o1
+            text: ushiro
+          - id: o2
+            text: suwari
+          - id: o3
+            text: tachi
+        correctAnswer: ushiro
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l2-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: derrière (comme dans la chute arrière)
+        correctAnswer: ushiro
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u5-l3
+    title: Mae ukemi
+    subtitle: Mae ukemi
+    description: La chute avant.
+    icon: ArrowUp
+    xpReward: 20
+    focus: Chute avant
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l3.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Mae ukemi
+          kanji: 前受身
+          fr: chute avant
+          illustration:
+            image: scenes/mae-ukemi
+            emoji: 🤸
+            alt: Un pratiquant en pleine chute avant roulée sur l'épaule, sur le tatami.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Vers l'avant
+        texte: "Mae veut dire « devant » : mae ukemi est la chute avant. Le Budokan enseigne aussi des chutes roulées (kaiten ukemi). Comme pour toutes les chutes, on commence doucement, souvent depuis une position basse, selon les indications de l'enseignant."
+    exercises:
+      - id: ex-6k-u5-l3-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Mae ukemi »"
+        jpText: Mae ukemi
+        options:
+          - id: o1
+            text: Mae ukemi
+            illustration:
+              image: scenes/mae-ukemi
+              emoji: 🤸
+              alt: Un pratiquant en chute avant roulée sur l'épaule.
+          - id: o2
+            text: Ushiro ukemi
+            illustration:
+              image: scenes/ushiro-ukemi
+              emoji: 🤸
+              alt: Un pratiquant chute en arrière.
+          - id: o3
+            text: Shikko
+            illustration:
+              image: scenes/shikko
+              emoji: 🧎
+              alt: Un pratiquant se déplace à genoux.
+        correctAnswer: Mae ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-2
+        type: meaning_choice
+        prompt: Que signifie « mae ukemi » ?
+        jpText: Mae ukemi
+        options:
+          - id: o1
+            text: chute arrière
+          - id: o2
+            text: salut debout
+          - id: o3
+            text: chute avant
+        correctAnswer: chute avant
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 前受身
+        options:
+          - id: o1
+            text: irimi
+            translation: entrer
+          - id: o2
+            text: mae ukemi
+            translation: chute avant
+          - id: o3
+            text: ushiro ukemi
+            translation: chute arrière
+        correctAnswer: mae ukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-4
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: mae
+            fr: devant
+          - jp: ushiro
+            fr: derrière
+          - jp: mae ukemi
+            fr: chute avant
+          - jp: ushiro ukemi
+            fr: chute arrière
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le Budokan enseigne aussi des chutes roulées.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-6
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: La chute avant vous fait peur.
+        options:
+          - id: o1
+            text: J'évite le tapis pendant ce temps
+          - id: o2
+            text: Je le dis à l'enseignant et je commence doucement
+          - id: o3
+            text: Je me lance de toute ma hauteur pour vaincre ma peur
+        correctAnswer: Je le dis à l'enseignant et je commence doucement
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-7
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: まえうけみ
+            fr: chute avant
+          - jp: うしろうけみ
+            fr: chute arrière
+          - jp: うけみ
+            fr: chute
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l3-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la chute avant
+        correctAnswer: mae ukemi
+        acceptedAnswers:
+          - maeukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+  - id: 6k-u5-l4
+    title: Chuter avec un partenaire
+    subtitle: Uke
+    description: Chuter sous l'action de tori, en sécurité.
+    icon: Users
+    xpReward: 20
+    focus: Chuter sous l'action du partenaire
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l4.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Uke
+          kanji: 受け
+          fr: celui qui attaque et reçoit la technique
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      note:
+        titre: Chuter au bon moment
+        texte: "À deux, uke chute sous l'action de tori, et non de lui-même par anticipation : le Budokan insiste sur ce point. Tori, de son côté, adapte sa vitesse au niveau de uke. Si quelque chose ne va pas, on s'arrête et on le dit."
+    exercises:
+      - id: ex-6k-u5-l4-1
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: À deux, uke chute sous l'action de tori, et non de lui-même par anticipation.
+        correctAnswer: vrai
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-2
+        type: scenario
+        prompt: Quelle attitude ?
+        frText: Vous êtes tori. Votre uke débute et chute avec difficulté.
+        options:
+          - id: o1
+            text: Je garde ma vitesse habituelle
+          - id: o2
+            text: Je change de partenaire sans rien dire
+          - id: o3
+            text: Je ralentis et j'adapte la technique à son niveau
+        correctAnswer: Je ralentis et j'adapte la technique à son niveau
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-3
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Narrateur
+            text: Léa est uke. Avant même que tori bouge, elle se jette au sol.
+          - speaker: Sensei
+            text: Attends l'action de ton partenaire. Tu chutes parce qu'il agit, pas avant.
+          - speaker: Narrateur
+            text: Léa recommence et chute au moment où tori la déséquilibre.
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 2
+            prompt: Quelle erreur Léa a-t-elle faite ?
+            options:
+              - id: o1
+                text: elle a chuté avant l'action de tori
+              - id: o2
+                text: elle a refusé de chuter
+              - id: o3
+                text: elle a oublié de saluer
+            correctAnswer: elle a chuté avant l'action de tori
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-4
+        type: meaning_choice
+        prompt: Qui est « uke » ?
+        jpText: Uke
+        options:
+          - id: o1
+            text: celui qui attaque et reçoit la technique
+          - id: o2
+            text: celui qui exécute la technique
+          - id: o3
+            text: l'enseignant
+        correctAnswer: celui qui attaque et reçoit la technique
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-5
+        type: order_steps
+        prompt: Remettez dans l'ordre.
+        steps:
+          - Uke attaque
+          - Tori exécute la technique
+          - Uke chute (ukemi)
+          - Uke se relève, prêt à continuer
+        correctAnswer: steps
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-6
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Tori adapte sa ___ au niveau de uke.
+        options:
+          - id: o1
+            text: ceinture
+          - id: o2
+            text: vitesse
+          - id: o3
+            text: tenue
+        correctAnswer: vitesse
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: うけ
+        correctAnswer: uke
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l4-8
+        type: term_choice
+        prompt: Comment s'appelle celui qui exécute la technique ?
+        frText: Le partenaire qui projette ou immobilise
+        options:
+          - id: o1
+            text: uke
+          - id: o2
+            text: kohai
+          - id: o3
+            text: tori
+        correctAnswer: tori
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+  - id: 6k-u5-l5
+    title: Katate dori
+    subtitle: Katate dori
+    description: La saisie d'un poignet.
+    icon: Hand
+    xpReward: 20
+    focus: Katate dori (en gyaku hanmi dans la nomenclature CSDGE)
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l5.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Katate dori
+          kanji: 片手取
+          fr: saisie d'un poignet par une main
+          illustration:
+            image: scenes/katate-dori
+            emoji: ✊
+            alt: Uke saisit d'une main un poignet de tori ; ils sont en gyaku hanmi.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+        - jp: Kogekiho
+          fr: les formes d'attaque (nomenclature CSDGE)
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      note:
+        titre: Une main, une saisie
+        texte: "Katate : une main ; dori : saisie. Dans la nomenclature de la CSDGE, « katate dori » seul désigne la saisie en gyaku hanmi : uke saisit avec la main opposée (sa main droite sur le poignet gauche de tori, ou l'inverse). C'est l'une des attaques du 5e kyu FFAB. La CSDGE regroupe les attaques sous le nom de kogekiho."
+    exercises:
+      - id: ex-6k-u5-l5-1
+        type: technique_decoder
+        prompt: Dans la nomenclature CSDGE, en quelle garde se fait « katate dori » (sans précision) ?
+        jpText: Katate dori shiho nage
+        decomposition:
+          attaque: katate dori
+          technique: shiho nage
+        options:
+          - id: o1
+            text: gyaku hanmi
+          - id: o2
+            text: ai hanmi
+          - id: o3
+            text: à genoux
+        correctAnswer: gyaku hanmi
+        explanation: La CSDGE précise « ai hanmi » quand la saisie se fait en garde identique ; sans précision, c'est gyaku hanmi.
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-2
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Katate dori »"
+        jpText: Katate dori
+        options:
+          - id: o1
+            text: Kata dori
+            illustration:
+              image: scenes/kata-dori
+              emoji: 🫱
+              alt: Uke saisit le keikogi de tori à l'épaule.
+          - id: o2
+            text: Morote dori
+            illustration:
+              image: scenes/morote-dori
+              emoji: ✊
+              alt: Uke saisit à deux mains un seul avant-bras de tori.
+          - id: o3
+            text: Katate dori
+            illustration:
+              image: scenes/katate-dori
+              emoji: ✊
+              alt: Uke saisit d'une main un poignet de tori.
+        correctAnswer: Katate dori
+        explanation: "Kata dori (sans « te ») est la saisie à l'épaule : attention à l'oreille !"
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-3
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: かたてどり
+        options:
+          - id: o1
+            text: ryote dori
+            translation: saisie des deux poignets
+          - id: o2
+            text: katate dori
+            translation: saisie d'un poignet
+          - id: o3
+            text: kata dori
+            translation: saisie à l'épaule
+        correctAnswer: katate dori
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 片手取
+        options:
+          - id: o1
+            text: katate dori
+            translation: saisie d'un poignet
+          - id: o2
+            text: ryote dori
+            translation: saisie des deux poignets
+          - id: o3
+            text: kata dori
+            translation: saisie à l'épaule
+        correctAnswer: katate dori
+        explanation: "片手 : une main ; 両手 (ryote) : les deux mains ; 肩 (kata) : l'épaule."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-5
+        type: scenario
+        prompt: Quelle attaque ?
+        frText: Tori a le pied gauche devant. Uke, pied droit devant, lui saisit le poignet gauche avec sa main droite.
+        options:
+          - id: o1
+            text: ai hanmi katate dori
+          - id: o2
+            text: ryote dori
+          - id: o3
+            text: katate dori (gyaku hanmi)
+        correctAnswer: katate dori (gyaku hanmi)
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-6
+        type: meaning_choice
+        prompt: Que désigne « kogekiho » ?
+        jpText: Kogekiho
+        options:
+          - id: o1
+            text: les saluts
+          - id: o2
+            text: les formes d'attaque
+          - id: o3
+            text: les chutes
+        correctAnswer: les formes d'attaque
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-7
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Katate dori fait partie des attaques du 5e kyu à la FFAB.
+        correctAnswer: vrai
+        sources:
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l5-8
+        type: typed_term
+        prompt: Écrivez le nom de l'attaque.
+        frText: saisie d'un poignet par une main
+        correctAnswer: katate dori
+        acceptedAnswers:
+          - katatedori
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+  - id: 6k-u5-l6
+    title: Ai hanmi katate dori
+    subtitle: Ai hanmi katate dori
+    description: La saisie du poignet en garde identique.
+    icon: Hand
+    xpReward: 20
+    focus: Main droite sur main droite
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l6.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ai hanmi katate dori
+          kanji: 相半身片手取り
+          fr: saisie du poignet en garde identique (main droite sur poignet droit, ou gauche sur gauche)
+          note: Kanji composé à partir d'éléments attestés (相半身, 片手取り).
+          illustration:
+            image: scenes/ai-hanmi
+            emoji: 🧍
+            alt: Deux partenaires face à face, tous deux pied droit devant ; la saisie se fera main droite sur poignet droit.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      note:
+        titre: Croiser en diagonale
+        texte: "En ai hanmi, les deux partenaires ont le même pied devant. Uke saisit alors le poignet de tori avec la main du même côté : main droite sur poignet droit, ou gauche sur gauche. La saisie traverse en diagonale. C'est la deuxième attaque à connaître pour le 5e kyu FFAB."
+    exercises:
+      - id: ex-6k-u5-l6-1
+        type: tile_build
+        prompt: Composez le nom de l'attaque.
+        frText: saisie du poignet, même pied devant
+        wordBank:
+          - katate
+          - gyaku
+          - dori
+          - ai
+          - hanmi
+          - ryote
+        correctAnswer:
+          - ai
+          - hanmi
+          - katate
+          - dori
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "7"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-2
+        type: technique_decoder
+        prompt: Quelle partie de l'appel nomme la saisie ?
+        jpText: Ai hanmi katate dori ikkyo
+        decomposition:
+          attaque: ai hanmi katate dori
+          technique: ikkyo
+        options:
+          - id: o1
+            text: ai hanmi
+          - id: o2
+            text: ai
+          - id: o3
+            text: katate dori
+        correctAnswer: katate dori
+        explanation: "Ai hanmi : la garde (même pied devant) ; katate dori : la saisie."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-3
+        type: scenario
+        prompt: Quelle attaque ?
+        frText: Tori et uke ont tous deux le pied droit devant. Uke saisit le poignet droit de tori avec sa main droite.
+        options:
+          - id: o1
+            text: morote dori
+          - id: o2
+            text: ai hanmi katate dori
+          - id: o3
+            text: katate dori (gyaku hanmi)
+        correctAnswer: ai hanmi katate dori
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "7"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En ai hanmi katate dori, uke saisit le poignet droit de tori avec sa main gauche.
+        correctAnswer: faux
+        explanation: "Main droite sur poignet droit (ou gauche sur gauche). Main gauche sur poignet droit : gyaku hanmi."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-5
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: あいはんみかたてどり
+        options:
+          - id: o1
+            text: gyaku hanmi katate dori
+            translation: saisie, pieds opposés
+          - id: o2
+            text: ai hanmi
+            translation: même pied devant
+          - id: o3
+            text: ai hanmi katate dori
+            translation: saisie, même pied devant
+        correctAnswer: ai hanmi katate dori
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-6
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: ai hanmi katate dori
+            fr: main droite sur poignet droit
+          - jp: gyaku hanmi katate dori
+            fr: main droite sur poignet gauche
+          - jp: ryote dori
+            fr: les deux poignets saisis
+        correctAnswer: pairs
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: La CSDGE écrit cette attaque « ___ katate dori ».
+        options:
+          - id: o1
+            text: aihanmi
+          - id: o2
+            text: gyaku
+          - id: o3
+            text: ushiro
+        correctAnswer: aihanmi
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l6-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: あいはんみ
+        correctAnswer: ai hanmi
+        acceptedAnswers:
+          - aihanmi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+  - id: 6k-u5-l7
+    title: Shomen uchi
+    subtitle: Shomen uchi
+    description: La frappe verticale au sommet de la tête.
+    icon: Swords
+    xpReward: 20
+    focus: Frappe verticale avec le tranchant de la main
+    isReview: false
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l7.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Shomen uchi
+          kanji: 正面打
+          fr: frappe verticale de face, au sommet de la tête, avec le tranchant de la main
+          illustration:
+            image: scenes/shomen-uchi
+            emoji: ✋
+            alt: Uke frappe verticalement vers le sommet de la tête de tori avec le tranchant de la main ; tori va à la rencontre.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+        - jp: Yokomen uchi
+          kanji: 横面打
+          fr: frappe oblique sur le côté de la tête
+          illustration:
+            image: scenes/yokomen-uchi
+            emoji: ✋
+            alt: Uke frappe en diagonale le côté de la tête de tori avec le tranchant de la main.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      note:
+        titre: "Uchi : frapper"
+        texte: Uchi veut dire frappe. Shomen uchi vise la face avant, le sommet de la tête, verticalement, avec le tranchant de la main (tegatana). C'est la troisième attaque du 5e kyu FFAB. À ne pas confondre avec yokomen uchi, frappe oblique sur le côté de la tête, travaillée plus tard. À l'entraînement, uke frappe avec contrôle, à la vitesse que son partenaire peut recevoir.
+    exercises:
+      - id: ex-6k-u5-l7-1
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Shomen uchi »"
+        jpText: Shomen uchi
+        options:
+          - id: o1
+            text: Shomen uchi
+            illustration:
+              image: scenes/shomen-uchi
+              emoji: ✋
+              alt: Uke frappe verticalement vers le sommet de la tête de tori, tranchant de la main.
+          - id: o2
+            text: Yokomen uchi
+            illustration:
+              image: scenes/yokomen-uchi
+              emoji: ✋
+              alt: Uke frappe en diagonale le côté de la tête de tori.
+          - id: o3
+            text: Tsuki
+            illustration:
+              image: scenes/tsuki
+              emoji: 👊
+              alt: Uke porte un coup de poing direct au ventre de tori.
+        correctAnswer: Shomen uchi
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-2
+        type: meaning_choice
+        prompt: Que signifie « uchi » dans « shomen uchi » ?
+        jpText: Uchi
+        options:
+          - id: o1
+            text: saisie
+          - id: o2
+            text: chute
+          - id: o3
+            text: frappe
+        correctAnswer: frappe
+        explanation: "Uchi : frappe ; dori : saisie ; ukemi : chute."
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-3
+        type: technique_decoder
+        prompt: Quelle partie de l'appel indique la cible ?
+        jpText: Shomen uchi irimi nage
+        decomposition:
+          attaque: shomen uchi
+          technique: irimi nage
+        options:
+          - id: o1
+            text: aucune
+          - id: o2
+            text: shomen (la face avant)
+          - id: o3
+            text: uchi (la frappe)
+        correctAnswer: shomen (la face avant)
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 正面打
+        options:
+          - id: o1
+            text: shomen uchi
+            translation: frappe de face
+          - id: o2
+            text: yokomen uchi
+            translation: frappe oblique
+          - id: o3
+            text: katate dori
+            translation: saisie d'un poignet
+        correctAnswer: shomen uchi
+        explanation: "正面 : face avant (comme shomen) ; 横面 : côté (yokomen)."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-5
+        type: term_choice
+        prompt: Quelle attaque est une frappe oblique sur le côté de la tête ?
+        frText: Frappe oblique, côté de la tête
+        options:
+          - id: o1
+            text: shomen uchi
+          - id: o2
+            text: tsuki
+          - id: o3
+            text: yokomen uchi
+        correctAnswer: yokomen uchi
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-6
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Shomen uchi se porte avec le poing fermé.
+        correctAnswer: faux
+        explanation: Avec le tranchant de la main (tegatana). Le coup de poing direct est tsuki.
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-7
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: しょうめんうち
+            fr: frappe de face
+          - jp: よこめんうち
+            fr: frappe oblique
+          - jp: かたてどり
+            fr: saisie d'un poignet
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l7-8
+        type: typed_term
+        prompt: Écrivez le nom de l'attaque.
+        frText: frappe verticale au sommet de la tête
+        correctAnswer: shomen uchi
+        acceptedAnswers:
+          - shomenuchi
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+  - id: 6k-u5-l8
+    title: "Révision : chuter et premières attaques"
+    subtitle: Ukemi
+    description: Chutes et attaques du futur 5e kyu.
+    icon: RotateCcw
+    xpReward: 30
+    focus: Révision des leçons 1 à 7
+    isReview: true
+    research: niveaux/6k/6k-u5/recherche/6k-u5-l8.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ukemi
+          kanji: 受身
+          fr: art de chuter pour se protéger et se remettre vite en position
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Ushiro ukemi
+          kanji: 後ろ受身
+          fr: chute arrière
+          illustration:
+            image: scenes/ushiro-ukemi
+            emoji: 🤸
+            alt: Un pratiquant chute en arrière sur le tatami.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Mae ukemi
+          kanji: 前受身
+          fr: chute avant
+          illustration:
+            image: scenes/mae-ukemi
+            emoji: 🤸
+            alt: Un pratiquant en pleine chute avant roulée sur l'épaule, sur le tatami.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+        - jp: Uke
+          kanji: 受け
+          fr: celui qui attaque et reçoit la technique
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Katate dori
+          kanji: 片手取
+          fr: saisie d'un poignet par une main
+          illustration:
+            image: scenes/katate-dori
+            emoji: ✊
+            alt: Uke saisit d'une main un poignet de tori ; ils sont en gyaku hanmi.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+        - jp: Ai hanmi katate dori
+          kanji: 相半身片手取り
+          fr: saisie du poignet en garde identique (main droite sur poignet droit, ou gauche sur gauche)
+          note: Kanji composé à partir d'éléments attestés (相半身, 片手取り).
+          illustration:
+            image: scenes/ai-hanmi
+            emoji: 🧍
+            alt: Deux partenaires face à face, tous deux pied droit devant ; la saisie se fera main droite sur poignet droit.
+          source:
+            type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+        - jp: Shomen uchi
+          kanji: 正面打
+          fr: frappe verticale de face, au sommet de la tête, avec le tranchant de la main
+          illustration:
+            image: scenes/shomen-uchi
+            emoji: ✋
+            alt: Uke frappe verticalement vers le sommet de la tête de tori avec le tranchant de la main ; tori va à la rencontre.
+          source:
+            type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      note:
+        titre: Révision
+        texte: Ukemi, ushiro ukemi, mae ukemi ; chuter sous l'action de tori ; katate dori, ai hanmi katate dori, shomen uchi.
+    exercises:
+      - id: ex-6k-u5-l8-1
+        type: listen_choose
+        prompt: Qu'entendez-vous ? (appel d'attaque)
+        audioText: しょうめんうち
+        options:
+          - id: o1
+            text: shomen uchi
+            translation: frappe de face
+          - id: o2
+            text: yokomen uchi
+            translation: frappe oblique
+          - id: o3
+            text: katate dori
+            translation: saisie d'un poignet
+        correctAnswer: shomen uchi
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-2
+        type: technique_decoder
+        prompt: Quelle est la forme de garde dans cet appel ?
+        jpText: Ai hanmi katate dori shiho nage
+        decomposition:
+          attaque: ai hanmi katate dori
+          technique: shiho nage
+        options:
+          - id: o1
+            text: "gyaku hanmi : pieds opposés"
+          - id: o2
+            text: "suwari : à genoux"
+          - id: o3
+            text: "ai hanmi : même pied devant"
+        correctAnswer: "ai hanmi : même pied devant"
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-3
+        type: tile_build
+        prompt: Composez le nom de l'attaque.
+        frText: frappe verticale de face
+        wordBank:
+          - uchi
+          - yokomen
+          - shomen
+          - dori
+        correctAnswer:
+          - shomen
+          - uchi
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-4
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: mae ukemi
+            fr: chute avant
+          - jp: ushiro ukemi
+            fr: chute arrière
+          - jp: katate dori
+            fr: saisie d'un poignet
+          - jp: shomen uchi
+            fr: frappe de face
+        correctAnswer: pairs
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-5
+        type: image_choice
+        prompt: "Choisissez l'illustration : « Morote dori »"
+        jpText: Morote dori
+        options:
+          - id: o1
+            text: Ryote dori
+            illustration:
+              image: scenes/ryote-dori
+              emoji: ✊
+              alt: Uke saisit les deux poignets de tori, une main pour chaque poignet.
+          - id: o2
+            text: Katate dori
+            illustration:
+              image: scenes/katate-dori
+              emoji: ✊
+              alt: Uke saisit d'une main un poignet de tori.
+          - id: o3
+            text: Morote dori
+            illustration:
+              image: scenes/morote-dori
+              emoji: ✊
+              alt: Uke saisit à deux mains un seul avant-bras de tori.
+        correctAnswer: Morote dori
+        explanation: "Morote dori : deux mains sur un seul bras. Ce n'est pas une attaque de ce niveau, mais elle ressemble aux autres saisies : à reconnaître pour ne pas confondre."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "18"
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-6
+        type: scenario
+        prompt: Quelle attitude ?
+        frText: Vous êtes uke et vous sentez que vous allez chuter trop tôt, avant l'action de tori.
+        options:
+          - id: o1
+            text: Je résiste de toutes mes forces
+          - id: o2
+            text: J'attends l'action de tori pour chuter
+          - id: o3
+            text: Je chute tout de suite pour aller plus vite
+        correctAnswer: J'attends l'action de tori pour chuter
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-7
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Katate dori, ai hanmi katate dori et shomen uchi sont les attaques du 5e kyu FFAB.
+        correctAnswer: vrai
+        sources:
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+      - id: ex-6k-u5-l8-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: la chute arrière
+        correctAnswer: ushiro ukemi
+        acceptedAnswers:
+          - ushiroukemi
+        sources:
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19

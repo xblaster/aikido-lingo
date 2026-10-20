@@ -1,0 +1,74 @@
+# Référentiel du niveau 2e–1er kyu (id 1K, regroupement imposé par le contrat) — À COMPLÉTER (competences, lexique, themes).
+# Rédigé le 2026-10-19 à partir de : FFAB « Grades KYU » (colonne vertébrale), FFAAA Guide du débutant,
+# FLAM Annexes 2.3-2.4 (2011), Aikikai Examination Guidelines. Chaque ligne indique le kyu (champ `kyu`).
+level: 1K
+nom: "2e et 1er kyu"
+statut: "à compléter"
+referencePrincipale: "FFAB, Grades KYU"
+referentielPrincipal: "FFAB, Grades KYU"
+etat: a-completer
+prerequis:
+  - { referentiel: "FFAB", texte: "2e kyu : 7 mois après le 3e kyu ou 140 h ; 1er kyu : 8 mois après le 2e kyu ou 160 h", source: "FFAB-KYU" }
+  - { referentiel: "FFAAA", texte: "2e kyu : 7 mois ; 1er kyu : 8 mois", source: "FFAAA-GUIDE p. 21" }
+  - { referentiel: "FLAM", texte: "2e kyu : 50 cours, ceinture bleue ; 1er kyu : 60 cours, ceinture marron", source: "FLAM-KYU-2011 p. 6-7" }
+  - { referentiel: "Aikikai Hombu", texte: "2e kyu : 50 jours après le 3e ; 1er kyu : 60 jours après le 2e", source: "AIK-EXAM-EN" }
+programmeOfficiel:   # FFAB
+  - { kyu: 2, categorie: "Suwari waza", attaque: "Yokomen uchi", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Yonkyo", "Kote gaeshi", "Irimi nage"], source: &ffab2 { ref: "FFAB, Grades KYU, 2e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 2e KYU" } }
+  - { kyu: 2, categorie: "Hanmi handachi waza", attaque: "Ryote dori", techniques: ["Shiho nage", "Kokyu nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Hanmi handachi waza", attaque: "Ushiro ryokata dori", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Kokyu nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Gyaku hanmi katate dori", techniques: ["Sankyo", "Yonkyo", "Kokyu nage", "Sumi otoshi", "Hiji kime osae"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Jodan tsuki", techniques: ["Ikkyo", "Irimi nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Kaiten nage (soto et uchi)", "Koshi nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Kata dori men uchi", techniques: ["Shiho nage", "Ude kime nage", "Kote gaeshi", "Irimi nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Katate ryote dori", techniques: ["Shiho nage", "Ude kime nage", "Kote gaeshi", "Irimi nage", "Juji garami"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Muna dori", techniques: ["Ikkyo", "Nikyo", "Shiho nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Yokomen uchi", techniques: ["Koshi nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Tachi waza", attaque: "Ryote dori", techniques: ["Juji garami"], source: *ffab2 }
+  - { kyu: 2, categorie: "Ushiro waza", attaque: "Ushiro ryote dori", techniques: ["Nikyo", "Sankyo", "Yonkyo", "Shiho nage"], source: *ffab2 }
+  - { kyu: 2, categorie: "Ushiro waza", attaque: "Ushiro ryokata dori", techniques: ["Ikkyo", "Nikyo", "Irimi nage"], source: *ffab2 }
+  - { kyu: 1, categorie: "Suwari waza", attaque: "Ryote dori", techniques: ["Ikkyo"], source: &ffab1 { ref: "FFAB, Grades KYU, 1er KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 1er KYU" } }
+  - { kyu: 1, categorie: "Suwari waza", attaque: "Ryokata dori", techniques: ["Ikkyo"], source: *ffab1 }
+  - { kyu: 1, categorie: "Hanmi handachi waza", attaque: "Gyaku hanmi katate dori", techniques: ["Kote gaeshi", "Irimi nage", "Kaiten nage", "Sumi otoshi"], source: *ffab1 }
+  - { kyu: 1, categorie: "Hanmi handachi waza", attaque: "Shomen uchi", techniques: ["Irimi nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Tachi waza", attaque: "Ryote dori", techniques: ["Ikkyo"], source: *ffab1 }
+  - { kyu: 1, categorie: "Tachi waza", attaque: "Ryokata dori", techniques: ["Ikkyo"], source: *ffab1 }
+  - { kyu: 1, categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Gokyo", "Shiho nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Tachi waza", attaque: "Jodan tsuki", techniques: ["Shiho nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Tachi waza", attaque: "Mae geri", techniques: ["Irimi nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Ushiro waza", attaque: "Ushiro ryote dori", techniques: ["Kokyu nage", "Koshi nage", "Jiyu waza"], source: *ffab1 }
+  - { kyu: 1, categorie: "Ushiro waza", attaque: "Ushiro ryokata dori", techniques: ["Sankyo", "Kote gaeshi", "Kokyu nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Ushiro waza", attaque: "(Ushiro) eri dori", techniques: ["Ikkyo", "Kote gaeshi", "Kokyu nage"], source: *ffab1 }
+  - { kyu: 1, categorie: "Ushiro waza", attaque: "(Ushiro) katate dori kubishime", techniques: ["Shiho nage", "Kote gaeshi", "Kokyu nage"], source: *ffab1 }
+variantes:
+  - referentiel: "FFAAA (exemple non normatif)"
+    source: { ref: "FFAAA, Guide du débutant", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "19-20" }
+    note: "À COMPLÉTER : retranscrire les tableaux 2e et 1er kyu (p. 19-20) ; attention, la colonne de droite déborde sur plusieurs lignes dans le PDF. 1er kyu : « toutes les techniques réalisables en suwari waza et hanmi handachi waza »."
+  - referentiel: "FLAM (2011, indicatif)"
+    source: { ref: "FLAM, Annexes 2.3-2.4", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "6-7/18" }
+    note: "À COMPLÉTER : programme lu (pages rendues en image) mais non retranscrit ici. 2e kyu : tachi, suwari, ushiro waza (ryote dori, katate dori kubi shime) ; 1er kyu : ajoute muna dori, muna dori men uchi, jodan tsuki, mae geri, eri dori, ryo hiji dori."
+  - referentiel: "Aikikai Hombu Dojo"
+    source: { ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", page: "lignes 2nd/1st Kyu" }
+    lignes:
+      - { kyu: 2, categorie: "Suwari et tachi waza", attaque: "Shomen uchi ; kata dori", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Yonkyo"] }
+      - { kyu: 2, categorie: "Hanmi handachi waza", attaque: "Katate dori", techniques: ["Shiho nage"] }
+      - { kyu: 2, categorie: "Tachi waza", attaque: "Shomen uchi ; tsuki ; katate dori", techniques: ["Irimi nage", "Kote gaeshi"] }
+      - { kyu: 2, categorie: "Non précisé", attaque: "Katate dori", techniques: ["Kaiten nage", "Jiyu waza"] }
+      - { kyu: 2, categorie: "Non précisé", attaque: "Ryote dori", techniques: ["Tenchi nage"] }
+      - { kyu: 2, categorie: "Suwari waza", attaque: null, techniques: ["Kokyu ho"] }
+      - { kyu: 1, categorie: "Suwari et tachi waza", attaque: "Shomen uchi ; yokomen uchi ; kata dori ; (tachi) ushiro ryote dori", techniques: ["Ikkyo", "Nikyo", "Sankyo", "Yonkyo"] }
+      - { kyu: 1, categorie: "Non précisé", attaque: "Yokomen uchi", techniques: ["Gokyo"] }
+      - { kyu: 1, categorie: "Non précisé", attaque: "Katate dori ; ryote dori", techniques: ["Shiho nage"] }
+      - { kyu: 1, categorie: "Non précisé", attaque: "Shomen uchi ; tsuki ; katate dori", techniques: ["Irimi nage", "Kote gaeshi", "Kaiten nage"] }
+      - { kyu: 1, categorie: "Non précisé", attaque: "Ryote dori", techniques: ["Tenchi nage"] }
+      - { kyu: 1, categorie: "Non précisé", attaque: "Katate dori ; ryote dori ; morote dori", techniques: ["Jiyu waza"] }
+      - { kyu: 1, categorie: "Suwari et tachi waza", attaque: null, techniques: ["Kokyu ho"] }
+competences: []        # à compléter
+criteresEvaluation:
+  - "Kyu délivré sous la responsabilité de l'enseignant du club (FFAB-KYU)."
+lexique: []            # à compléter (ushiro ryokata dori, muna dori, jodan tsuki, mae geri, eri dori, kubishime, sumi otoshi, hiji kime osae, juji garami, jiyu waza : voir terminologie.yaml)
+themes: []             # à compléter
+sources:
+  - { type: federation, ref: "FFAB, Grades KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAAA, Guide du débutant", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "19-21", consulte: "2026-10-19" }
+  - { type: federation, ref: "FLAM, Annexes 2.3-2.4 (2011)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "6-7/18", consulte: "2026-10-19" }
+  - { type: aikikai, ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", consulte: "2026-10-19" }

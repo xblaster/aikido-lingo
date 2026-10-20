@@ -1,0 +1,1726 @@
+# Unité 6k-u2 : généré depuis le brouillon de l’agent contenu ; fiches dans 6k-u2/recherche/.
+id: 6k-u2
+level: 6K
+unitNumber: 2
+title: Qu'est-ce que l'aïkido ?
+jpTitle: Aikido
+description: Le sens du mot, le fondateur, les rôles tori et uke, l'absence de compétition, les grades, les fédérations et les nombres.
+themeColor: bg-sky-500
+icon: BookOpen
+cover: histoire
+review:
+  statut: brouillon
+referentiel:
+  ref: 6k.yaml, unité « Qu'est-ce que l'aïkido ? » (AIK-WHAT ; AIK-HIST ; FFAB-KYU ; FFAAA-GRADES)
+  url: https://aikikai.or.jp/eng/aikido/
+lessons:
+  - id: 6k-u2-l1
+    title: "Ai, ki, do : le sens du mot"
+    subtitle: Aikido
+    description: Trois kanji pour un nom.
+    icon: Languages
+    xpReward: 20
+    focus: "合気道 : union, énergie, voie"
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l1.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Aikido
+          kanji: 合気道
+          fr: « voie de l'harmonie des énergies »
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Ki
+          kanji: 気
+          fr: énergie vitale, esprit
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Budo
+          kanji: 武道
+          fr: "« voie martiale » : les arts martiaux japonais"
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Lire 合気道
+        texte: Ai (合) évoque l'union, l'harmonie ; ki (気) l'énergie ; do (道) la voie, le chemin. Le même do se retrouve dans dojo (le lieu de la voie) et dans budo (la voie martiale).
+    exercises:
+      - id: ex-6k-u2-l1-1
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 合気道
+        options:
+          - id: o1
+            text: aikido
+            translation: voie de l'harmonie des énergies
+          - id: o2
+            text: budo
+            translation: voie martiale
+          - id: o3
+            text: dojo
+            translation: lieu de la voie
+        correctAnswer: aikido
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-2
+        type: meaning_choice
+        prompt: Dans « aikido », quel élément signifie « la voie » ?
+        jpText: Aikido
+        options:
+          - id: o1
+            text: ai
+          - id: o2
+            text: ki
+          - id: o3
+            text: do
+        correctAnswer: do
+        explanation: "Do 道 : la voie. Ai 合 : l'union. Ki 気 : l'énergie."
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "3"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-3
+        type: meaning_choice
+        prompt: Que signifie « ki » ?
+        jpText: Ki
+        options:
+          - id: o1
+            text: le salut
+          - id: o2
+            text: énergie vitale, esprit
+          - id: o3
+            text: la voie
+        correctAnswer: énergie vitale, esprit
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "22"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-4
+        type: match_pairs
+        prompt: Associez chaque élément à son sens.
+        pairs:
+          - jp: ai
+            fr: union, harmonie
+          - jp: ki
+            fr: énergie
+          - jp: do
+            fr: voie
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "3"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-5
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le « do » d'aikido est le même que celui de dojo.
+        correctAnswer: vrai
+        explanation: 道 dans 合気道 et dans 道場.
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-6
+        type: term_choice
+        prompt: Quel mot désigne les arts martiaux japonais comme « voies » ?
+        frText: « voie martiale »
+        options:
+          - id: o1
+            text: keiko
+          - id: o2
+            text: budo
+          - id: o3
+            text: aikido
+        correctAnswer: budo
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-7
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: あいきどう
+        correctAnswer: aikido
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l1-8
+        type: kanji_choice
+        prompt: Quel kanji signifie « énergie » ?
+        kanji: 気
+        options:
+          - id: o1
+            text: do
+            translation: voie
+          - id: o2
+            text: rei
+            translation: salut
+          - id: o3
+            text: ki
+            translation: énergie
+        correctAnswer: ki
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u2-l2
+    title: Le fondateur
+    subtitle: O sensei
+    description: Ueshiba Morihei et la lignée des Doshu.
+    icon: ScrollText
+    xpReward: 20
+    focus: Ueshiba Morihei (1883-1969)
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l2.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ueshiba Morihei
+          kanji: 植芝盛平
+          fr: fondateur de l'aïkido (1883-1969)
+          source:
+            type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+        - jp: O sensei
+          kanji: 大先生
+          fr: "« grand maître » : surnom du fondateur"
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Kaiso
+          kanji: 開祖
+          fr: le fondateur
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Doshu
+          kanji: 道主
+          fr: "« maître de la voie » : chef de lignée (Aikikai)"
+          source:
+            type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+      note:
+        titre: Trois générations
+        texte: Ueshiba Morihei (1883-1969) a fondé l'aïkido ; on l'appelle O sensei ou kaiso. Son fils Ueshiba Kisshomaru (1921-1999) a été le deuxième Doshu. Son petit-fils Ueshiba Moriteru, né en 1951, est Doshu depuis 1999.
+      culture:
+        titre: Le Kobukan
+        texte: En 1931, le fondateur ouvre à Tokyo un dojo, le Kobukan (皇武館). C'est l'actuel Hombu Dojo, le dojo central de l'Aikikai.
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+    exercises:
+      - id: ex-6k-u2-l2-1
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Narrateur
+            text: Ueshiba Morihei naît en 1883 au Japon.
+          - speaker: Narrateur
+            text: En 1931, il ouvre à Tokyo un dojo, le Kobukan.
+          - speaker: Narrateur
+            text: Ce dojo est devenu le Hombu Dojo, le dojo central de l'Aikikai.
+          - speaker: Narrateur
+            text: Le fondateur meurt en 1969. Son fils Kisshomaru devient le deuxième Doshu.
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 2
+            prompt: Où le Kobukan a-t-il été ouvert ?
+            options:
+              - id: o1
+                text: à Kyoto
+              - id: o2
+                text: à Paris
+              - id: o3
+                text: à Tokyo
+            correctAnswer: à Tokyo
+          - afterLine: 4
+            prompt: Qui devient le deuxième Doshu ?
+            options:
+              - id: o1
+                text: le Kobukan
+              - id: o2
+                text: Ueshiba Kisshomaru
+              - id: o3
+                text: Ueshiba Moriteru
+            correctAnswer: Ueshiba Kisshomaru
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-2
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le fondateur de l'aïkido est Ueshiba Morihei (1883-1969).
+        correctAnswer: vrai
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-3
+        type: meaning_choice
+        prompt: Qui désigne-t-on par « O sensei » ?
+        jpText: O sensei
+        options:
+          - id: o1
+            text: le plus ancien élève
+          - id: o2
+            text: le fondateur, Ueshiba Morihei
+          - id: o3
+            text: l'enseignant du club
+        correctAnswer: le fondateur, Ueshiba Morihei
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-4
+        type: match_pairs
+        prompt: Associez chaque personne à son rôle.
+        pairs:
+          - jp: Ueshiba Morihei
+            fr: fondateur
+          - jp: Ueshiba Kisshomaru
+            fr: 2e Doshu (son fils)
+          - jp: Ueshiba Moriteru
+            fr: Doshu actuel (son petit-fils)
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-5
+        type: kanji_choice
+        prompt: Quel nom est écrit ici ?
+        kanji: 植芝盛平
+        options:
+          - id: o1
+            text: Ueshiba Kisshomaru
+          - id: o2
+            text: Ueshiba Moriteru
+          - id: o3
+            text: Ueshiba Morihei
+        correctAnswer: Ueshiba Morihei
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-6
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Le chef de lignée de l'aïkido, à l'Aikikai, porte le titre de ___.
+        options:
+          - id: o1
+            text: kohai
+          - id: o2
+            text: Doshu
+          - id: o3
+            text: sempai
+        correctAnswer: Doshu
+        sources:
+          - type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-7
+        type: term_choice
+        prompt: Quel dojo, fondé en 1931 à Tokyo, est devenu le Hombu Dojo ?
+        frText: Le dojo ouvert par le fondateur en 1931
+        options:
+          - id: o1
+            text: Kobukan
+          - id: o2
+            text: Kamiza
+          - id: o3
+            text: Aikikai
+        correctAnswer: Kobukan
+        explanation: Le Kobukan 皇武館 ; l'Aikikai est la fondation qui gère aujourd'hui le Hombu Dojo.
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l2-8
+        type: typed_term
+        prompt: Écrivez le titre du chef de lignée de l'Aikikai.
+        frText: « maître de la voie »
+        correctAnswer: doshu
+        sources:
+          - type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+  - id: 6k-u2-l3
+    title: Tori et uke
+    subtitle: Tori
+    description: Deux rôles, qu'on échange sans cesse.
+    icon: ArrowLeftRight
+    xpReward: 20
+    focus: Tori exécute, uke attaque et reçoit
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l3.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Tori
+          kanji: 取り
+          fr: celui qui exécute la technique
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Uke
+          kanji: 受け
+          fr: celui qui attaque et reçoit la technique
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Nage
+          kanji: 投げ
+          fr: projection ; par extension, celui qui projette
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: On apprend des deux côtés
+        texte: Tori exécute la technique ; uke attaque, puis la reçoit, souvent en chutant. Les deux rôles s'échangent, et l'on travaille à droite comme à gauche. Selon les dojos, tori est aussi appelé nage.
+    exercises:
+      - id: ex-6k-u2-l3-1
+        type: meaning_choice
+        prompt: Que fait « uke » ?
+        jpText: Uke
+        options:
+          - id: o1
+            text: il attaque et reçoit la technique
+          - id: o2
+            text: il exécute la technique
+          - id: o3
+            text: il juge le passage de grade
+        correctAnswer: il attaque et reçoit la technique
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-VII
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-07.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-2
+        type: term_choice
+        prompt: Quel terme désigne celui qui exécute la technique ?
+        frText: Le partenaire qui exécute la technique
+        options:
+          - id: o1
+            text: uke
+          - id: o2
+            text: sempai
+          - id: o3
+            text: tori
+        correctAnswer: tori
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-3
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Pendant un cours, on reste toujours dans le même rôle.
+        correctAnswer: faux
+        explanation: Tori et uke échangent leurs rôles, et l'on travaille des deux côtés.
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-4
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 受け
+        options:
+          - id: o1
+            text: uke
+            translation: celui qui reçoit
+          - id: o2
+            text: tori
+            translation: celui qui exécute
+          - id: o3
+            text: nage
+            translation: projection
+        correctAnswer: uke
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-5
+        type: scenario
+        prompt: Que faites-vous ?
+        frText: Votre partenaire a fait la technique quatre fois en tant que tori. C'est à vous.
+        options:
+          - id: o1
+            text: Il reste tori, je reste uke jusqu'à la fin
+          - id: o2
+            text: Nous arrêtons de travailler
+          - id: o3
+            text: Je deviens tori et il devient uke
+        correctAnswer: Je deviens tori et il devient uke
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-I
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-01.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-6
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: とり
+            fr: exécute la technique
+          - jp: うけ
+            fr: attaque et reçoit
+          - jp: なげ
+            fr: projection
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Dans certains dojos, tori est aussi appelé ___, « celui qui projette ».
+        options:
+          - id: o1
+            text: nage
+          - id: o2
+            text: uke
+          - id: o3
+            text: kohai
+        correctAnswer: nage
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "23"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l3-8
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: うけ
+        correctAnswer: uke
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+  - id: 6k-u2-l4
+    title: Pas de compétition
+    subtitle: Budo
+    description: Un art martial sans vainqueur ni vaincu.
+    icon: Handshake
+    xpReward: 20
+    focus: L'aïkido n'a pas de compétition
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l4.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Aikido
+          kanji: 合気道
+          fr: art martial sans compétition
+          source:
+            type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+      note:
+        titre: Progresser ensemble
+        texte: "L'Aikikai et la FFAAA soulignent que l'aïkido ne comporte pas de compétition. On ne cherche pas à battre son partenaire : chacun progresse grâce à l'autre, en tant que tori comme en tant que uke."
+    exercises:
+      - id: ex-6k-u2-l4-1
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En aïkido, des tournois désignent un champion chaque année.
+        correctAnswer: faux
+        explanation: L'aïkido ne comporte pas de compétition (Aikikai, FFAAA).
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "5"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-2
+        type: scenario
+        prompt: Quelle attitude est la plus juste ?
+        frText: Votre partenaire débute et chute difficilement.
+        options:
+          - id: o1
+            text: J'accélère pour montrer que je suis plus fort
+          - id: o2
+            text: Je refuse de travailler avec lui
+          - id: o3
+            text: J'adapte mon rythme pour qu'il puisse pratiquer en sécurité
+        correctAnswer: J'adapte mon rythme pour qu'il puisse pratiquer en sécurité
+        explanation: Sans compétition, le but est de progresser ensemble ; la sécurité du partenaire passe d'abord.
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: ouvrage
+            ref: BUDOKAN-II
+            url: https://www.nipponbudokan.or.jp/pdf/shidosho/aikido/Aikido-02.pdf
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-3
+        type: meaning_choice
+        prompt: Que signifie « budo » ?
+        jpText: Budo
+        options:
+          - id: o1
+            text: ceinture noire
+          - id: o2
+            text: voie martiale
+          - id: o3
+            text: compétition
+        correctAnswer: voie martiale
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-4
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: "L'aïkido ne comporte pas de ___ : on progresse avec son partenaire, pas contre lui."
+        options:
+          - id: o1
+            text: compétition
+          - id: o2
+            text: salut
+          - id: o3
+            text: partenaire
+        correctAnswer: compétition
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "5"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-5
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Tom
+            text: Il y a des championnats d'aïkido ?
+          - speaker: Sempai
+            text: Non, l'aïkido ne comporte pas de compétition.
+          - speaker: Tom
+            text: Alors comment sait-on qu'on progresse ?
+          - speaker: Sempai
+            text: Par la pratique, et par les grades délivrés par l'enseignant.
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 2
+            prompt: Y a-t-il des compétitions en aïkido ?
+            options:
+              - id: o1
+                text: seulement pour les dan
+              - id: o2
+                text: non
+              - id: o3
+                text: oui, chaque année
+            correctAnswer: non
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "5"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-6
+        type: term_choice
+        prompt: Comment s'appelle celui qui reçoit la technique ?
+        frText: Le partenaire qui attaque puis reçoit la technique
+        options:
+          - id: o1
+            text: sensei
+          - id: o2
+            text: uke
+          - id: o3
+            text: tori
+        correctAnswer: uke
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-7
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: ぶどう
+        options:
+          - id: o1
+            text: budo
+            translation: voie martiale
+          - id: o2
+            text: dojo
+            translation: salle
+          - id: o3
+            text: doshu
+            translation: maître de la voie
+        correctAnswer: budo
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l4-8
+        type: typed_term
+        prompt: Écrivez le mot japonais.
+        frText: « voie martiale »
+        correctAnswer: budo
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u2-l5
+    title: Les kyu et les dan
+    subtitle: Kyu
+    description: "Comment on progresse : six kyu, puis les dan."
+    icon: Award
+    xpReward: 20
+    focus: Kyu délivrés en club, dan par la CSDGE
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l5.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Kyu
+          kanji: 級
+          fr: grade avant les dan (du 6e au 1er kyu en France)
+          source:
+            type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+        - jp: Dan
+          kanji: 段
+          fr: grade de ceinture noire
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shodan
+          kanji: 初段
+          fr: "1er dan ; « sho » : le début"
+          source:
+            type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+        - jp: Kuro obi
+          kanji: 黒帯
+          fr: ceinture noire
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: On compte à rebours
+        texte: "En France, la FFAB et la FFAAA comptent six kyu : on commence au 6e et l'on progresse jusqu'au 1er. Les kyu sont délivrés en club par l'enseignant. Viennent ensuite les dan ; le premier, shodan, veut dire « le début ». Les dan sont délivrés par la CSDGE, commission commune aux deux fédérations. Au Hombu Dojo de l'Aikikai, il n'y a que cinq kyu."
+    exercises:
+      - id: ex-6k-u2-l5-1
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En France, les kyu sont délivrés en club par l'enseignant.
+        correctAnswer: vrai
+        sources:
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-2
+        type: order_steps
+        prompt: Remettez ces grades dans l'ordre de progression.
+        steps:
+          - 6e kyu
+          - 5e kyu
+          - 1er kyu
+          - shodan (1er dan)
+        correctAnswer: steps
+        sources:
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAB-KYU
+            url: https://www.ffabaikido.com/fr/grades-kyu-100.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-3
+        type: meaning_choice
+        prompt: Que signifie « shodan » ?
+        jpText: Shodan
+        options:
+          - id: o1
+            text: ceinture blanche
+          - id: o2
+            text: 1er dan
+          - id: o3
+            text: 6e kyu
+        correctAnswer: 1er dan
+        explanation: "Sho 初 : le début. Le 1er dan marque le début d'une nouvelle étape."
+        sources:
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-4
+        type: kanji_choice
+        prompt: Comment se lit ce kanji ?
+        kanji: 段
+        options:
+          - id: o1
+            text: dan
+            translation: grade de ceinture noire
+          - id: o2
+            text: kyu
+            translation: grade avant les dan
+          - id: o3
+            text: do
+            translation: voie
+        correctAnswer: dan
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-5
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: kyu
+            fr: grade avant les dan
+          - jp: dan
+            fr: grade de ceinture noire
+          - jp: shodan
+            fr: 1er dan
+          - jp: kuro obi
+            fr: ceinture noire
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-6
+        type: scenario
+        prompt: Que répondez-vous ?
+        frText: "Un nouveau demande : « Quelle couleur de ceinture aurai-je au 5e kyu ? »"
+        options:
+          - id: o1
+            text: Il n'y a jamais de couleur
+          - id: o2
+            text: "Cela dépend de la fédération et du club : demande à l'enseignant"
+          - id: o3
+            text: Jaune, partout dans le monde
+        correctAnswer: "Cela dépend de la fédération et du club : demande à l'enseignant"
+        explanation: Les couleurs de ceinture kyu varient ; la FLAM, par exemple, en propose à titre indicatif.
+        sources:
+          - type: federation
+            ref: FLAM-KYU-2011
+            url: https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf
+            page: "4"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-7
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: Au Hombu Dojo de l'Aikikai, on compte ___ kyu.
+        options:
+          - id: o1
+            text: cinq
+          - id: o2
+            text: six
+          - id: o3
+            text: dix
+        correctAnswer: cinq
+        explanation: Cinq au Hombu Dojo ; six en France (FFAB, FFAAA).
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-EN
+            url: https://aikikai.or.jp/eng/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l5-8
+        type: typed_term
+        prompt: Écrivez le terme japonais.
+        frText: le 1er dan
+        correctAnswer: shodan
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L2
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf
+            page: "10"
+            consulte: 2026-10-19
+  - id: 6k-u2-l6
+    title: Les fédérations
+    subtitle: Aikikai
+    description: Qui organise l'aïkido en France, au Luxembourg et au Japon.
+    icon: Building2
+    xpReward: 20
+    focus: Aikikai, FFAB, FFAAA, CSDGE, FLAM
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l6.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Aikikai
+          kanji: 合気会
+          fr: fondation qui gère l'aïkido du fondateur et le Hombu Dojo
+          source:
+            type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+        - jp: Hombu Dojo
+          kanji: 本部道場
+          fr: dojo central de l'Aikikai, à Tokyo
+          source:
+            type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+      note:
+        titre: Plusieurs organisations
+        texte: Au Japon, l'Aikikai gère le Hombu Dojo à Tokyo. En France, deux fédérations coexistent, la FFAB et la FFAAA ; les dan y sont délivrés par une commission commune, la CSDGE. Au Luxembourg, l'aïkido relève de la FLAM, qui a fêté ses 55 ans d'aïkido en 2025.
+    exercises:
+      - id: ex-6k-u2-l6-1
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: Aikikai
+            fr: fondation japonaise du Hombu Dojo
+          - jp: CSDGE
+            fr: commission des dan en France
+          - jp: FLAM
+            fr: fédération luxembourgeoise
+          - jp: FFAB
+            fr: fédération française
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: officiel
+            ref: CSDGE-L1
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre1_reglementation_generale.pdf
+            page: "7"
+            consulte: 2026-10-19
+          - type: federation
+            ref: FLAM-55
+            url: https://flam.lu/aikido/2025/10/21/55-ans-aikido-au-g-d-luxembourg/
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAB-FFAB
+            url: https://www.ffabaikido.com/fr/la-f-f-a-b-31.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-2
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: En France, la FFAB et la FFAAA délivrent les dan par une commission commune, la CSDGE.
+        correctAnswer: vrai
+        sources:
+          - type: officiel
+            ref: CSDGE-L1
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre1_reglementation_generale.pdf
+            page: 6-7
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-3
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 合気会
+        options:
+          - id: o1
+            text: Hombu Dojo
+            translation: le dojo central
+          - id: o2
+            text: Aikikai
+            translation: la fondation
+          - id: o3
+            text: aikido
+            translation: la discipline
+        correctAnswer: Aikikai
+        explanation: "会 : association. 合気道 (aikido) finit par 道, la voie."
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-4
+        type: meaning_choice
+        prompt: Qu'est-ce que le Hombu Dojo ?
+        jpText: Hombu Dojo
+        options:
+          - id: o1
+            text: le dojo central de l'Aikikai, à Tokyo
+          - id: o2
+            text: la commission des grades française
+          - id: o3
+            text: le dojo de la FLAM
+        correctAnswer: le dojo central de l'Aikikai, à Tokyo
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-5
+        type: missing_word
+        prompt: Choisissez le mot qui manque.
+        frText: En 2025, l'aïkido luxembourgeois (FLAM) a fêté ses ___ ans.
+        options:
+          - id: o1
+            text: "100"
+          - id: o2
+            text: "10"
+          - id: o3
+            text: "55"
+        correctAnswer: "55"
+        sources:
+          - type: federation
+            ref: FLAM-55
+            url: https://flam.lu/aikido/2025/10/21/55-ans-aikido-au-g-d-luxembourg/
+            consulte: 2026-10-19
+          - type: web
+            ref: CHRONICLE-LU
+            url: https://chronicle.lu/category/things-to-see-do/57117-luxembourg-to-mark-55-years-of-aikido-with-seminar-led-by-master-mitsuteru-ueshiba
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-6
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: あいきかい
+        options:
+          - id: o1
+            text: kaiso
+            translation: le fondateur
+          - id: o2
+            text: Aikikai
+            translation: la fondation
+          - id: o3
+            text: aikido
+            translation: la discipline
+        correctAnswer: Aikikai
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-7
+        type: scenario
+        prompt: Que répondez-vous ?
+        frText: Un ami pratique dans un club FFAAA, vous dans un club FFAB. Il dit que l'une des deux fédérations « fait du faux aïkido ».
+        options:
+          - id: o1
+            text: Les deux fédérations sont reconnues ; leurs dan relèvent d'une même commission
+          - id: o2
+            text: Il a raison, une seule fédération existe vraiment
+          - id: o3
+            text: Seul le Luxembourg fait du vrai aïkido
+        correctAnswer: Les deux fédérations sont reconnues ; leurs dan relèvent d'une même commission
+        sources:
+          - type: officiel
+            ref: CSDGE-L1
+            url: https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre1_reglementation_generale.pdf
+            page: 6-7
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAB-FFAB
+            url: https://www.ffabaikido.com/fr/la-f-f-a-b-31.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l6-8
+        type: typed_term
+        prompt: Écrivez le nom de la fondation japonaise.
+        frText: fondation qui gère le Hombu Dojo
+        correctAnswer: aikikai
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+  - id: 6k-u2-l7
+    title: Compter en japonais
+    subtitle: Ichi, ni, san
+    description: De un à dix, pour l'échauffement et les exercices.
+    icon: Hash
+    xpReward: 20
+    focus: Les nombres de 1 à 10
+    isReview: false
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l7.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Ichi
+          kanji: 一
+          fr: un
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Ni
+          kanji: 二
+          fr: deux
+          source:
+            type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "24"
+            consulte: 2026-10-19
+        - jp: San
+          kanji: 三
+          fr: trois
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shi / yon
+          kanji: 四
+          fr: quatre
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Go
+          kanji: 五
+          fr: cinq
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Roku
+          kanji: 六
+          fr: six
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Shichi / nana
+          kanji: 七
+          fr: sept
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Hachi
+          kanji: 八
+          fr: huit
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Kyu / ku
+          kanji: 九
+          fr: neuf
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+        - jp: Ju
+          kanji: 十
+          fr: dix
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Deux lectures pour 4, 7 et 9
+        texte: "Quatre se dit shi ou yon, sept shichi ou nana, neuf kyu ou ku. Les nombres reviennent dans les noms de techniques : ikkyo (1), nikyo (2), sankyo (3)… Attention : kyu (neuf) n'a rien à voir avec kyu (le grade), qui s'écrit 級."
+    exercises:
+      - id: ex-6k-u2-l7-1
+        type: match_pairs_audio
+        prompt: Écoutez et associez.
+        pairs:
+          - jp: いち
+            fr: "1"
+          - jp: に
+            fr: "2"
+          - jp: さん
+            fr: "3"
+          - jp: ご
+            fr: "5"
+        correctAnswer: pairs
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "24"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-2
+        type: listen_choose
+        prompt: Qu'entendez-vous ?
+        audioText: はち
+        options:
+          - id: o1
+            text: ichi
+            translation: "1"
+          - id: o2
+            text: shichi
+            translation: "7"
+          - id: o3
+            text: hachi
+            translation: "8"
+        correctAnswer: hachi
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-3
+        type: kanji_choice
+        prompt: Quel nombre est-ce ?
+        kanji: 十
+        options:
+          - id: o1
+            text: ni
+            translation: "2"
+          - id: o2
+            text: ju
+            translation: "10"
+          - id: o3
+            text: roku
+            translation: "6"
+        correctAnswer: ju
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-4
+        type: order_steps
+        prompt: Remettez dans l'ordre croissant.
+        steps:
+          - ichi
+          - ni
+          - san
+          - shi
+          - go
+        correctAnswer: steps
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "24"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-5
+        type: image_choice
+        prompt: "Choisissez l'illustration : « roku »"
+        jpText: Roku
+        options:
+          - id: o1
+            text: "4"
+            illustration:
+              emoji: 4️⃣
+              alt: le chiffre quatre
+          - id: o2
+            text: "9"
+            illustration:
+              emoji: 9️⃣
+              alt: le chiffre neuf
+          - id: o3
+            text: "6"
+            illustration:
+              emoji: 6️⃣
+              alt: le chiffre six
+        correctAnswer: "6"
+        explanation: Roku = 6. Quatre se dit shi ou yon, neuf kyu ou ku.
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-6
+        type: tile_build
+        prompt: Comptez de un à quatre.
+        frText: 1, 2, 3, 4
+        wordBank:
+          - san
+          - go
+          - ichi
+          - shi
+          - ni
+          - roku
+        correctAnswer:
+          - ichi
+          - ni
+          - san
+          - shi
+        acceptedAnswers:
+          - ichi ni san yon
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "24"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-7
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Sept peut se dire « shichi » ou « nana ».
+        correctAnswer: vrai
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+          - type: federation
+            ref: FFAAA-GUIDE
+            url: http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf
+            page: "24"
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l7-8
+        type: typed_term
+        prompt: Écrivez le nombre en romaji.
+        frText: dix
+        correctAnswer: ju
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+  - id: 6k-u2-l8
+    title: "Révision : qu'est-ce que l'aïkido ?"
+    subtitle: Aikido
+    description: Le sens, l'histoire, les rôles, les grades.
+    icon: RotateCcw
+    xpReward: 30
+    focus: Révision des leçons 1 à 7
+    isReview: true
+    research: niveaux/6k/6k-u2/recherche/6k-u2-l8.md
+    auteur:
+      session: contenu-6k-2026-10-19
+      date: 2026-10-19
+    intro:
+      termes:
+        - jp: Aikido
+          kanji: 合気道
+          fr: « voie de l'harmonie des énergies »
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Ueshiba Morihei
+          kanji: 植芝盛平
+          fr: fondateur de l'aïkido (1883-1969)
+          source:
+            type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+        - jp: Tori
+          kanji: 取り
+          fr: celui qui exécute la technique
+          source:
+            type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+        - jp: Aikido
+          kanji: 合気道
+          fr: art martial sans compétition
+          source:
+            type: aikikai
+            ref: AIK-WHAT-EN
+            url: https://aikikai.or.jp/eng/aikido/
+            consulte: 2026-10-19
+        - jp: Kyu
+          kanji: 級
+          fr: grade avant les dan (du 6e au 1er kyu en France)
+          source:
+            type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+        - jp: Aikikai
+          kanji: 合気会
+          fr: fondation qui gère l'aïkido du fondateur et le Hombu Dojo
+          source:
+            type: aikikai
+            ref: AIK-HIST-JA
+            url: https://aikikai.or.jp/aikido/history/
+            consulte: 2026-10-19
+        - jp: Ichi
+          kanji: 一
+          fr: un
+          source:
+            type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      note:
+        titre: Révision
+        texte: "Aïkido : voie de l'harmonie des énergies, fondée par Ueshiba Morihei, sans compétition. Tori exécute, uke reçoit. Six kyu en France, puis les dan."
+    exercises:
+      - id: ex-6k-u2-l8-1
+        type: story
+        prompt: Lisez le récit.
+        dialogue:
+          - speaker: Léa
+            text: Pourquoi l'appelle-t-on O sensei ?
+          - speaker: Sensei
+            text: C'est le surnom du fondateur, Ueshiba Morihei.
+          - speaker: Léa
+            text: Et le Doshu actuel ?
+          - speaker: Sensei
+            text: C'est son petit-fils, Ueshiba Moriteru.
+        correctAnswer: story
+        storyQuestions:
+          - afterLine: 2
+            prompt: Qui est O sensei ?
+            options:
+              - id: o1
+                text: l'enseignant de Léa
+              - id: o2
+                text: Ueshiba Moriteru
+              - id: o3
+                text: Ueshiba Morihei
+            correctAnswer: Ueshiba Morihei
+          - afterLine: 4
+            prompt: Quel lien entre le Doshu actuel et le fondateur ?
+            options:
+              - id: o1
+                text: c'est son élève
+              - id: o2
+                text: c'est son petit-fils
+              - id: o3
+                text: c'est son fils
+            correctAnswer: c'est son petit-fils
+        sources:
+          - type: aikikai
+            ref: AIK-HIST-EN
+            url: https://aikikai.or.jp/eng/aikido/history/
+            consulte: 2026-10-19
+          - type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-2
+        type: match_pairs
+        prompt: Associez.
+        pairs:
+          - jp: tori
+            fr: exécute la technique
+          - jp: uke
+            fr: attaque et reçoit
+          - jp: kyu
+            fr: grade avant les dan
+          - jp: budo
+            fr: voie martiale
+        correctAnswer: pairs
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-3
+        type: technique_decoder
+        prompt: Ikkyo, nikyo, sankyo… Quel nombre se cache dans « sankyo » ?
+        jpText: Shomen uchi sankyo
+        decomposition:
+          attaque: shomen uchi
+          technique: sankyo
+        options:
+          - id: o1
+            text: deux
+          - id: o2
+            text: trois
+          - id: o3
+            text: un
+        correctAnswer: trois
+        explanation: "San = 3 : sankyo (三教). Ikkyo contient ichi (1), nikyo ni (2)."
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-4
+        type: true_false
+        prompt: Vrai ou faux ?
+        statement: Le 1er kyu vient avant le 6e kyu dans la progression.
+        correctAnswer: faux
+        explanation: On commence au 6e kyu et l'on progresse jusqu'au 1er.
+        sources:
+          - type: federation
+            ref: FFAAA-GRADES
+            url: https://aikido.com.fr/grades/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-5
+        type: listen_type
+        prompt: Écoutez et écrivez en romaji.
+        audioText: とり
+        correctAnswer: tori
+        sources:
+          - type: aikikai
+            ref: AIK-WHAT-JA
+            url: https://aikikai.or.jp/aikido/
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-6
+        type: meaning_choice
+        prompt: Que signifie « Doshu » ?
+        jpText: Doshu
+        options:
+          - id: o1
+            text: salle de pratique
+          - id: o2
+            text: maître de la voie, chef de lignée
+          - id: o3
+            text: élève débutant
+        correctAnswer: maître de la voie, chef de lignée
+        sources:
+          - type: aikikai
+            ref: AIK-DOSHU-EN
+            url: https://aikikai.or.jp/eng/aikido/message/
+            consulte: 2026-10-19
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-7
+        type: term_choice
+        prompt: Quel est le nombre huit ?
+        frText: "8"
+        options:
+          - id: o1
+            text: hachi
+          - id: o2
+            text: roku
+          - id: o3
+            text: ju
+        correctAnswer: hachi
+        sources:
+          - type: web
+            ref: NWU-GLOSS
+            url: https://www.earth.northwestern.edu/public/craig/aikido/glossary.html
+            consulte: 2026-10-19
+      - id: ex-6k-u2-l8-8
+        type: kanji_choice
+        prompt: Comment se lit ce mot ?
+        kanji: 初段
+        options:
+          - id: o1
+            text: sandan
+            translation: 3e dan
+          - id: o2
+            text: kyu
+            translation: grade kyu
+          - id: o3
+            text: shodan
+            translation: 1er dan
+        correctAnswer: shodan
+        sources:
+          - type: aikikai
+            ref: AIK-EXAM-JA
+            url: https://aikikai.or.jp/hombudojo/grading/
+            consulte: 2026-10-19

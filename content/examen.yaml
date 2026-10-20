@@ -1,0 +1,26 @@
+# Simulateur de passage de grade (contrat : [{ level, epreuves: [{ categorie, appel, attaque, technique, variante?, conseils }], criteres, sources }]).
+# Limité au 5e kyu : seul niveau du périmètre actuel (6K-5K) qui ait un programme officiel publié (FFAB).
+# Le 6e kyu n'a pas de programme officiel publié (referentiel/sources.md, « Non vérifié » n° 1) : pas d'entrée.
+# Programme : FFAB « Grades KYU », section 5e KYU. Variantes FFAAA / FLAM / Aikikai : referentiel/5k.yaml.
+- level: 5K
+  statut: brouillon
+  epreuves:
+    - { categorie: "Suwari waza", appel: "Suwari waza ai hanmi katate dori ikkyo", attaque: "ai hanmi katate dori", technique: "ikkyo", conseils: ["Les deux partenaires sont à genoux.", "Travaillez à droite et à gauche."] }
+    - { categorie: "Suwari waza", appel: "Suwari waza ai hanmi katate dori irimi nage", attaque: "ai hanmi katate dori", technique: "irimi nage", conseils: ["Irimi nage : projection en entrant."] }
+    - { categorie: "Suwari waza", appel: "Suwari waza shomen uchi ikkyo", attaque: "shomen uchi", technique: "ikkyo", conseils: ["Shomen uchi : frappe verticale au sommet de la tête."] }
+    - { categorie: "Suwari waza", appel: "Suwari waza shomen uchi irimi nage", attaque: "shomen uchi", technique: "irimi nage", conseils: [] }
+    - { categorie: "Suwari waza", appel: "Suwari waza ryote dori kokyu ho", attaque: "ryote dori", technique: "kokyu ho", conseils: ["Ryote dori : les deux poignets saisis, une main pour chacun."] }
+    - { categorie: "Tachi waza", appel: "Ai hanmi katate dori ikkyo", attaque: "ai hanmi katate dori", technique: "ikkyo", conseils: ["Même pied devant ; main droite sur poignet droit, ou gauche sur gauche."] }
+    - { categorie: "Tachi waza", appel: "Ai hanmi katate dori shiho nage", attaque: "ai hanmi katate dori", technique: "shiho nage", conseils: [] }
+    - { categorie: "Tachi waza", appel: "Ai hanmi katate dori irimi nage", attaque: "ai hanmi katate dori", technique: "irimi nage", conseils: [] }
+    - { categorie: "Tachi waza", appel: "Gyaku hanmi katate dori tenchi nage", attaque: "gyaku hanmi katate dori", technique: "tenchi nage", conseils: ["Pieds opposés devant.", "Tenchi nage : « ciel et terre », une main monte, l'autre descend."] }
+    - { categorie: "Tachi waza", appel: "Shomen uchi ikkyo", attaque: "shomen uchi", technique: "ikkyo", conseils: [] }
+    - { categorie: "Tachi waza", appel: "Shomen uchi irimi nage", attaque: "shomen uchi", technique: "irimi nage", conseils: [] }
+  criteres:
+    - "En France, les kyu sont délivrés en club par l'enseignant (FFAB, FFAAA) : les critères sont ceux de votre enseignant."
+    - "À titre d'orientation seulement : pour les dan, la CSDGE observe dès l'entrée dans le dojo le respect (reigisaho), la vigilance et l'attitude (shisei)."
+    - "Au Hombu Dojo de l'Aikikai, le candidat répète gauche/droite et omote/ura jusqu'à ce qu'on l'arrête ; son programme du 5e kyu diffère (voir referentiel/5k.yaml)."
+  sources:
+    - { type: federation, ref: "FFAB-KYU (section 5e KYU)", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", consulte: "2026-10-19" }
+    - { type: officiel, ref: "CSDGE-L2 Annexe I", url: "https://aikido.com.fr/wp-content/uploads/2026/01/2025_12_31_CSDGE_AIKIDO_Livre2_reglementations_techniques.pdf", page: "7-9", consulte: "2026-10-19" }
+    - { type: aikikai, ref: "AIK-EXAM-EN", url: "https://aikikai.or.jp/eng/hombudojo/grading/", consulte: "2026-10-19" }

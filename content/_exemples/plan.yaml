@@ -1,0 +1,31 @@
+# Plan d'unité (MODÈLE COMMENTÉ, tronqué à 3 leçons ; un vrai plan en a 8).
+# Écrit AVANT la rédaction. Il fixe, pour chaque leçon, le thème et les 8 types d'exercices
+# (un par exercice, dans l'ordre). Contrôles à faire avant de rédiger :
+#   - exactement 8 types par leçon (doublons permis), au moins 3 types distincts ;
+#   - chacun des 16 types du catalogue (docs/types-exercices.md) apparaît au moins une fois dans l'unité ;
+#   - la leçon 8 est la révision (isReview: true) et ne reprend que des notions des leçons 1 à 7 ;
+#   - chaque thème correspond à un passage du référentiel (content/referentiel/<niveau>.yaml).
+unit: 6k-u1                        # identifiant de l'unité (= nom du fichier 6k-u1.yaml)
+level: 6K
+theme: "Le dojo et l'étiquette"    # thème de l'unité, en français
+referentiel:                       # passage du référentiel / programme officiel couvert
+  fichier: content/referentiel/6k.yaml
+  section: "unites[0]"             # ou l'identifiant de section utilisé par le référentiel
+  sources: [S-01, S-04]            # identifiants des sources de content/referentiel/sources.md
+adaptation: >-                     # (optionnel) écart avec ce que propose le référentiel, et pourquoi
+  Aucune.
+lessons:
+  - id: 6k-u1-l1
+    theme: "Entrer au dojo et saluer"
+    termes: [dojo, rei, ritsurei]   # termes du lexique (ids de content/lexique.yaml) introduits
+    types: [meaning_choice, kanji_choice, match_pairs, order_steps, scenario, true_false, missing_word, typed_term]
+  - id: 6k-u1-l2
+    theme: "Seiza et le salut à genoux"
+    termes: [seiza, zarei]
+    types: [term_choice, image_choice, listen_choose, order_steps, story, match_pairs_audio, listen_type, meaning_choice]
+  # … leçons 3 à 7 …
+  - id: 6k-u1-l8
+    theme: "Révision"
+    isReview: true
+    termes: []                      # une révision n'introduit rien
+    types: [technique_decoder, tile_build, scenario, match_pairs, true_false, listen_choose, typed_term, order_steps]

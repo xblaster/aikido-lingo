@@ -1,0 +1,110 @@
+# Plan de l’unité 6k-u2 (types par leçon, dans l’ordre des exercices).
+unit: 6k-u2
+level: 6K
+theme: Qu'est-ce que l'aïkido ?
+referentiel:
+  fichier: content/referentiel/6k.yaml
+  section: themes[1]
+  sources:
+    - AIK-WHAT-EN
+    - AIK-WHAT-JA
+    - AIK-HIST-EN
+    - AIK-HIST-JA
+    - BUDOKAN-I
+    - FFAB-KYU
+    - FFAAA-GRADES
+    - FFAB-FFAB
+    - FLAM-55
+    - NWU-GLOSS
+    - FFAAA-GUIDE
+adaptation: Aucune.
+lessons:
+  - id: 6k-u2-l1
+    theme: "Ai, ki, do : le sens du mot"
+    types:
+      - kanji_choice
+      - meaning_choice
+      - meaning_choice
+      - match_pairs
+      - true_false
+      - term_choice
+      - listen_type
+      - kanji_choice
+  - id: 6k-u2-l2
+    theme: Le fondateur
+    types:
+      - story
+      - true_false
+      - meaning_choice
+      - match_pairs
+      - kanji_choice
+      - missing_word
+      - term_choice
+      - typed_term
+  - id: 6k-u2-l3
+    theme: Tori et uke
+    types:
+      - meaning_choice
+      - term_choice
+      - true_false
+      - kanji_choice
+      - scenario
+      - match_pairs_audio
+      - missing_word
+      - listen_type
+  - id: 6k-u2-l4
+    theme: Pas de compétition
+    types:
+      - true_false
+      - scenario
+      - meaning_choice
+      - missing_word
+      - story
+      - term_choice
+      - listen_choose
+      - typed_term
+  - id: 6k-u2-l5
+    theme: Les kyu et les dan
+    types:
+      - true_false
+      - order_steps
+      - meaning_choice
+      - kanji_choice
+      - match_pairs
+      - scenario
+      - missing_word
+      - typed_term
+  - id: 6k-u2-l6
+    theme: Les fédérations
+    types:
+      - match_pairs
+      - true_false
+      - kanji_choice
+      - meaning_choice
+      - missing_word
+      - listen_choose
+      - scenario
+      - typed_term
+  - id: 6k-u2-l7
+    theme: Compter en japonais
+    types:
+      - match_pairs_audio
+      - listen_choose
+      - kanji_choice
+      - order_steps
+      - image_choice
+      - tile_build
+      - true_false
+      - typed_term
+  - id: 6k-u2-l8
+    theme: "Révision : qu'est-ce que l'aïkido ?"
+    isReview: true
+    types:
+      - story
+      - match_pairs
+      - technique_decoder
+      - true_false
+      - listen_type
+      - meaning_choice
+      - term_choice
+      - kanji_choice

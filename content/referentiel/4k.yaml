@@ -1,0 +1,61 @@
+# Référentiel du niveau 4e kyu — À COMPLÉTER (competences, lexique, themes). Rédigé le 2026-10-19 à partir de :
+# FFAB « Grades KYU » (colonne vertébrale), FFAAA Guide du débutant, FLAM Annexe 2.1 (2011), Aikikai Examination Guidelines.
+level: 4K
+nom: "4e kyu"
+statut: "à compléter"
+referencePrincipale: "FFAB, Grades KYU"
+referentielPrincipal: "FFAB, Grades KYU"
+etat: a-completer
+prerequis:
+  - { referentiel: "FFAB", texte: "Minimum 3 mois de pratique réelle après le 5e kyu ou 60 heures", source: "FFAB-KYU" }
+  - { referentiel: "FFAAA", texte: "3 mois", source: "FFAAA-GUIDE p. 21" }
+  - { referentiel: "FLAM", texte: "30 cours depuis le 5e kyu ; ceinture orange", source: "FLAM-KYU-2011 p. 4" }
+  - { referentiel: "Aikikai Hombu", texte: "40 jours de pratique après le 5e kyu", source: "AIK-EXAM-EN" }
+programmeOfficiel:   # FFAB — source commune
+  - { categorie: "Suwari waza", attaque: "Ai hanmi katate dori", techniques: ["Nikyo", "Sankyo", "Yonkyo"], source: &ffab { ref: "FFAB, Grades KYU, 4e KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", page: "section 4e KYU" } }
+  - { categorie: "Suwari waza", attaque: "Kata dori", techniques: ["Ikkyo", "Nikyo"], source: *ffab }
+  - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Nikyo", "Kote gaeshi"], source: *ffab }
+  - { categorie: "Tachi waza", attaque: "Ai hanmi katate dori", techniques: ["Nikyo", "Sankyo", "Yonkyo", "Ude kime nage", "Kote gaeshi", "Koshi nage"], source: *ffab }
+  - { categorie: "Tachi waza", attaque: "Gyaku hanmi katate dori", techniques: ["Ikkyo", "Nikyo", "Shiho nage", "Ude kime nage", "Kote gaeshi", "Irimi nage", "Uchi kaiten nage", "Soto kaiten nage"], source: *ffab }
+  - { categorie: "Tachi waza", attaque: "Kata dori", techniques: ["Ikkyo", "Nikyo"], source: *ffab }
+  - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Nikyo", "Sankyo (uchi, soto kaiten)", "Yonkyo", "Kote gaeshi"], source: *ffab }
+  - { categorie: "Tachi waza", attaque: "Yokomen uchi", techniques: ["Shiho nage", "Ude kime nage", "Kokyu nage"], source: *ffab }
+  - { categorie: "Ushiro waza", attaque: "Katate dori kubishime", techniques: ["Ikkyo", "Irimi nage"], source: *ffab }
+variantes:
+  - referentiel: "FFAAA (exemple non normatif)"
+    source: { ref: "FFAAA, Guide du débutant", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "18" }
+    lignes:
+      - { categorie: "Tachi waza", attaque: "Katate dori", techniques: ["Ikkyo", "Nikyo", "Kote gaeshi", "Irimi nage", "Uchi kaiten nage", "Kokyu nage", "Ude kime nage", "Sokumen irimi nage"] }
+      - { categorie: "Tachi waza", attaque: "Kata dori", techniques: ["Ikkyo", "Nikyo"] }
+      - { categorie: "Tachi waza", attaque: "Ai hanmi katate dori", techniques: ["Nikyo", "Sankyo", "Kote gaeshi", "Ude kime nage"] }
+      - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Kote gaeshi"] }
+      - { categorie: "Tachi waza", attaque: "Yokomen uchi", techniques: ["Shiho nage", "Ude kime nage"] }
+      - { categorie: "Tachi waza", attaque: "Ryote dori", techniques: ["Tenchi nage"] }
+      - { categorie: "Tachi waza", attaque: "Ushiro ryote dori", techniques: ["Sankyo"] }
+      - { categorie: "Suwari waza", attaque: "Ai hanmi katate dori", techniques: ["Ikkyo", "Irimi nage"] }
+      - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"] }
+  - referentiel: "FLAM (2011, indicatif)"
+    source: { ref: "FLAM, Annexe 2.1", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18" }
+    lignes:
+      - { categorie: "Tachi waza", attaque: "Shomen uchi", techniques: ["Ikkyo O/U", "Kote gaeshi O/U", "Nikyo O/U"] }
+      - { categorie: "Tachi waza", attaque: "Chudan tsuki", techniques: ["Irimi nage O/U", "Kote gaeshi O/U"] }
+      - { categorie: "Tachi waza", attaque: "Katate dori", techniques: ["Shiho nage O/U", "Tenchi nage", "Ikkyo O/U", "Ude kime nage O/U", "Kokyu nage"] }
+      - { categorie: "Suwari waza", attaque: "Shomen uchi", techniques: ["Ikkyo O/U"] }
+      - { categorie: "Suwari waza", attaque: "Kata dori", techniques: ["Ikkyo O/U"] }
+  - referentiel: "Aikikai Hombu Dojo"
+    source: { ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", page: "ligne 4th Kyu" }
+    lignes:
+      - { categorie: "Non précisé", attaque: "Shomen uchi", techniques: ["Ikkyo", "Irimi nage"] }
+      - { categorie: "Non précisé", attaque: "Kata dori", techniques: ["Nikyo"] }
+      - { categorie: "Non précisé", attaque: "Yokomen uchi", techniques: ["Shiho nage"] }
+      - { categorie: "Suwari waza", attaque: null, techniques: ["Kokyu ho"] }
+competences: []        # à compléter
+criteresEvaluation:
+  - "Kyu délivré sous la responsabilité de l'enseignant du club (FFAB-KYU)."
+lexique: []            # à compléter (voir terminologie.yaml : nikyo, sankyo, yonkyo, kote gaeshi, kaiten nage, koshi nage, ude kime nage, kokyu nage, kata dori, yokomen uchi, chudan tsuki)
+themes: []             # à compléter
+sources:
+  - { type: federation, ref: "FFAB, Grades KYU", url: "https://www.ffabaikido.com/fr/grades-kyu-100.html", consulte: "2026-10-19" }
+  - { type: federation, ref: "FFAAA, Guide du débutant", url: "http://www.aikido-idf-ffaaa.fr/media/2019/02/aikido-ffaaa-guide-debutant.pdf", page: "18, 21", consulte: "2026-10-19" }
+  - { type: federation, ref: "FLAM, Annexe 2.1 (2011)", url: "https://flam.lu/aikido/wp-content/uploads/sites/2/2020/11/AIKIDO-Passages-de-grades-KYU.pdf", page: "4/18", consulte: "2026-10-19" }
+  - { type: aikikai, ref: "Aikikai, Examination Guidelines", url: "https://aikikai.or.jp/eng/hombudojo/grading/", consulte: "2026-10-19" }
